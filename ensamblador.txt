@@ -1,0 +1,81 @@
+_INICIO
+CAR R15, 0	
+CAR R16, 0			
+_REVISAR_SELECCION_DE_KERNEL:
+COM R14, 0                  
+SIQ _REVISAR_SELECCION_DE_KERNEL       
+COM R14, 1                 
+SIQ _KERNEL_BLUR 
+COM R14, 2                 
+SIQ _KERNEL_SHARPENNING
+COM R14, 4                 
+SIQ _KERNEL_OVERSHARPENNING
+_KERNEL_BLUR                              
+MOV R00, 00                
+MOV R01, 01               
+MOV R02, 02
+MOV R15, 03                
+MOV R16, 04               
+MOV R17, 05
+MOV R18, 06
+MOV R19, 07               
+MOV R20, 08                
+SLT _CONV                   
+_KERNEL_SHARPENNING
+MOV R00, 09                
+MOV R01, 10               
+MOV R02, 11
+MOV R15, 12                
+MOV R16, 13               
+MOV R17, 14
+MOV R18, 15
+MOV R19, 16               
+MOV R20, 17 
+SLT _CONV
+_KERNEL_OVERSHARPENNING
+MOV R00, 18                
+MOV R01, 19               
+MOV R02, 20
+MOV R15, 21                
+MOV R16, 22               
+MOV R17, 23
+MOV R18, 24
+MOV R19, 25               
+MOV R20, 26 
+SLT _CONV
+CAR R12, 0     
+CAR R13, 0     
+_CONV:
+COM R12, 480                            
+SMQ _RELLENAR_FILA                       
+SLT _FIN                                        
+_RELLENAR_FILA
+COM R13, 640                            
+SIQ _REINICIAR_CONTADOR_DE_COLUMNAS
+CPX R21, 0
+MOV R03, R21                               
+CPX R21, 1
+MOV R04, R21                               
+CPX R21, 2
+MOV R05, R21                               
+CPX R21, 3
+MOV R06, R21                               
+CPX R21, 4
+MOV R07, R21                               
+CPX R21, 5
+MOV R08, R21                               
+CPX R21, 6
+MOV R09, R21                               
+CPX R21, 7
+MOV R10, R21                              
+CPX R21, 8
+MOV R11, R21                              
+CON
+INC R13                         
+SLT _RELLENAR_FILA                       
+_REINICIAR_CONTADOR_DE_COLUMNAS
+CAR R13, 0                              
+INC R12                         
+SLT _CONV   	
+_FIN
+SLT _INICIO 

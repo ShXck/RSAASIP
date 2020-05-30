@@ -1,0 +1,368 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/alecastrillo/Desktop/ArquiProyectoI/simulation/modelsim
+vALU_N_bits
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1568253984
+!i10b 1
+!s100 e7S67@HRI@D^UGRMWI^g<0
+I8lLf3<^bJzKfBdJlPh?MM2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ALU_N_bits_sv_unit
+S1
+R0
+Z4 w1555810316
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/ALU_N_bits.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/ALU_N_bits.sv
+L0 1
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1568253984.000000
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/ALU_N_bits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/ALU_N_bits.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU
+Z9 tCvgOpt 0
+n@a@l@u_@n_bits
+vand_A
+R1
+R2
+!i10b 1
+!s100 nW0O3=eBl]eh?jJ_Bgjm[2
+Id2P<hRdTa1dLW^HQON@0L3
+R3
+!s105 and_A_sv_unit
+S1
+R0
+Z10 w1553997372
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/and_A.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/and_A.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/and_A.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/and_A.sv|
+!i113 1
+R7
+R8
+R9
+nand_@a
+vflags
+R1
+R2
+!i10b 1
+!s100 QgaAf0>;2SK8oi_l[PG2G0
+I:hA[a@cB0IQaJ19gM_H_l3
+R3
+!s105 flags_sv_unit
+S1
+R0
+R4
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/flags.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/flags.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/flags.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/flags.sv|
+!i113 1
+R7
+R8
+R9
+vleft_shift_arithmetic
+R1
+R2
+!i10b 1
+!s100 XkD=2BUPM9Y=Azn?C3>3n2
+IVPX?=WRa;Mk38_zJ:VEBb1
+R3
+!s105 left_shift_arithmetic_sv_unit
+S1
+R0
+R10
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/left_shift_arithmetic.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/left_shift_arithmetic.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/left_shift_arithmetic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/left_shift_arithmetic.sv|
+!i113 1
+R7
+R8
+R9
+vleft_shift_logic
+R1
+Z11 !s110 1568253983
+!i10b 1
+!s100 WGK^h`DO>F0K3hDUVC`5:0
+I]ZIhdRUGoGj16m7UePk6M0
+R3
+!s105 left_shift_logic_sv_unit
+S1
+R0
+Z12 w1555727074
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/left_shift_logic.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/left_shift_logic.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z13 !s108 1568253983.000000
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/left_shift_logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/left_shift_logic.sv|
+!i113 1
+R7
+R8
+R9
+vmux_ALU
+R1
+R11
+!i10b 1
+!s100 ^XaTZaakMnMOOR]FnBPMX3
+I2ioI2d14mDVZf=3]:T;mh1
+R3
+!s105 mux_ALU_sv_unit
+S1
+R0
+R10
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/mux_ALU.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/mux_ALU.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/mux_ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/mux_ALU.sv|
+!i113 1
+R7
+R8
+R9
+nmux_@a@l@u
+vmux_Sumador
+R1
+R11
+!i10b 1
+!s100 [2hKeAHoJEVZzo^X?nIU72
+IdMSO2QfV`[VJ`<17Y@3<e1
+R3
+!s105 mux_Sumador_sv_unit
+S1
+R0
+R10
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/mux_Sumador.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/mux_Sumador.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/mux_Sumador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/mux_Sumador.sv|
+!i113 1
+R7
+R8
+R9
+nmux_@sumador
+vnot_A
+R1
+R11
+!i10b 1
+!s100 Sk@g51[mB?`YZWHI5jZbO3
+Ihe_mP`nKCLAfL]mD@:GGX0
+R3
+!s105 not_A_sv_unit
+S1
+R0
+R10
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/not_A.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/not_A.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/not_A.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/not_A.sv|
+!i113 1
+R7
+R8
+R9
+nnot_@a
+vor_A
+R1
+R11
+!i10b 1
+!s100 Qb;^g5EfLR9KgOhG_P^AW0
+Ij3JiCO[FaG4<2EH[3hl9^1
+R3
+!s105 or_A_sv_unit
+S1
+R0
+R10
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/or_A.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/or_A.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/or_A.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/or_A.sv|
+!i113 1
+R7
+R8
+R9
+nor_@a
+vright_shift_arithmetic
+R1
+R11
+!i10b 1
+!s100 LI_1_zP0=b;mhHPOzfZ?K0
+IeL9P_VmJ28:8JfBHQUeAS0
+R3
+!s105 right_shift_arithmetic_sv_unit
+S1
+R0
+R10
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/right_shift_arithmetic.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/right_shift_arithmetic.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/right_shift_arithmetic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/right_shift_arithmetic.sv|
+!i113 1
+R7
+R8
+R9
+vright_shift_logic
+R1
+R11
+!i10b 1
+!s100 ?@L>;mnBPQoC^EbNaKOS90
+IRZNA`HkdcLHTL?;faMmJb3
+R3
+!s105 right_shift_logic_sv_unit
+S1
+R0
+R12
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/right_shift_logic.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/right_shift_logic.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/right_shift_logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/right_shift_logic.sv|
+!i113 1
+R7
+R8
+R9
+vsumador
+R1
+R11
+!i10b 1
+!s100 lHRlaBAJ8Ya<537Eb=?T`0
+I8fQOUYz1@9ZFef:5PQR<L2
+R3
+!s105 sumador_sv_unit
+S1
+R0
+R10
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/sumador.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/sumador.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/sumador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/sumador.sv|
+!i113 1
+R7
+R8
+R9
+vtb_ALU
+R1
+Z14 !s110 1568253982
+!i10b 1
+!s100 >bjZdjPbE5VdPO[ciXOKJ2
+IAoRN`aTPVQC9IHA8Z6V;[1
+R3
+!s105 tb_ALU_sv_unit
+S1
+R0
+w1568253831
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/Testbenches/tb_ALU.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/Testbenches/tb_ALU.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z15 !s108 1568253982.000000
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/Testbenches/tb_ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/Testbenches|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/Testbenches/tb_ALU.sv|
+!i113 1
+R7
+!s92 -sv -work work +incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/Testbenches
+R9
+ntb_@a@l@u
+vxor_A
+R1
+R14
+!i10b 1
+!s100 WjmMhg;dYf3>UBT7cmCRf2
+Ig1;a]DnzVMDhb7CBLB8j:3
+R3
+!s105 xor_A_sv_unit
+S1
+R0
+R10
+8C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/xor_A.sv
+FC:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/xor_A.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/xor_A.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU|C:/Users/alecastrillo/Desktop/ArquiProyectoI/ARM/ALU/xor_A.sv|
+!i113 1
+R7
+R8
+R9
+nxor_@a
