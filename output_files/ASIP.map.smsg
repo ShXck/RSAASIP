@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at mod.sv(4): object "a" differs only in case from object "A" in the same scope File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/mod.sv Line: 4
+Info (10281): Verilog HDL Declaration information at mod.sv(5): object "n" differs only in case from object "N" in the same scope File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/mod.sv Line: 5

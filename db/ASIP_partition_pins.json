@@ -1,0 +1,285 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ALU_Result[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[15]",
+					"strict" : false
+				},
+				{
+					"name" : "z",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Contrl[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Contrl[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "data2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[9]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[10]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[10]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[11]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[11]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[12]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[12]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[13]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[13]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[14]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[14]",
+					"strict" : false
+				},
+				{
+					"name" : "data2[15]",
+					"strict" : false
+				},
+				{
+					"name" : "data1[15]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[15]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[11]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[14]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[13]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[12]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[10]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data3[9]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

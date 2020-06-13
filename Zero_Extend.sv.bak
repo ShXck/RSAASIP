@@ -1,0 +1,3 @@
+module Zero_Extend(input logic [9:0] immediate, output logic[15:0] ext_imm);
+	assign ext_imm = {6'b0, immediate};
+endmodule

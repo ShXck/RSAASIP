@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui {C:/Users/DELL/Desktop/Proyecto2-Arqui/Zero_Extend.sv}
+vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui {C:/Users/DELL/Desktop/Proyecto2-Arqui/ZeroExtend_TB.sv}
+

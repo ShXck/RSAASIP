@@ -1,0 +1,3 @@
+module Mux2(input logic [15:0] data1, data2, input logic sel, output logic [15:0] out);
+	assign out = sel ? data1 : data2;
+endmodule

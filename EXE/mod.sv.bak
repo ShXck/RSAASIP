@@ -1,0 +1,33 @@
+`timescale 1ns / 1ps
+
+module mod #(parameter ARQ = 19)(
+    input [ARQ-1:0] a,
+    input [ARQ-1:0] n,
+    output [ARQ-1:0] R,
+    output [ARQ-1:0] Q
+    );
+	 
+   reg [ARQ-1:0] A, N;
+   reg [ARQ:0] p;   
+   integer i;
+  
+   always@ (a or n) begin
+       A = a;
+       N = n;
+       p = 0;
+       for(i=0;i < ARQ;i=i+1) begin 
+           p = {p[ARQ-2:0],A[ARQ-1]};
+           A[ARQ-1:1] = A[ARQ-2:0];
+           p = p-N;
+           if(p[ARQ-1] == 1)begin
+                A[0] = 1'b0;
+                p = p + N;   
+           end
+           else
+                A[0] =1'b1;
+      end
+         
+   end    
+   
+   assign R = p, Q = A;
+endmodule
