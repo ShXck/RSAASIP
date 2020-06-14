@@ -1,0 +1,16 @@
+module BranchUnit_TB();
+
+	logic [9:0] address, out_addr;
+	logic z, b_taken;
+	logic [2:0] op;
+	
+	Branch_Unit uut(address, op, z, b_taken, out_addr);
+	
+	initial begin
+		#100 address = 10'd25; opcode = 3'b101; z = 1;
+		#100 address = 10'd30; opcode = 3'b101; z = 0;
+		#100 address = 10'd60; opcode = 3'b110; z = 0;
+		#100 address = 10'd65; opcode = 3'b110; z = 1;
+	end
+	
+endmodule

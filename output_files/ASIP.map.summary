@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Sat Jun 13 16:17:16 2020
+Analysis & Elaboration Status : Successful - Sun Jun 14 17:47:42 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ASIP
-Top-level Entity Name : ALU_TB
+Top-level Entity Name : ID_TB
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
