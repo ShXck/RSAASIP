@@ -8,84 +8,188 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/DELL/Desktop/Proyecto2-Arqui/simulation/modelsim
-vID
+vAdder
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1592178473
+Z2 !s110 1592282251
 !i10b 1
-!s100 j2kH]8m^cQF05>cHQ[WlM2
-IY9jTDdz5<A88UcaWVh`9E0
+!s100 [:c1fO23YPWT`hjHeN>9_0
+IFJ79O5<I2Hc7goVDnGi@>3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 ID_sv_unit
+!s105 Adder_sv_unit
 S1
 R0
-w1592176487
-8C:/Users/DELL/Desktop/Proyecto2-Arqui/ID/ID.sv
-FC:/Users/DELL/Desktop/Proyecto2-Arqui/ID/ID.sv
+w1592067537
+8C:/Users/DELL/Desktop/Proyecto2-Arqui/Adder.sv
+FC:/Users/DELL/Desktop/Proyecto2-Arqui/Adder.sv
 L0 1
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1592178473.000000
-!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/ID/ID.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/ID|C:/Users/DELL/Desktop/Proyecto2-Arqui/ID/ID.sv|
+Z5 !s108 1592282251.000000
+!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/Adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui|C:/Users/DELL/Desktop/Proyecto2-Arqui/Adder.sv|
 !i113 1
 Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/ID
+Z7 !s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui
 Z8 tCvgOpt 0
-n@i@d
-vID_TB
+n@adder
+vALU
 R1
-!s110 1592178474
+R2
 !i10b 1
-!s100 AoE9F`GMlOB38^d5ClOO<2
-I^Ijomi3^TeMf^F]9_HbNl1
+!s100 bmzG8nAO^B`K>3=97i5;51
+Iki;jRFWJ5Z=Q6SQMQFod^3
 R3
-!s105 ID_TB_sv_unit
+!s105 ALU_sv_unit
 S1
 R0
-w1592178441
-8C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/ID_TB.sv
-FC:/Users/DELL/Desktop/Proyecto2-Arqui/tb/ID_TB.sv
-L0 1
+w1592278333
+8C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/ALU.sv
+FC:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/ALU.sv
+L0 3
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/ID_TB.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/tb|C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/ID_TB.sv|
+!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE|C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/ALU.sv|
+!i113 1
+R6
+Z9 !s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE
+R8
+n@a@l@u
+vBranch_Unit
+R1
+Z10 !s110 1592282252
+!i10b 1
+!s100 >NKWEfIPCBWdOC<fW^Ko13
+IKK1]>D9h1b4k_=7VWbim?2
+R3
+!s105 Branch_Unit_sv_unit
+S1
+R0
+w1592278238
+8C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Branch_Unit.sv
+FC:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Branch_Unit.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z11 !s108 1592282252.000000
+!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Branch_Unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE|C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Branch_Unit.sv|
+!i113 1
+R6
+R9
+R8
+n@branch_@unit
+vEXE
+R1
+R10
+!i10b 1
+!s100 B5A;;WdzlIMT8j``fPa<G3
+Id`PHT1m6Y7MXZKSWDR@V00
+R3
+!s105 EXE_sv_unit
+S1
+R0
+w1592280245
+8C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/EXE.sv
+FC:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/EXE.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/EXE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE|C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/EXE.sv|
+!i113 1
+R6
+R9
+R8
+n@e@x@e
+vEXE_TB
+R1
+R10
+!i10b 1
+!s100 Ta96zNN7MekH<DoRca=NW0
+IHESi]W3l>PSXI<aS4FghC2
+R3
+!s105 EXE_TB_sv_unit
+S1
+R0
+w1592282218
+8C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/EXE_TB.sv
+FC:/Users/DELL/Desktop/Proyecto2-Arqui/tb/EXE_TB.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/EXE_TB.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/tb|C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/EXE_TB.sv|
 !i113 1
 R6
 !s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/tb
 R8
-n@i@d_@t@b
-vInstr_Decoder
+n@e@x@e_@t@b
+vMod
 R1
 R2
 !i10b 1
-!s100 T_nkDadP;bHAZYo8Z>Fg82
-IeV2e1QU[SBj`Q^RMjYGMY0
+!s100 R9:DNV]Vk:N`Q[Selg0=60
+Ic1?V[TQmG[CBILN85H<cl0
 R3
-!s105 Instr_Decoder_sv_unit
+!s105 Mod_sv_unit
 S1
 R0
-w1592172265
-8C:/Users/DELL/Desktop/Proyecto2-Arqui/ID/Instr_Decoder.sv
-FC:/Users/DELL/Desktop/Proyecto2-Arqui/ID/Instr_Decoder.sv
-L0 1
+w1592081579
+8C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mod.sv
+FC:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mod.sv
+L0 3
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/ID/Instr_Decoder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/ID|C:/Users/DELL/Desktop/Proyecto2-Arqui/ID/Instr_Decoder.sv|
+!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mod.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE|C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mod.sv|
 !i113 1
 R6
-R7
+R9
 R8
-n@instr_@decoder
+n@mod
+vMod_Exp
+R1
+R10
+!i10b 1
+!s100 C206^W6kze[;9P>S2YXSo3
+IS2SbOPYDIDYAVYb1L_NEb1
+R3
+!s105 Mod_Exp_sv_unit
+S1
+R0
+w1592084495
+8C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mod_Exp.sv
+FC:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mod_Exp.sv
+L0 7
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mod_Exp.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE|C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mod_Exp.sv|
+!i113 1
+R6
+R9
+R8
+n@mod_@exp
 vMux2
 R1
 R2
@@ -109,58 +213,84 @@ R5
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui|C:/Users/DELL/Desktop/Proyecto2-Arqui/Mux2.sv|
 !i113 1
 R6
-Z9 !s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui
-R8
-n@mux2
-vRegister_Bank
-R1
-R2
-!i10b 1
-!s100 9FoH3`LT6f@YOSQJ@?3KA1
-Igf1o9TLc3J<=0k9M^NULQ0
-R3
-!s105 Register_Bank_sv_unit
-S1
-R0
-w1592159779
-8C:/Users/DELL/Desktop/Proyecto2-Arqui/ID/Register_Bank.sv
-FC:/Users/DELL/Desktop/Proyecto2-Arqui/ID/Register_Bank.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R5
-!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/ID/Register_Bank.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/ID|C:/Users/DELL/Desktop/Proyecto2-Arqui/ID/Register_Bank.sv|
-!i113 1
-R6
 R7
 R8
-n@register_@bank
-vZero_Extend
+n@mux2
+vMux4
 R1
 R2
 !i10b 1
-!s100 l[Q;[5JLRzMm?<8_aFbiX2
-I7?ZB5ojo[@0jFOT2>JhVG0
+!s100 1PFXzG@a:D^QdL=kW367X1
+I]3i<8foY@;o`_Aa0oKg]W0
 R3
-!s105 Zero_Extend_sv_unit
+!s105 Mux4_sv_unit
 S1
 R0
-w1592067112
-8C:/Users/DELL/Desktop/Proyecto2-Arqui/Zero_Extend.sv
-FC:/Users/DELL/Desktop/Proyecto2-Arqui/Zero_Extend.sv
+w1592070235
+8C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mux4.sv
+FC:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mux4.sv
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/Zero_Extend.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui|C:/Users/DELL/Desktop/Proyecto2-Arqui/Zero_Extend.sv|
+!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mux4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE|C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mux4.sv|
 !i113 1
 R6
 R9
 R8
-n@zero_@extend
+n@mux4
+vSubstraction
+R1
+R2
+!i10b 1
+!s100 F4O2YKUa_^2B@hTkkX_I21
+I6UNSbeP><YA1bg2Z47P5z2
+R3
+!s105 Substraction_sv_unit
+S1
+R0
+w1592071203
+8C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Substraction.sv
+FC:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Substraction.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Substraction.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE|C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Substraction.sv|
+!i113 1
+R6
+R9
+R8
+n@substraction
+vZero_Flag
+R1
+R2
+!i10b 1
+!s100 i`63gYM]U:zJ_lAW>]7?`0
+ILkg0ganQg^?1Kmg0nIQ>_2
+R3
+!s105 Zero_Flag_sv_unit
+S1
+R0
+w1592073395
+8C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Zero_Flag.sv
+FC:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Zero_Flag.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Zero_Flag.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE|C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Zero_Flag.sv|
+!i113 1
+R6
+R9
+R8
+n@zero_@flag

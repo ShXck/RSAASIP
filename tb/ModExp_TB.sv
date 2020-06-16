@@ -16,9 +16,9 @@ module ModExp_TB();
 	defparam uut.ARQ = ARQ;
 	
 	initial begin
-	   base = 150;
+	   base = 255;
 	   modulo = 1927;
-	   exponent =  1349;
+	   exponent =  1842;
 	   clk = 0;
 	   reset = 0;
 	   #10 reset = 1;

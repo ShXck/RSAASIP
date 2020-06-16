@@ -1,5 +1,5 @@
 Analysis & Elaboration report for ASIP
-Sun Jun 14 17:47:42 2020
+Mon Jun 15 22:37:21 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -9,15 +9,26 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |ID_TB
-  5. Parameter Settings for User Entity Instance: ID:uut
-  6. Parameter Settings for User Entity Instance: ID:uut|Instr_Decoder:decoder
-  7. Parameter Settings for User Entity Instance: ID:uut|Zero_Extend:zero_extend
-  8. Parameter Settings for User Entity Instance: ID:uut|Mux2:wr_mux
-  9. Parameter Settings for User Entity Instance: ID:uut|Register_Bank:reg_bank
- 10. Analysis & Elaboration Settings
- 11. Port Connectivity Checks: "ID:uut"
- 12. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |EXE_TB
+  5. Parameter Settings for User Entity Instance: EXE:uut
+  6. Parameter Settings for User Entity Instance: EXE:uut|Mux2:in_mux
+  7. Parameter Settings for User Entity Instance: EXE:uut|ALU:alu
+  8. Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Adder:adder
+  9. Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Substraction:subs
+ 10. Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Mod_Exp:modex
+ 11. Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod
+ 12. Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod
+ 13. Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Mux4:selector
+ 14. Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Zero_Flag:zero
+ 15. Parameter Settings for User Entity Instance: EXE:uut|Branch_Unit:branch
+ 16. Analysis & Elaboration Settings
+ 17. Port Connectivity Checks: "EXE:uut|ALU:alu|Mux4:selector"
+ 18. Port Connectivity Checks: "EXE:uut|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod"
+ 19. Port Connectivity Checks: "EXE:uut|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod"
+ 20. Port Connectivity Checks: "EXE:uut|ALU:alu|Mod_Exp:modex"
+ 21. Port Connectivity Checks: "EXE:uut|ALU:alu|Substraction:subs"
+ 22. Port Connectivity Checks: "EXE:uut"
+ 23. Analysis & Elaboration Messages
 
 
 
@@ -43,10 +54,10 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Jun 14 17:47:42 2020       ;
+; Analysis & Elaboration Status ; Successful - Mon Jun 15 22:37:21 2020       ;
 ; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                 ; ASIP                                        ;
-; Top-level Entity Name         ; ID_TB                                       ;
+; Top-level Entity Name         ; EXE_TB                                      ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -74,38 +85,108 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |ID_TB ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |EXE_TB ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------+
-; Parameter Settings for User Entity Instance: ID:uut ;
-+----------------+-------+----------------------------+
-; Parameter Name ; Value ; Type                       ;
-+----------------+-------+----------------------------+
-; ARQ            ; 16    ; Signed Integer             ;
-+----------------+-------+----------------------------+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:uut ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; ARQ            ; 16    ; Signed Integer              ;
++----------------+-------+-----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ID:uut|Instr_Decoder:decoder ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:uut|Mux2:in_mux ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; ARQ            ; 16    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:uut|ALU:alu ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; ARQ            ; 16    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Adder:adder ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Substraction:subs ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Mod_Exp:modex ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; ARQ            ; 8     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Mux4:selector ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ID:uut|Zero_Extend:zero_extend ;
+; Parameter Settings for User Entity Instance: EXE:uut|ALU:alu|Zero_Flag:zero ;
 +----------------+-------+----------------------------------------------------+
 ; Parameter Name ; Value ; Type                                               ;
 +----------------+-------+----------------------------------------------------+
@@ -114,23 +195,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ID:uut|Mux2:wr_mux ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; ARQ            ; 16    ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ID:uut|Register_Bank:reg_bank ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:uut|Branch_Unit:branch ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -140,7 +211,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; ID_TB              ; ASIP               ;
+; Top-level entity name                                                           ; EXE_TB             ; ASIP               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -221,18 +292,61 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ID:uut"                                                                                                                    ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                    ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
-; out1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
-; out2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
-; out3 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
-; imm  ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (10 bits) it drives; bit(s) "imm[15..10]" have no fanouts ;
-; imm  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
-; addr ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                   ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXE:uut|ALU:alu|Mux4:selector"                                                                                                                                                             ;
++--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                                                                                                                                             ;
++--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data4        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; data4[15..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXE:uut|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod"                                                         ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                  ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; div_result ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXE:uut|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod"                                                            ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                  ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; div_result ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXE:uut|ALU:alu|Mod_Exp:modex"                                                        ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; finish ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXE:uut|ALU:alu|Substraction:subs"                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXE:uut"                                                                                    ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; alu_result   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; branch_taken ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; jaddr_out    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -241,10 +355,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Jun 14 17:47:23 2020
+    Info: Processing started: Mon Jun 15 22:37:00 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ASIP -c ASIP --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file tb/modexp_tb.sv
+    Info (12023): Found entity 1: ModExp_TB File: C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/ModExp_TB.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file tb/tb_instruction_mem.v
     Info (12023): Found entity 1: tb_instruction_mem File: C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/tb_instruction_mem.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
@@ -295,21 +411,32 @@ Info (12021): Found 1 design units, including 1 entities, in source file tb/id_t
     Info (12023): Found entity 1: ID_TB File: C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/ID_TB.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb/instrdec_tb.sv
     Info (12023): Found entity 1: InstrDec_TB File: C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/InstrDec_TB.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file exe/exe.sv
+    Info (12023): Found entity 1: EXE File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/EXE.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file tb/exe_tb.sv
+    Info (12023): Found entity 1: EXE_TB File: C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/EXE_TB.sv Line: 3
 Warning (10222): Verilog HDL Parameter Declaration warning at Instruction_Mem.sv(2): Parameter Declaration in module "Instruction_Mem" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-Arqui/IF/Instruction_Mem.sv Line: 2
-Info (12127): Elaborating entity "ID_TB" for the top level hierarchy
-Warning (10755): Verilog HDL warning at ID_TB.sv(25): assignments to clk create a combinational loop File: C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/ID_TB.sv Line: 25
-Info (12128): Elaborating entity "ID" for hierarchy "ID:uut" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/ID_TB.sv Line: 10
-Info (12128): Elaborating entity "Instr_Decoder" for hierarchy "ID:uut|Instr_Decoder:decoder" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/ID/ID.sv Line: 9
-Info (12128): Elaborating entity "Zero_Extend" for hierarchy "ID:uut|Zero_Extend:zero_extend" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/ID/ID.sv Line: 11
-Info (12128): Elaborating entity "Mux2" for hierarchy "ID:uut|Mux2:wr_mux" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/ID/ID.sv Line: 13
-Info (12128): Elaborating entity "Register_Bank" for hierarchy "ID:uut|Register_Bank:reg_bank" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/ID/ID.sv Line: 15
+Info (12127): Elaborating entity "EXE_TB" for the top level hierarchy
+Warning (10755): Verilog HDL warning at EXE_TB.sv(27): assignments to clk create a combinational loop File: C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/EXE_TB.sv Line: 27
+Info (12128): Elaborating entity "EXE" for hierarchy "EXE:uut" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/EXE_TB.sv Line: 13
+Info (12128): Elaborating entity "Mux2" for hierarchy "EXE:uut|Mux2:in_mux" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/EXE.sv Line: 11
+Info (12128): Elaborating entity "ALU" for hierarchy "EXE:uut|ALU:alu" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/EXE.sv Line: 13
+Info (12128): Elaborating entity "Adder" for hierarchy "EXE:uut|ALU:alu|Adder:adder" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/ALU.sv Line: 14
+Info (12128): Elaborating entity "Substraction" for hierarchy "EXE:uut|ALU:alu|Substraction:subs" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/ALU.sv Line: 15
+Info (12128): Elaborating entity "Mod_Exp" for hierarchy "EXE:uut|ALU:alu|Mod_Exp:modex" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/ALU.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at Mod_Exp.sv(41): truncated value with size 32 to match size of target (16) File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mod_Exp.sv Line: 41
+Info (12128): Elaborating entity "Mod" for hierarchy "EXE:uut|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mod_Exp.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at Mod.sv(33): truncated value with size 17 to match size of target (16) File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/Mod.sv Line: 33
+Info (12128): Elaborating entity "Mux4" for hierarchy "EXE:uut|ALU:alu|Mux4:selector" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/ALU.sv Line: 19
+Info (12128): Elaborating entity "Zero_Flag" for hierarchy "EXE:uut|ALU:alu|Zero_Flag:zero" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/ALU.sv Line: 21
+Info (12128): Elaborating entity "Branch_Unit" for hierarchy "EXE:uut|Branch_Unit:branch" File: C:/Users/DELL/Desktop/Proyecto2-Arqui/EXE/EXE.sv Line: 15
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/ID_TB.sv Line: 6
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4760 megabytes
-    Info: Processing ended: Sun Jun 14 17:47:42 2020
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:42
+    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/DELL/Desktop/Proyecto2-Arqui/tb/EXE_TB.sv Line: 7
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4761 megabytes
+    Info: Processing ended: Mon Jun 15 22:37:21 2020
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:45
 
 

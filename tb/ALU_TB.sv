@@ -15,9 +15,8 @@ module ALU_TB();
 		d1 = 16'd15; d2 = 16'd15; d3 = 16'd15;
 		#100 contrl = 2'b0;
 		#100 contrl = 2'b1;
-		#100 d1 = 16'd16; d2 = 16'd27; d3 = 16'd237;
-		#10 rst = 1'b1; contrl = 2'b10;
-		#10 rst = 1'b0; 
+		#100 d1 = 16'd5; d2 = 16'd148; d3 = 16'd50; contrl = 2'b10; rst = 1;
+		#50 rst = 0; 
 	end
 	
 	always #5 clk = ~clk;
