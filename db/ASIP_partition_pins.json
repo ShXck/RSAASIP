@@ -4,191 +4,139 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "alu_result[0]",
+					"name" : "mem_rd_mux_out",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[1]",
+					"name" : "wb_enable_out",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[2]",
+					"name" : "alu_result_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[3]",
+					"name" : "alu_result_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[4]",
+					"name" : "alu_result_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[5]",
+					"name" : "alu_result_out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[6]",
+					"name" : "alu_result_out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[7]",
+					"name" : "alu_result_out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[8]",
+					"name" : "alu_result_out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[9]",
+					"name" : "alu_result_out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[10]",
+					"name" : "alu_result_out[8]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[11]",
+					"name" : "alu_result_out[9]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[12]",
+					"name" : "alu_result_out[10]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[13]",
+					"name" : "alu_result_out[11]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[14]",
+					"name" : "alu_result_out[12]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result[15]",
+					"name" : "alu_result_out[13]",
 					"strict" : false
 				},
 				{
-					"name" : "branch_taken",
+					"name" : "alu_result_out[14]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr_out[0]",
+					"name" : "alu_result_out[15]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr_out[1]",
+					"name" : "mem_result_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr_out[2]",
+					"name" : "mem_result_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr_out[3]",
+					"name" : "mem_result_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr_out[4]",
+					"name" : "mem_result_out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr_out[5]",
+					"name" : "mem_result_out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr_out[6]",
+					"name" : "mem_result_out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr_out[7]",
+					"name" : "mem_result_out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr_out[8]",
+					"name" : "mem_result_out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr_out[9]",
+					"name" : "mem_result_out[8]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr_out[10]",
+					"name" : "mem_result_out[9]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr_out[11]",
+					"name" : "mem_result_out[10]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr_out[12]",
+					"name" : "mem_result_out[11]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_op[0]",
+					"name" : "mem_result_out[12]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_op[1]",
+					"name" : "mem_result_out[13]",
 					"strict" : false
 				},
 				{
-					"name" : "jop_lsb",
+					"name" : "mem_result_out[14]",
 					"strict" : false
 				},
 				{
-					"name" : "jaddr[0]",
-					"strict" : false
-				},
-				{
-					"name" : "jaddr[1]",
-					"strict" : false
-				},
-				{
-					"name" : "jaddr[2]",
-					"strict" : false
-				},
-				{
-					"name" : "jaddr[3]",
-					"strict" : false
-				},
-				{
-					"name" : "jaddr[4]",
-					"strict" : false
-				},
-				{
-					"name" : "jaddr[5]",
-					"strict" : false
-				},
-				{
-					"name" : "jaddr[6]",
-					"strict" : false
-				},
-				{
-					"name" : "jaddr[7]",
-					"strict" : false
-				},
-				{
-					"name" : "jaddr[8]",
-					"strict" : false
-				},
-				{
-					"name" : "jaddr[9]",
-					"strict" : false
-				},
-				{
-					"name" : "jaddr[10]",
-					"strict" : false
-				},
-				{
-					"name" : "jaddr[11]",
-					"strict" : false
-				},
-				{
-					"name" : "jaddr[12]",
-					"strict" : false
-				},
-				{
-					"name" : "rst",
+					"name" : "mem_result_out[15]",
 					"strict" : false
 				},
 				{
@@ -196,263 +144,143 @@
 					"strict" : false
 				},
 				{
-					"name" : "src2[0]",
+					"name" : "mem_rd_mux_in",
 					"strict" : false
 				},
 				{
-					"name" : "mux_exe",
+					"name" : "rst",
 					"strict" : false
 				},
 				{
-					"name" : "imm[0]",
+					"name" : "wb_enable_in",
 					"strict" : false
 				},
 				{
-					"name" : "srcdest[0]",
+					"name" : "alu_result_in[0]",
 					"strict" : false
 				},
 				{
-					"name" : "src1[0]",
+					"name" : "alu_result_in[1]",
 					"strict" : false
 				},
 				{
-					"name" : "src2[1]",
+					"name" : "alu_result_in[2]",
 					"strict" : false
 				},
 				{
-					"name" : "imm[1]",
+					"name" : "alu_result_in[3]",
 					"strict" : false
 				},
 				{
-					"name" : "srcdest[1]",
+					"name" : "alu_result_in[4]",
 					"strict" : false
 				},
 				{
-					"name" : "src1[1]",
+					"name" : "alu_result_in[5]",
 					"strict" : false
 				},
 				{
-					"name" : "src2[2]",
+					"name" : "alu_result_in[6]",
 					"strict" : false
 				},
 				{
-					"name" : "imm[2]",
+					"name" : "alu_result_in[7]",
 					"strict" : false
 				},
 				{
-					"name" : "srcdest[2]",
+					"name" : "alu_result_in[8]",
 					"strict" : false
 				},
 				{
-					"name" : "src1[2]",
+					"name" : "alu_result_in[9]",
 					"strict" : false
 				},
 				{
-					"name" : "src2[3]",
+					"name" : "alu_result_in[10]",
 					"strict" : false
 				},
 				{
-					"name" : "imm[3]",
+					"name" : "alu_result_in[11]",
 					"strict" : false
 				},
 				{
-					"name" : "srcdest[3]",
+					"name" : "alu_result_in[12]",
 					"strict" : false
 				},
 				{
-					"name" : "src1[3]",
+					"name" : "alu_result_in[13]",
 					"strict" : false
 				},
 				{
-					"name" : "src2[4]",
+					"name" : "alu_result_in[14]",
 					"strict" : false
 				},
 				{
-					"name" : "imm[4]",
+					"name" : "alu_result_in[15]",
 					"strict" : false
 				},
 				{
-					"name" : "srcdest[4]",
+					"name" : "mem_result_in[0]",
 					"strict" : false
 				},
 				{
-					"name" : "src1[4]",
+					"name" : "mem_result_in[1]",
 					"strict" : false
 				},
 				{
-					"name" : "src2[5]",
+					"name" : "mem_result_in[2]",
 					"strict" : false
 				},
 				{
-					"name" : "imm[5]",
+					"name" : "mem_result_in[3]",
 					"strict" : false
 				},
 				{
-					"name" : "srcdest[5]",
+					"name" : "mem_result_in[4]",
 					"strict" : false
 				},
 				{
-					"name" : "src1[5]",
+					"name" : "mem_result_in[5]",
 					"strict" : false
 				},
 				{
-					"name" : "src2[6]",
+					"name" : "mem_result_in[6]",
 					"strict" : false
 				},
 				{
-					"name" : "imm[6]",
+					"name" : "mem_result_in[7]",
 					"strict" : false
 				},
 				{
-					"name" : "srcdest[6]",
+					"name" : "mem_result_in[8]",
 					"strict" : false
 				},
 				{
-					"name" : "src1[6]",
+					"name" : "mem_result_in[9]",
 					"strict" : false
 				},
 				{
-					"name" : "src2[7]",
+					"name" : "mem_result_in[10]",
 					"strict" : false
 				},
 				{
-					"name" : "imm[7]",
+					"name" : "mem_result_in[11]",
 					"strict" : false
 				},
 				{
-					"name" : "srcdest[7]",
+					"name" : "mem_result_in[12]",
 					"strict" : false
 				},
 				{
-					"name" : "src1[7]",
+					"name" : "mem_result_in[13]",
 					"strict" : false
 				},
 				{
-					"name" : "src2[8]",
+					"name" : "mem_result_in[14]",
 					"strict" : false
 				},
 				{
-					"name" : "imm[8]",
-					"strict" : false
-				},
-				{
-					"name" : "srcdest[8]",
-					"strict" : false
-				},
-				{
-					"name" : "src1[8]",
-					"strict" : false
-				},
-				{
-					"name" : "src2[9]",
-					"strict" : false
-				},
-				{
-					"name" : "imm[9]",
-					"strict" : false
-				},
-				{
-					"name" : "srcdest[9]",
-					"strict" : false
-				},
-				{
-					"name" : "src1[9]",
-					"strict" : false
-				},
-				{
-					"name" : "src2[10]",
-					"strict" : false
-				},
-				{
-					"name" : "imm[10]",
-					"strict" : false
-				},
-				{
-					"name" : "srcdest[10]",
-					"strict" : false
-				},
-				{
-					"name" : "src1[10]",
-					"strict" : false
-				},
-				{
-					"name" : "src2[11]",
-					"strict" : false
-				},
-				{
-					"name" : "imm[11]",
-					"strict" : false
-				},
-				{
-					"name" : "srcdest[11]",
-					"strict" : false
-				},
-				{
-					"name" : "src1[11]",
-					"strict" : false
-				},
-				{
-					"name" : "src2[12]",
-					"strict" : false
-				},
-				{
-					"name" : "imm[12]",
-					"strict" : false
-				},
-				{
-					"name" : "srcdest[12]",
-					"strict" : false
-				},
-				{
-					"name" : "src1[12]",
-					"strict" : false
-				},
-				{
-					"name" : "src2[13]",
-					"strict" : false
-				},
-				{
-					"name" : "imm[13]",
-					"strict" : false
-				},
-				{
-					"name" : "srcdest[13]",
-					"strict" : false
-				},
-				{
-					"name" : "src1[13]",
-					"strict" : false
-				},
-				{
-					"name" : "src2[14]",
-					"strict" : false
-				},
-				{
-					"name" : "imm[14]",
-					"strict" : false
-				},
-				{
-					"name" : "srcdest[14]",
-					"strict" : false
-				},
-				{
-					"name" : "src1[14]",
-					"strict" : false
-				},
-				{
-					"name" : "src2[15]",
-					"strict" : false
-				},
-				{
-					"name" : "imm[15]",
-					"strict" : false
-				},
-				{
-					"name" : "srcdest[15]",
-					"strict" : false
-				},
-				{
-					"name" : "src1[15]",
+					"name" : "mem_result_in[15]",
 					"strict" : false
 				}
 			]

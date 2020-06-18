@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Mon Jun 15 22:37:21 2020
+Analysis & Elaboration Status : Successful - Wed Jun 17 19:52:17 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ASIP
-Top-level Entity Name : EXE_TB
+Top-level Entity Name : MEMWB_TB
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

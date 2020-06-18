@@ -1,5 +1,0 @@
-module Mux4_TB();
-
-parameter ARQ = 16;
-
-endmodule

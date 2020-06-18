@@ -1,7 +1,0 @@
-module Branch_Unit #(parameter ARQ = 16)(input logic[9:0] jaddress, input logic[2:0] opcode, input logic z, output logic[ARQ - 1:0] jaddress);
-
-
-
-	
-
-endmodule
