@@ -1,7 +1,7 @@
-module Instr_Decoder #(parameter ARQ = 16)(input logic[ARQ - 1:0] instr, output logic[2:0] src1, src2, srcdest, 
+module Instr_Decoder #(parameter ARQ = 16)(input logic[ARQ - 1:0] instr, output logic[2:0] src1, src2, srcdest, opcode,
 																	output logic[12:0] addr, output logic [9:0] imm,
 																	output logic jop_lsb);
-																	
+				 													
 	always @* begin 
 		case (instr[15:13])
 				3'b010, 3'b100: //MODEX - CMPEQ
@@ -51,6 +51,8 @@ module Instr_Decoder #(parameter ARQ = 16)(input logic[ARQ - 1:0] instr, output 
 					end
 			endcase
 	end
+	
+	assign opcode = instr[15:13];
 
 
 endmodule
