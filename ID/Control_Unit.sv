@@ -1,4 +1,5 @@
-module Control_Unit #(parameter ARQ = 16)(input logic[2:0] opcode, output logic rd_register_en, wb_enable, rd_mem_en, wr_mem_en, mux_id, mux_exe, mux_mem, jenable,
+module Control_Unit #(parameter ARQ = 16)(input logic[2:0] opcode, output logic rd_register_en, wb_enable, rd_mem_en, 
+														wr_mem_en, mux_id, mux_exe, mux_mem, jenable, pc_en,
 														output logic[1:0] alu_op);
 														
 	always @(*) begin
@@ -13,6 +14,7 @@ module Control_Unit #(parameter ARQ = 16)(input logic[2:0] opcode, output logic 
 				mux_mem <= 0;
 				jenable <= 0;
 				alu_op <= 2'b11;
+				pc_en <= 1;
 			end
 			
 			3'b001: begin    /// LDPX instruction.
@@ -25,6 +27,7 @@ module Control_Unit #(parameter ARQ = 16)(input logic[2:0] opcode, output logic 
 				mux_mem <= 0;
 				jenable <= 0;
 				alu_op <= 2'b11;
+				pc_en <= 1;
 			end
 			
 			3'b010: begin    /// MODEX instruction.
@@ -37,6 +40,7 @@ module Control_Unit #(parameter ARQ = 16)(input logic[2:0] opcode, output logic 
 				mux_mem <= 0;
 				jenable <= 0;
 				alu_op <= 2'b10;
+				pc_en <= 1;
 			end
 			
 			3'b011: begin    /// STPX instruction.
@@ -49,6 +53,7 @@ module Control_Unit #(parameter ARQ = 16)(input logic[2:0] opcode, output logic 
 				mux_mem <= 1;
 				jenable <= 0;
 				alu_op <= 2'b11;
+				pc_en <= 1;
 			end
 			
 			3'b100: begin    /// CMPEQ instruction.
@@ -61,6 +66,7 @@ module Control_Unit #(parameter ARQ = 16)(input logic[2:0] opcode, output logic 
 				mux_mem <= 0;
 				jenable <= 0;
 				alu_op <= 2'b01;
+				pc_en <= 1;
 			end
 			
 			3'b101, 3'b110: begin    /// JEQ/J instruction.
@@ -73,6 +79,7 @@ module Control_Unit #(parameter ARQ = 16)(input logic[2:0] opcode, output logic 
 				mux_mem <= 0;
 				jenable <= 1;
 				alu_op <= 2'b11;
+				pc_en <= 1;
 			end
 			
 			3'b111: begin    /// ADD instruction.
@@ -85,6 +92,7 @@ module Control_Unit #(parameter ARQ = 16)(input logic[2:0] opcode, output logic 
 				mux_mem <= 0;
 				jenable <= 0;
 				alu_op <= 2'b0;
+				pc_en <= 1;
 			end
 				
 			

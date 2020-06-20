@@ -1,4 +1,4 @@
-module Mux2_PC #(parameter MEMORY_ADDR_SIZE = 6) 
+module Mux2_PC #(parameter MEMORY_ADDR_SIZE = 13) 
 				(input logic [MEMORY_ADDR_SIZE-1:0] data1, data2, input logic sel, 
 				output logic [MEMORY_ADDR_SIZE-1:0] out);
 				

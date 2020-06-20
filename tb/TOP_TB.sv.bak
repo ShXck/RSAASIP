@@ -1,0 +1,20 @@
+module TOP_TB();
+
+parameter ARQ = 16;
+parameter MEMORY_ADDR_SIZE = 13;
+
+logic clk, rst, rst_ALU;
+logic [ARQ-1:0] result_WB, instr_out;
+
+TOP dut(parameter ARQ = 16)(clk, rst, rst_ALU, result_WB, instr_out);
+
+
+
+initial begin
+	clk = 0; rst = 1; 
+
+end
+
+always #5 clk = ~clk;
+
+endmodule

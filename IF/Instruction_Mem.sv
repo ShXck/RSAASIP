@@ -1,5 +1,5 @@
-module Instruction_Mem #(parameter ARQ = 16)(input logic[5:0] addr, output logic [ARQ - 1:0] instr);
-	parameter MEMORY_SIZE = 64;
+module Instruction_Mem #(parameter ARQ = 16)(input logic[12:0] addr, output logic [ARQ - 1:0] instr);
+	parameter MEMORY_SIZE = 8192;
 
 	reg [ARQ-1:0] memory [0:MEMORY_SIZE-1]; //Tamaño de la instrucción || Tamaño de la memoria
 	initial 

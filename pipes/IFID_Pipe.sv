@@ -1,5 +1,3 @@
-`timescale 1ns / 1ps
-
 module IFID_Pipe #(ARQ = 16)(input logic clk, rst, stop, input logic[ARQ - 1:0] instr_in, 
 										output logic[ARQ - 1:0]  instr_out);
 

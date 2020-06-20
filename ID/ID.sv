@@ -1,6 +1,6 @@
  module ID #(parameter ARQ = 16)(input logic[ARQ - 1:0] instr, wb_result, input logic clk, rst, wr_register,
 											output logic[ARQ - 1:0] out1, out2, out3, imm, output logic[12:0] addr, 
-											output logic jop_lsb, rd_mem_en, wr_mem_en, mux_exe, mux_mem, jenable, wb_enable, 
+											output logic jop_lsb, rd_mem_en, wr_mem_en, mux_exe, mux_mem, jenable, pc_en, wb_enable,
 											output logic[1:0] alu_op);
 	logic [2:0] bank_in1, bank_in2, bank_in3, opcode;
 	logic [12:0] jaddr;
@@ -10,7 +10,7 @@
 	
 	Instr_Decoder decoder(instr, bank_in1, bank_in2, bank_in3, opcode, jaddr, imm_in, jop_lsb);
 	
-	Control_Unit control_unit(opcode, rd_reg_enable, wb_enable, rd_mem_en, wr_mem_en, mux_id, mux_exe, mux_mem, jenable, alu_op);
+	Control_Unit control_unit(opcode, rd_reg_enable, wb_enable, rd_mem_en, wr_mem_en, mux_id, mux_exe, mux_mem, jenable, pc_en, alu_op);
 	
 	Zero_Extend zero_extend(imm_in, imm_out);
 	

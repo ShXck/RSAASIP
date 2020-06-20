@@ -1,5 +1,3 @@
-`timescale 1ns / 1ps
-
 module EXE #(parameter ARQ = 16)(input logic clk, rst, mux_exe, jop_lsb, jenable, input logic[1:0] alu_op, 
 											input logic[ARQ - 1:0] src1, src2, srcdest, imm,
 											input logic[12:0] jaddr, 
