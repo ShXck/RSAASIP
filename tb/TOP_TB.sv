@@ -5,16 +5,15 @@ module TOP_TB();
 parameter ARQ = 16;
 parameter MEMORY_ADDR_SIZE = 13;
 
-logic clk, rst, rst_ALU;
-logic [ARQ-1:0] result_WB;
-logic wb_enable_out, rd_mem_en_out, wr_mem_en_out, mux_exe_out, mux_mem_out, jop_lsb_out, jenable_out, pc_en_out;
-logic [ARQ - 1:0] src1_out, src2_out, src3_out, imm_out;
-logic[1:0] alu_op_out; 
-logic[12:0] addr_out;
+logic clk, rst, rst_ALU, wb_enable;
+logic [ARQ-1:0] src1_in, src2_in, src3_in, imm;
+logic [12:0] addr; 
+logic jop_lsb, rd_mem_en, wr_mem_en, mux_exe, mux_mem, jenable, pc_en, wb_en_exe_out;
+logic [1:0] alu_op;
 
 
-TOP uut(clk, rst, rst_ALU, result_WB, wb_enable_out, rd_mem_en_out, wr_mem_en_out, mux_exe_out, mux_mem_out, 
-		jop_lsb_out, jenable_out, pc_en_out, src1_out, src2_out, src3_out, imm_out, alu_op_out, addr_out);
+TOP uut(clk, rst, rst_ALU, src1_in, src2_in, src3_in, imm, addr, jop_lsb, rd_mem_en, 
+				wr_mem_en, mux_exe, mux_mem, jenable, pc_en, wb_en_exe_out, alu_op);
 											
 initial begin
 	clk = 1; rst = 1; 

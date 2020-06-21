@@ -1,0 +1,24 @@
+module Top_ID_TB();
+
+	parameter ARQ = 16;
+	logic clk, rst, rst_ALU, branch_taken;
+	logic[12:0] jaddr;
+	logic [ARQ-1:0] instr;
+	
+	output logic [ARQ-1:0] src1_in, src2_in, src3_in, imm, 
+	output logic addr, jop_lsb, rd_mem_en, wr_mem_en, mux_exe, mux_mem, jenable, pc_en_out, wb_enable_out,
+	output logic[1:0] alu_op
+											
+	TOP uut(clk, rst, rst_ALU, branch_taken, jaddr, instr);
+	
+	initial begin
+		clk = 1; rst = 1; branch_taken = 0; jaddr = 13'd2;
+		#5 rst = 0; 
+		#5 branch_taken = 1; 	 	
+	end 
+	
+	always #5 clk = ~clk;
+
+
+
+endmodule

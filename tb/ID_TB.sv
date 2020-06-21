@@ -22,7 +22,7 @@ initial begin
 	#100 wr_register = 0; instr = 16'b1000001011100000; wb_result = 0; // CMPEQ R5, R6
 	#100 wr_register = 0; instr = 16'b1010000000000100; wb_result = 0; // JEQ 4
 	#100 wr_register = 0; instr = 16'b1100000000000101; wb_result = 0; // J 5 
-	#100 wr_register = 1; instr = 16'b1110110000001111; wb_result = 16'd100;// ADD R3,15
+	#100 wr_register = 1; instr = 16'b1110110000001111; wb_result = 16'd100; // ADD R3,15
 	#100;
 end
 

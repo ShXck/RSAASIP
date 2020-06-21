@@ -7,392 +7,210 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/simulation/modelsim
-vControl_Unit
-Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1592692274
-!i10b 1
-!s100 ^iOdIBAdf8>E?KU]PoRA:2
-IGlQnWcXQE@_Hel7Wo3_Xo3
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 Control_Unit_sv_unit
-S1
-R0
-w1592674346
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Control_Unit.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Control_Unit.sv
-L0 1
-Z4 OV;L;10.5b;63
-r1
-!s85 0
-31
-Z5 !s108 1592692274.000000
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Control_Unit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Control_Unit.sv|
-!i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID
-Z8 tCvgOpt 0
-n@control_@unit
-vID
-R1
-Z9 !s110 1592692273
-!i10b 1
-!s100 LZV@kB?OLl`XD>b9H:`jT1
-IGl?79:OKk0ch5FAohRP`60
-R3
-!s105 ID_sv_unit
-S1
-R0
-w1592674459
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/ID.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/ID.sv
-L0 1
-R4
-r1
-!s85 0
-31
-Z10 !s108 1592692273.000000
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/ID.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/ID.sv|
-!i113 1
-R6
-R7
-R8
-n@i@d
-vIDEXE_Pipe
-R1
-R2
-!i10b 1
-!s100 >_<=8:feBhh_eSA_1X`A23
-IZTNP8J_m1mmDZR9F4_Ili0
-R3
-!s105 IDEXE_Pipe_sv_unit
-S1
-R0
-w1592690878
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes/IDEXE_Pipe.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes/IDEXE_Pipe.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R10
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes/IDEXE_Pipe.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes/IDEXE_Pipe.sv|
-!i113 1
-R6
-Z11 !s92 -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes
-R8
-n@i@d@e@x@e_@pipe
+Z0 dC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/simulation/modelsim
 vIF
-R1
-Z12 !s110 1592692272
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1592775268
 !i10b 1
 !s100 L1fJF<20Po@NkaiE:H[]X3
-IMi2G^9aV5`ZTJ9`^o?3cR3
-R3
+IL`_mz8VQ6Z>8f30<a1k9L3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 IF_sv_unit
 S1
 R0
-w1592674987
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/IF.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/IF.sv
+Z4 w1592753693
+8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv
+FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv
 L0 1
-R4
+Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z13 !s108 1592692272.000000
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/IF.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/IF.sv|
+Z6 !s108 1592775268.000000
+!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv|
 !i113 1
-R6
-Z14 !s92 -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF
-R8
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF
+Z9 tCvgOpt 0
 n@i@f
 vIFID_Pipe
 R1
-R12
+Z10 !s110 1592775267
 !i10b 1
-!s100 hFn853_okj[F[LXc462;D0
-I]kQh?DK>bd@ELgPA<9<LU3
+!s100 aLCTD3i1<6c3^iXZfX=EW2
+I4D8<LjzWBnP41o0ZXV0a82
 R3
 !s105 IFID_Pipe_sv_unit
 S1
 R0
-w1592690840
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes/IFID_Pipe.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes/IFID_Pipe.sv
+w1592769764
+8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IFID_Pipe.sv
+FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IFID_Pipe.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes/IFID_Pipe.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes/IFID_Pipe.sv|
+Z11 !s108 1592775267.000000
+!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IFID_Pipe.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IFID_Pipe.sv|
 !i113 1
-R6
-R11
-R8
-n@i@f@i@d_@pipe
-vInstr_Decoder
-R1
-R9
-!i10b 1
-!s100 NTc=8417?hzB1i:_94=ZV1
-Ik82NdiUQzUTBQe4bXC47<0
-R3
-!s105 Instr_Decoder_sv_unit
-S1
-R0
-Z15 w1592673666
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Instr_Decoder.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Instr_Decoder.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R10
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Instr_Decoder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Instr_Decoder.sv|
-!i113 1
-R6
 R7
-R8
-n@instr_@decoder
+!s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes
+R9
+n@i@f@i@d_@pipe
 vInstruction_Mem
 R1
 R2
 !i10b 1
 !s100 7m=RGEn^GY1AHBE8@Zidh0
-Inin[WFh<3Hb]XQJWk2_8B3
+I40nI[R^<^DegmHb1XlIUz1
 R3
 !s105 Instruction_Mem_sv_unit
 S1
 R0
-w1592675913
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/Instruction_Mem.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/Instruction_Mem.sv
-L0 1
 R4
-r1
-!s85 0
-31
+8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv
+FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv
+L0 1
 R5
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/Instruction_Mem.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/Instruction_Mem.sv|
-!i113 1
-R6
-R14
-R8
-n@instruction_@mem
-vMux2
-R1
-R9
-!i10b 1
-!s100 [BXlI<0;9U3HMcYKPhW`12
-Ifee_217k3z9XOUD_MA0bf0
-R3
-!s105 Mux2_sv_unit
-S1
-R0
-R15
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/Mux2.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/Mux2.sv
-L0 1
-R4
 r1
 !s85 0
 31
-R10
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/Mux2.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/Mux2.sv|
-!i113 1
 R6
-Z16 !s92 -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP
+!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv|
+!i113 1
+R7
 R8
-n@mux2
+R9
+n@instruction_@mem
 vMux2_PC
 R1
-R12
+R2
 !i10b 1
 !s100 1CclbfcM19Y:H>@>0`b733
-IVKZTY34MN_R5iGROTaWW@3
+Igf^^<U86>`85a4ePjIRmj0
 R3
 !s105 Mux2_PC_sv_unit
 S1
 R0
-w1592674898
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/Mux2_PC.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/Mux2_PC.sv
-L0 1
 R4
+8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Mux2_PC.sv
+FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Mux2_PC.sv
+L0 1
+R5
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/Mux2_PC.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/Mux2_PC.sv|
-!i113 1
 R6
-R14
+!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Mux2_PC.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Mux2_PC.sv|
+!i113 1
+R7
 R8
+R9
 n@mux2_@p@c
 vpc_register
 R1
-R12
+R10
 !i10b 1
 !s100 Kf7c1P17CegmLg4ihbW8z0
-I6zo^;NHm`Z9RemezC3mi_0
+IM5`TXbelT[Fbj_Wdbbha90
 R3
 !s105 pc_register_sv_unit
 S1
 R0
-w1592675528
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/pc_register.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/pc_register.sv
-L0 1
 R4
+8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/pc_register.sv
+FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/pc_register.sv
+L0 1
+R5
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/pc_register.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/pc_register.sv|
+R11
+!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/pc_register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/pc_register.sv|
 !i113 1
-R6
-R14
+R7
 R8
+R9
 vplus_1
 R1
-R12
+R10
 !i10b 1
 !s100 g]He<SMMMk>O]:23L2K@P2
-IfL7K`KL22>Jb?;kGGXMZO0
+I0ABnXnB4^nmI_J7QiJEgX2
 R3
 !s105 plus_1_sv_unit
 S1
 R0
-w1592674914
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/plus_1.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/plus_1.sv
-L0 1
 R4
+8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv
+FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv
+L0 1
+R5
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/plus_1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/plus_1.sv|
+R11
+!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv|
 !i113 1
-R6
-R14
-R8
-vRegister_Bank
-R1
-R9
-!i10b 1
-!s100 9FoH3`LT6f@YOSQJ@?3KA1
-I1[6lkTM4M17=gOhoX@5KX0
-R3
-!s105 Register_Bank_sv_unit
-S1
-R0
-R15
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Register_Bank.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Register_Bank.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R10
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Register_Bank.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Register_Bank.sv|
-!i113 1
-R6
 R7
 R8
-n@register_@bank
+R9
 vTOP
 R1
 R2
 !i10b 1
-!s100 Q72AS6gLm2FB=R;Fk`?9B2
-I]lhIGhXB<^Jj:ZJ8Z>7_V2
+!s100 z[@2I6ZV:k5z^_L<hi=UP1
+IkO4BdojdiH;4CZoIV5gkR3
 R3
 !s105 TOP_sv_unit
 S1
 R0
-w1592687754
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/TOP.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/TOP.sv
+w1592775161
+8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv
+FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/TOP.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/TOP.sv|
-!i113 1
 R6
-R16
-R8
+!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv|
+!i113 1
+R7
+!s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP
+R9
 n@t@o@p
-vTOP_TB
+vTop_Fetch_TB
 R1
 R2
 !i10b 1
-!s100 8278`BFP35Vc[>dn:D6[53
-I]SjJBn=n2OQfkkG44z?X42
+!s100 >4U^f`J4jCi^Wm1fJ`z4a2
+IH^L[A@lA8iZ:L2`AZJ:NI1
 R3
-!s105 TOP_TB_sv_unit
+!s105 Top_Fetch_TB_sv_unit
 S1
 R0
-w1592692247
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/tb/TOP_TB.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/tb/TOP_TB.sv
-L0 3
-R4
-r1
-!s85 0
-31
-R5
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/tb/TOP_TB.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/tb|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/tb/TOP_TB.sv|
-!i113 1
-R6
-!s92 -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/tb
-R8
-n@t@o@p_@t@b
-vZero_Extend
-R1
-R9
-!i10b 1
-!s100 l[Q;[5JLRzMm?<8_aFbiX2
-I2GMib`02dcL^c0FLmg?4z1
-R3
-!s105 Zero_Extend_sv_unit
-S1
-R0
-R15
-8C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/Zero_Extend.sv
-FC:/Users/jdmon/OneDrive/Escritorio/RSAASIP/Zero_Extend.sv
+w1592773697
+8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_Fetch_TB.sv
+FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_Fetch_TB.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R10
-!s107 C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/Zero_Extend.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP|C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/Zero_Extend.sv|
-!i113 1
 R6
-R16
-R8
-n@zero_@extend
+!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_Fetch_TB.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_Fetch_TB.sv|
+!i113 1
+R7
+!s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb
+R9
+n@top_@fetch_@t@b
