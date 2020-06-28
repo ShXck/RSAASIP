@@ -1,0 +1,27 @@
+`timescale 1ms / 1ns
+
+
+module Top_EXE_TB();
+
+	parameter ARQ = 16;
+	parameter MEMORY_ADDR_SIZE = 13;
+	
+	logic clk, rst, rst_ALU, wr_reg_en;
+	logic [ARQ-1:0] instr_out, wb_result_in;
+
+	logic[ARQ - 1:0] alu_result;
+	logic branch_taken;
+	logic[MEMORY_ADDR_SIZE-1:0] jaddr_exe_out;
+											
+	TOP uut (clk, rst, rst_ALU, wr_reg_en, instr_out, wb_result_in, 
+				alu_result, branch_taken, jaddr_exe_out); 
+
+	
+	initial begin 
+		clk = 1; rst = 1; wb_result_in = 16'd17; wr_reg_en = 1;  
+		#5 rst = 0; 
+	end 
+	
+	always #5 clk = ~clk; 
+
+endmodule

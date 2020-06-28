@@ -10,162 +10,252 @@
 # Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes/IFID_Pipe.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/pipes {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/pipes/IFID_Pipe.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:12 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes/IFID_Pipe.sv 
+# Start time: 15:50:30 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/pipes" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/pipes/IFID_Pipe.sv 
 # -- Compiling module IFID_Pipe
 # 
 # Top level modules:
 # 	IFID_Pipe
-# End time: 16:31:12 on Jun 20,2020, Elapsed time: 0:00:00
+# End time: 15:50:31 on Jun 23,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/plus_1.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF/plus_1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:12 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/plus_1.sv 
+# Start time: 15:50:31 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF/plus_1.sv 
 # -- Compiling module plus_1
 # 
 # Top level modules:
 # 	plus_1
-# End time: 16:31:12 on Jun 20,2020, Elapsed time: 0:00:00
+# End time: 15:50:31 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/pc_register.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF/pc_register.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:12 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/pc_register.sv 
+# Start time: 15:50:31 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF/pc_register.sv 
 # -- Compiling module pc_register
 # 
 # Top level modules:
 # 	pc_register
-# End time: 16:31:12 on Jun 20,2020, Elapsed time: 0:00:00
+# End time: 15:50:31 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/Mux2_PC.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF/Mux2_PC.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:12 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/Mux2_PC.sv 
+# Start time: 15:50:31 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF/Mux2_PC.sv 
 # -- Compiling module Mux2_PC
 # 
 # Top level modules:
 # 	Mux2_PC
-# End time: 16:31:12 on Jun 20,2020, Elapsed time: 0:00:00
+# End time: 15:50:31 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/IF.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF/IF.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:12 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/IF.sv 
+# Start time: 15:50:31 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF/IF.sv 
 # -- Compiling module IF
 # 
 # Top level modules:
 # 	IF
-# End time: 16:31:13 on Jun 20,2020, Elapsed time: 0:00:01
+# End time: 15:50:31 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/Mux2.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/Mux2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:13 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/Mux2.sv 
+# Start time: 15:50:31 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/Mux2.sv 
 # -- Compiling module Mux2
 # 
 # Top level modules:
 # 	Mux2
-# End time: 16:31:13 on Jun 20,2020, Elapsed time: 0:00:00
+# End time: 15:50:31 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/Zero_Extend.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/Zero_Extend.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:13 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/Zero_Extend.sv 
+# Start time: 15:50:31 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/Zero_Extend.sv 
 # -- Compiling module Zero_Extend
 # 
 # Top level modules:
 # 	Zero_Extend
-# End time: 16:31:13 on Jun 20,2020, Elapsed time: 0:00:00
+# End time: 15:50:31 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Instr_Decoder.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/Adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:13 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Instr_Decoder.sv 
+# Start time: 15:50:31 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/Adder.sv 
+# -- Compiling module Adder
+# 
+# Top level modules:
+# 	Adder
+# End time: 15:50:31 on Jun 23,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:50:32 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 15:50:32 on Jun 23,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Substraction.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:50:32 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Substraction.sv 
+# -- Compiling module Substraction
+# 
+# Top level modules:
+# 	Substraction
+# End time: 15:50:32 on Jun 23,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mux4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:50:32 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mux4.sv 
+# -- Compiling module Mux4
+# 
+# Top level modules:
+# 	Mux4
+# End time: 15:50:32 on Jun 23,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Zero_Flag.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:50:32 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Zero_Flag.sv 
+# -- Compiling module Zero_Flag
+# 
+# Top level modules:
+# 	Zero_Flag
+# End time: 15:50:32 on Jun 23,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mod.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:50:32 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mod.sv 
+# -- Compiling module Mod
+# 
+# Top level modules:
+# 	Mod
+# End time: 15:50:32 on Jun 23,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mod_Exp.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:50:32 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mod_Exp.sv 
+# -- Compiling module Mod_Exp
+# 
+# Top level modules:
+# 	Mod_Exp
+# End time: 15:50:32 on Jun 23,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Branch_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:50:33 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Branch_Unit.sv 
+# -- Compiling module Branch_Unit
+# 
+# Top level modules:
+# 	Branch_Unit
+# End time: 15:50:33 on Jun 23,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID/Instr_Decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:50:33 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID/Instr_Decoder.sv 
 # -- Compiling module Instr_Decoder
 # 
 # Top level modules:
 # 	Instr_Decoder
-# End time: 16:31:13 on Jun 20,2020, Elapsed time: 0:00:00
+# End time: 15:50:33 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Register_Bank.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID/Register_Bank.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:13 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Register_Bank.sv 
+# Start time: 15:50:33 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID/Register_Bank.sv 
 # -- Compiling module Register_Bank
 # 
 # Top level modules:
 # 	Register_Bank
-# End time: 16:31:13 on Jun 20,2020, Elapsed time: 0:00:00
+# End time: 15:50:33 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/ID.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID/ID.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:13 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/ID.sv 
+# Start time: 15:50:33 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID/ID.sv 
 # -- Compiling module ID
 # 
 # Top level modules:
 # 	ID
-# End time: 16:31:13 on Jun 20,2020, Elapsed time: 0:00:00
+# End time: 15:50:33 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes/IDEXE_Pipe.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/EXE.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:13 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/pipes/IDEXE_Pipe.sv 
+# Start time: 15:50:33 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/EXE.sv 
+# -- Compiling module EXE
+# 
+# Top level modules:
+# 	EXE
+# End time: 15:50:33 on Jun 23,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/pipes {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/pipes/IDEXE_Pipe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:50:33 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/pipes" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/pipes/IDEXE_Pipe.sv 
 # -- Compiling module IDEXE_Pipe
 # 
 # Top level modules:
 # 	IDEXE_Pipe
-# End time: 16:31:14 on Jun 20,2020, Elapsed time: 0:00:01
+# End time: 15:50:34 on Jun 23,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Control_Unit.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID/Control_Unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:14 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/ID/Control_Unit.sv 
+# Start time: 15:50:34 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/ID/Control_Unit.sv 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 16:31:14 on Jun 20,2020, Elapsed time: 0:00:00
+# End time: 15:50:34 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/TOP.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/TOP.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:14 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/TOP.sv 
+# Start time: 15:50:34 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/TOP.sv 
 # -- Compiling module TOP
 # 
 # Top level modules:
 # 	TOP
-# End time: 16:31:14 on Jun 20,2020, Elapsed time: 0:00:00
+# End time: 15:50:34 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/tb {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/tb/TOP_TB.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/TOP_tb {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/TOP_tb/Top_EXE_TB.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:14 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/tb" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/tb/TOP_TB.sv 
-# -- Compiling module TOP_TB
+# Start time: 15:50:34 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/TOP_tb" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/TOP_tb/Top_EXE_TB.sv 
+# -- Compiling module Top_EXE_TB
 # 
 # Top level modules:
-# 	TOP_TB
-# End time: 16:31:14 on Jun 20,2020, Elapsed time: 0:00:00
+# 	Top_EXE_TB
+# End time: 15:50:34 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/Instruction_Mem.sv}
+# vlog -sv -work work +incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF {C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF/Instruction_Mem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:31:14 on Jun 20,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/Instruction_Mem.sv 
+# Start time: 15:50:34 on Jun 23,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF" C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF/Instruction_Mem.sv 
 # -- Compiling module Instruction_Mem
 # 
 # Top level modules:
 # 	Instruction_Mem
-# End time: 16:31:14 on Jun 20,2020, Elapsed time: 0:00:00
+# End time: 15:50:34 on Jun 23,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.TOP_TB
-# vsim work.TOP_TB 
-# Start time: 16:31:22 on Jun 20,2020
+vsim work.Top_EXE_TB
+# vsim work.Top_EXE_TB 
+# Start time: 15:50:44 on Jun 23,2020
 # Loading sv_std.std
-# Loading work.TOP_TB
+# Loading work.Top_EXE_TB
 # Loading work.TOP
 # Loading work.IF
 # Loading work.Mux2_PC
@@ -180,33 +270,39 @@ vsim work.TOP_TB
 # Loading work.Mux2
 # Loading work.Register_Bank
 # Loading work.IDEXE_Pipe
-# ** Warning: (vsim-3839) C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/IF.sv(9): Variable '/TOP_TB/uut/fetch/addr_in', driven via a port connection, is multiply driven. See C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/IF.sv(15).
-#    Time: 0 ns  Iteration: 0  Instance: /TOP_TB/uut/fetch File: C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/IF/IF.sv
-# ** Warning: (vsim-3839) C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/TOP.sv(19): Variable '/TOP_TB/uut/wb_enable', driven via a port connection, is multiply driven. See C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/TOP.sv(31).
-#    Time: 0 ns  Iteration: 0  Instance: /TOP_TB/uut File: C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/TOP.sv
-# ** Warning: (vsim-3839) C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/TOP.sv(11): Variable '/TOP_TB/uut/pc_en', driven via a port connection, is multiply driven. See C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/TOP.sv(31).
-#    Time: 0 ns  Iteration: 0  Instance: /TOP_TB/uut File: C:/Users/jdmon/OneDrive/Escritorio/RSAASIP/TOP.sv
-add wave -position end  sim:/TOP_TB/clk
-add wave -position end  sim:/TOP_TB/rst
-add wave -position end  sim:/TOP_TB/wb_enable_out
-add wave -position end  sim:/TOP_TB/rd_mem_en_out
-add wave -position end  sim:/TOP_TB/wr_mem_en_out
-add wave -position end  sim:/TOP_TB/mux_exe_out
-add wave -position end  sim:/TOP_TB/mux_mem_out
-add wave -position end  sim:/TOP_TB/jop_lsb_out
-add wave -position end  sim:/TOP_TB/jenable_out
-add wave -position end  sim:/TOP_TB/pc_en_out
-add wave -position end  sim:/TOP_TB/src1_out
-add wave -position end  sim:/TOP_TB/src2_out
-add wave -position end  sim:/TOP_TB/src3_out
-add wave -position end  sim:/TOP_TB/imm_out
-add wave -position end  sim:/TOP_TB/alu_op_out
-add wave -position end  sim:/TOP_TB/addr_out
+# Loading work.EXE
+# Loading work.ALU
+# Loading work.Adder
+# Loading work.Substraction
+# Loading work.Mod_Exp
+# Loading work.Mod
+# Loading work.Mux4
+# Loading work.Zero_Flag
+# Loading work.Branch_Unit
+# ** Warning: (vsim-3017) C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mod_Exp.sv(29): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /Top_EXE_TB/uut/execution/alu/modex/base_squared_mod File: C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mod.sv
+# ** Warning: (vsim-3722) C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mod_Exp.sv(29): [TFMPC] - Missing connection for port 'div_result'.
+# ** Warning: (vsim-3017) C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mod_Exp.sv(32): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /Top_EXE_TB/uut/execution/alu/modex/result_mul_base_mod File: C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mod.sv
+# ** Warning: (vsim-3722) C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mod_Exp.sv(32): [TFMPC] - Missing connection for port 'div_result'.
+# ** Warning: (vsim-3015) C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/ALU.sv(19): [PCDPC] - Port size (16) does not match connection size (32) for port 'data4'. The port definition is at: C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mux4.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_EXE_TB/uut/execution/alu/selector File: C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/EXE/Mux4.sv
+# ** Warning: (vsim-3839) C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF/IF.sv(9): Variable '/Top_EXE_TB/uut/fetch/addr_in', driven via a port connection, is multiply driven. See C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF/IF.sv(15).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_EXE_TB/uut/fetch File: C:/Users/jdmon/OneDrive/Escritorio/RSAASIP-IntegrationTest/IF/IF.sv
+add wave -position end  sim:/Top_EXE_TB/clk
+add wave -position end  sim:/Top_EXE_TB/rst
+add wave -position end  sim:/Top_EXE_TB/rst_ALU
+add wave -position end  sim:/Top_EXE_TB/wr_reg_en
+add wave -position end  sim:/Top_EXE_TB/instr_out
+add wave -position end  sim:/Top_EXE_TB/wb_result_in
+add wave -position end  sim:/Top_EXE_TB/alu_result
+add wave -position end  sim:/Top_EXE_TB/branch_taken
+add wave -position end  sim:/Top_EXE_TB/jaddr_exe_out
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: DELL  Hostname: DESKTOP-VM7QFMR  ProcessID: 11200
-#           Attempting to use alternate WLF file "./wlft6k5nvx".
+#           Attempting to use alternate WLF file "./wlftrwji81".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft6k5nvx
+#           Using alternate file: ./wlftrwji81
 run -all
-# End time: 16:33:25 on Jun 20,2020, Elapsed time: 0:02:03
-# Errors: 0, Warnings: 5
+# End time: 15:54:37 on Jun 23,2020, Elapsed time: 0:03:53
+# Errors: 0, Warnings: 8

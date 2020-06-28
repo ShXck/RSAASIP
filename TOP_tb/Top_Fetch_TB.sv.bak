@@ -1,0 +1,40 @@
+module Top_Fetch_TB();
+
+	parameter ARQ = 16;
+	logic clk, rst, pc_en, branch_taken, jaddr_out;
+	logic [ARQ-1:0] instr;
+	TOP uut(clk, rst, pc_en, branch_taken, jaddr_out, instr);
+	
+	initial begin
+		clk = 0; rst = 1; pc_en = 1; branch_taken = 0; jaddr_out = 13'b1101;
+		#
+	
+	end
+	
+	
+	always #5 clk = ~clk;
+
+endmodule
+
+
+
+module IF_TB();
+
+	parameter ARQ = 16;
+	parameter MEMORY_ADDR_SIZE = 13;
+	
+	logic clk, rst, pc_en, mux_sel;
+	logic [ARQ-1:0] instr;
+	logic [MEMORY_ADDR_SIZE-1:0] branch_addr;
+
+	IF dut(clk, rst, pc_en, mux_sel, branch_addr, instr);
+
+initial begin
+	pc_en = 1; clk = 1; rst = 1; mux_sel = 0; branch_addr=6'b1101;
+	
+	#10 rst = 0;
+	end
+
+always #5 clk = ~clk;
+
+endmodule

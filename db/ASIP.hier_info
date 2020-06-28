@@ -1,78 +1,76 @@
-|TOP
-clk => clk.IN1
-rst => rst.IN1
-rst_ALU => EXE:execution.rst
-result_WB[0] << <GND>
-result_WB[1] << <GND>
-result_WB[2] << <GND>
-result_WB[3] << <GND>
-result_WB[4] << <GND>
-result_WB[5] << <GND>
-result_WB[6] << <GND>
-result_WB[7] << <GND>
-result_WB[8] << <GND>
-result_WB[9] << <GND>
-result_WB[10] << <GND>
-result_WB[11] << <GND>
-result_WB[12] << <GND>
-result_WB[13] << <GND>
-result_WB[14] << <GND>
-result_WB[15] << <GND>
-wb_en_exe_out << EXEMEM_Pipe:exemem_pipe.port9
-rd_mem_en_exe_out << EXEMEM_Pipe:exemem_pipe.port10
-wr_mem_en_exe_out << EXEMEM_Pipe:exemem_pipe.port11
-pc_en_exe_out << EXEMEM_Pipe:exemem_pipe.port12
-sr1_exe_out[0] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[1] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[2] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[3] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[4] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[5] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[6] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[7] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[8] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[9] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[10] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[11] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[12] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[13] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[14] << EXEMEM_Pipe:exemem_pipe.port13
-sr1_exe_out[15] << EXEMEM_Pipe:exemem_pipe.port13
-srdest_exe_out[0] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[1] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[2] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[3] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[4] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[5] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[6] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[7] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[8] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[9] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[10] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[11] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[12] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[13] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[14] << EXEMEM_Pipe:exemem_pipe.port14
-srdest_exe_out[15] << EXEMEM_Pipe:exemem_pipe.port14
-alu_result_out[0] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[1] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[2] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[3] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[4] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[5] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[6] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[7] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[8] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[9] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[10] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[11] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[12] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[13] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[14] << EXEMEM_Pipe:exemem_pipe.port15
-alu_result_out[15] << EXEMEM_Pipe:exemem_pipe.port15
+|Top_EXE_TB
 
 
-|TOP|IF:fetch
+|Top_EXE_TB|TOP:uut
+clk => clk.IN3
+rst => rst.IN3
+rst_ALU => ~NO_FANOUT~
+wr_reg_en => wr_reg_en.IN2
+instr_out[0] <= instr_out[0].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[1] <= instr_out[1].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[2] <= instr_out[2].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[3] <= instr_out[3].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[4] <= instr_out[4].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[5] <= instr_out[5].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[6] <= instr_out[6].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[7] <= instr_out[7].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[8] <= instr_out[8].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[9] <= instr_out[9].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[10] <= instr_out[10].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[11] <= instr_out[11].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[12] <= instr_out[12].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[13] <= instr_out[13].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[14] <= instr_out[14].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[15] <= instr_out[15].DB_MAX_OUTPUT_PORT_TYPE
+wb_result_in[0] => wb_result_in[0].IN1
+wb_result_in[1] => wb_result_in[1].IN1
+wb_result_in[2] => wb_result_in[2].IN1
+wb_result_in[3] => wb_result_in[3].IN1
+wb_result_in[4] => wb_result_in[4].IN1
+wb_result_in[5] => wb_result_in[5].IN1
+wb_result_in[6] => wb_result_in[6].IN1
+wb_result_in[7] => wb_result_in[7].IN1
+wb_result_in[8] => wb_result_in[8].IN1
+wb_result_in[9] => wb_result_in[9].IN1
+wb_result_in[10] => wb_result_in[10].IN1
+wb_result_in[11] => wb_result_in[11].IN1
+wb_result_in[12] => wb_result_in[12].IN1
+wb_result_in[13] => wb_result_in[13].IN1
+wb_result_in[14] => wb_result_in[14].IN1
+wb_result_in[15] => wb_result_in[15].IN1
+alu_result[0] <= EXE:execution.port11
+alu_result[1] <= EXE:execution.port11
+alu_result[2] <= EXE:execution.port11
+alu_result[3] <= EXE:execution.port11
+alu_result[4] <= EXE:execution.port11
+alu_result[5] <= EXE:execution.port11
+alu_result[6] <= EXE:execution.port11
+alu_result[7] <= EXE:execution.port11
+alu_result[8] <= EXE:execution.port11
+alu_result[9] <= EXE:execution.port11
+alu_result[10] <= EXE:execution.port11
+alu_result[11] <= EXE:execution.port11
+alu_result[12] <= EXE:execution.port11
+alu_result[13] <= EXE:execution.port11
+alu_result[14] <= EXE:execution.port11
+alu_result[15] <= EXE:execution.port11
+branch_taken <= EXE:execution.port12
+jaddr_exe_out[0] <= EXE:execution.port13
+jaddr_exe_out[1] <= EXE:execution.port13
+jaddr_exe_out[2] <= EXE:execution.port13
+jaddr_exe_out[3] <= EXE:execution.port13
+jaddr_exe_out[4] <= EXE:execution.port13
+jaddr_exe_out[5] <= EXE:execution.port13
+jaddr_exe_out[6] <= EXE:execution.port13
+jaddr_exe_out[7] <= EXE:execution.port13
+jaddr_exe_out[8] <= EXE:execution.port13
+jaddr_exe_out[9] <= EXE:execution.port13
+jaddr_exe_out[10] <= EXE:execution.port13
+jaddr_exe_out[11] <= EXE:execution.port13
+jaddr_exe_out[12] <= EXE:execution.port13
+
+
+|Top_EXE_TB|TOP:uut|IF:fetch
 clk => clk.IN1
 rst => rst.IN1
 pc_en => pc_en.IN1
@@ -108,7 +106,7 @@ instr[14] <= Instruction_Mem:instruction_mem.port1
 instr[15] <= Instruction_Mem:instruction_mem.port1
 
 
-|TOP|IF:fetch|Mux2_PC:mux_pc
+|Top_EXE_TB|TOP:uut|IF:fetch|Mux2_PC:mux_pc
 data1[0] => out.DATAA
 data1[1] => out.DATAA
 data1[2] => out.DATAA
@@ -163,7 +161,7 @@ out[11] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[12] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|IF:fetch|pc_register:pc_reg
+|Top_EXE_TB|TOP:uut|IF:fetch|pc_register:pc_reg
 clk => always1.IN0
 rst => next_addr_out.OUTPUTSELECT
 rst => next_addr_out.OUTPUTSELECT
@@ -207,7 +205,7 @@ addr_out[11] <= addr_out[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 addr_out[12] <= addr_out[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|IF:fetch|Instruction_Mem:instruction_mem
+|Top_EXE_TB|TOP:uut|IF:fetch|Instruction_Mem:instruction_mem
 addr[0] => memory.RADDR
 addr[1] => memory.RADDR1
 addr[2] => memory.RADDR2
@@ -239,7 +237,7 @@ instr[14] <= memory.DATAOUT14
 instr[15] <= memory.DATAOUT15
 
 
-|TOP|IF:fetch|plus_1:plus_pc
+|Top_EXE_TB|TOP:uut|IF:fetch|plus_1:plus_pc
 addr_in[0] => Add0.IN26
 addr_in[1] => Add0.IN25
 addr_in[2] => Add0.IN24
@@ -268,7 +266,7 @@ addr_out[11] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 addr_out[12] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|IFID_Pipe:ifid_pipe
+|Top_EXE_TB|TOP:uut|IFID_Pipe:ifid_pipe
 clk => instr_out[0]~reg0.CLK
 clk => instr_out[1]~reg0.CLK
 clk => instr_out[2]~reg0.CLK
@@ -351,7 +349,7 @@ instr_out[14] <= instr_out[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 instr_out[15] <= instr_out[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|ID:deco
+|Top_EXE_TB|TOP:uut|ID:deco
 instr[0] => instr[0].IN1
 instr[1] => instr[1].IN1
 instr[2] => instr[2].IN1
@@ -476,7 +474,7 @@ alu_op[0] <= Control_Unit:control_unit.port10
 alu_op[1] <= Control_Unit:control_unit.port10
 
 
-|TOP|ID:deco|Instr_Decoder:decoder
+|Top_EXE_TB|TOP:uut|ID:deco|Instr_Decoder:decoder
 instr[0] => addr.DATAB
 instr[0] => imm.DATAB
 instr[1] => addr.DATAB
@@ -578,7 +576,7 @@ imm[9] <= imm.DB_MAX_OUTPUT_PORT_TYPE
 jop_lsb <= jop_lsb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|ID:deco|Control_Unit:control_unit
+|Top_EXE_TB|TOP:uut|ID:deco|Control_Unit:control_unit
 opcode[0] => Decoder0.IN2
 opcode[1] => Decoder0.IN1
 opcode[2] => Decoder0.IN0
@@ -595,7 +593,7 @@ alu_op[0] <= alu_op.DB_MAX_OUTPUT_PORT_TYPE
 alu_op[1] <= alu_op.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|ID:deco|Zero_Extend:zero_extend
+|Top_EXE_TB|TOP:uut|ID:deco|Zero_Extend:zero_extend
 immediate[0] => ext_imm[0].DATAIN
 immediate[1] => ext_imm[1].DATAIN
 immediate[2] => ext_imm[2].DATAIN
@@ -624,7 +622,7 @@ ext_imm[14] <= <GND>
 ext_imm[15] <= <GND>
 
 
-|TOP|ID:deco|Mux2:wr_mux
+|Top_EXE_TB|TOP:uut|ID:deco|Mux2:wr_mux
 data1[0] => out.DATAA
 data1[1] => out.DATAA
 data1[2] => out.DATAA
@@ -691,7 +689,7 @@ out[14] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[15] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|ID:deco|Register_Bank:reg_bank
+|Top_EXE_TB|TOP:uut|ID:deco|Register_Bank:reg_bank
 clk => src3_out[0]~reg0.CLK
 clk => src3_out[1]~reg0.CLK
 clk => src3_out[2]~reg0.CLK
@@ -1497,7 +1495,7 @@ src3_out[14] <= src3_out[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 src3_out[15] <= src3_out[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|IDEXE_Pipe:idexe_pipe
+|Top_EXE_TB|TOP:uut|IDEXE_Pipe:idexe_pipe
 clk => mux_mem_out~reg0.CLK
 clk => mux_exe_out~reg0.CLK
 clk => pc_en_out~reg0.CLK
@@ -1848,7 +1846,7 @@ jaddr_out[11] <= jaddr_out[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 jaddr_out[12] <= jaddr_out[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|EXE:execution
+|Top_EXE_TB|TOP:uut|EXE:execution
 clk => clk.IN1
 rst => rst.IN1
 mux_exe => mux_exe.IN1
@@ -1965,7 +1963,7 @@ jaddr_out[11] <= Branch_Unit:branch.port5
 jaddr_out[12] <= Branch_Unit:branch.port5
 
 
-|TOP|EXE:execution|Mux2:in_mux
+|Top_EXE_TB|TOP:uut|EXE:execution|Mux2:in_mux
 data1[0] => out.DATAA
 data1[1] => out.DATAA
 data1[2] => out.DATAA
@@ -2032,7 +2030,7 @@ out[14] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[15] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|EXE:execution|ALU:alu
+|Top_EXE_TB|TOP:uut|EXE:execution|ALU:alu
 data1[0] => data1[0].IN3
 data1[1] => data1[1].IN3
 data1[2] => data1[2].IN3
@@ -2104,7 +2102,7 @@ ALU_Result[15] <= final_result[15].DB_MAX_OUTPUT_PORT_TYPE
 z <= Zero_Flag:zero.port1
 
 
-|TOP|EXE:execution|ALU:alu|Adder:adder
+|Top_EXE_TB|TOP:uut|EXE:execution|ALU:alu|Adder:adder
 num1[0] => Add0.IN16
 num1[1] => Add0.IN15
 num1[2] => Add0.IN14
@@ -2155,7 +2153,7 @@ result[14] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 result[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|EXE:execution|ALU:alu|Substraction:subs
+|Top_EXE_TB|TOP:uut|EXE:execution|ALU:alu|Substraction:subs
 num1[0] => Add0.IN32
 num1[1] => Add0.IN31
 num1[2] => Add0.IN30
@@ -2207,7 +2205,7 @@ result[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 cout <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|EXE:execution|ALU:alu|Mod_Exp:modex
+|Top_EXE_TB|TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex
 base[0] => base_logic.DATAB
 base[1] => base_logic.DATAB
 base[2] => base_logic.DATAB
@@ -2406,7 +2404,7 @@ result[14] <= result_logic[14].DB_MAX_OUTPUT_PORT_TYPE
 result[15] <= result_logic[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod
+|Top_EXE_TB|TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod
 og_number[0] => Add30.IN32
 og_number[1] => Add28.IN32
 og_number[2] => Add26.IN32
@@ -2969,7 +2967,7 @@ div_result[14] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
 div_result[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod
+|Top_EXE_TB|TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod
 og_number[0] => Add30.IN32
 og_number[1] => Add28.IN32
 og_number[2] => Add26.IN32
@@ -3532,7 +3530,7 @@ div_result[14] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
 div_result[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|EXE:execution|ALU:alu|Mux4:selector
+|Top_EXE_TB|TOP:uut|EXE:execution|ALU:alu|Mux4:selector
 data1[0] => out.DATAA
 data1[1] => out.DATAA
 data1[2] => out.DATAA
@@ -3663,7 +3661,7 @@ out[14] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[15] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|EXE:execution|ALU:alu|Zero_Flag:zero
+|Top_EXE_TB|TOP:uut|EXE:execution|ALU:alu|Zero_Flag:zero
 ALU_Result[0] => Equal0.IN15
 ALU_Result[1] => Equal0.IN14
 ALU_Result[2] => Equal0.IN13
@@ -3683,7 +3681,7 @@ ALU_Result[15] => Equal0.IN0
 z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|EXE:execution|Branch_Unit:branch
+|Top_EXE_TB|TOP:uut|EXE:execution|Branch_Unit:branch
 jaddress[0] => jaddress_out[0].DATAIN
 jaddress[1] => jaddress_out[1].DATAIN
 jaddress[2] => jaddress_out[2].DATAIN
@@ -3715,216 +3713,5 @@ jaddress_out[9] <= jaddress[9].DB_MAX_OUTPUT_PORT_TYPE
 jaddress_out[10] <= jaddress[10].DB_MAX_OUTPUT_PORT_TYPE
 jaddress_out[11] <= jaddress[11].DB_MAX_OUTPUT_PORT_TYPE
 jaddress_out[12] <= jaddress[12].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|TOP|EXEMEM_Pipe:exemem_pipe
-clk => pc_en_out~reg0.CLK
-clk => alu_result_out[0]~reg0.CLK
-clk => alu_result_out[1]~reg0.CLK
-clk => alu_result_out[2]~reg0.CLK
-clk => alu_result_out[3]~reg0.CLK
-clk => alu_result_out[4]~reg0.CLK
-clk => alu_result_out[5]~reg0.CLK
-clk => alu_result_out[6]~reg0.CLK
-clk => alu_result_out[7]~reg0.CLK
-clk => alu_result_out[8]~reg0.CLK
-clk => alu_result_out[9]~reg0.CLK
-clk => alu_result_out[10]~reg0.CLK
-clk => alu_result_out[11]~reg0.CLK
-clk => alu_result_out[12]~reg0.CLK
-clk => alu_result_out[13]~reg0.CLK
-clk => alu_result_out[14]~reg0.CLK
-clk => alu_result_out[15]~reg0.CLK
-clk => srcdest_out[0]~reg0.CLK
-clk => srcdest_out[1]~reg0.CLK
-clk => srcdest_out[2]~reg0.CLK
-clk => srcdest_out[3]~reg0.CLK
-clk => srcdest_out[4]~reg0.CLK
-clk => srcdest_out[5]~reg0.CLK
-clk => srcdest_out[6]~reg0.CLK
-clk => srcdest_out[7]~reg0.CLK
-clk => srcdest_out[8]~reg0.CLK
-clk => srcdest_out[9]~reg0.CLK
-clk => srcdest_out[10]~reg0.CLK
-clk => srcdest_out[11]~reg0.CLK
-clk => srcdest_out[12]~reg0.CLK
-clk => srcdest_out[13]~reg0.CLK
-clk => srcdest_out[14]~reg0.CLK
-clk => srcdest_out[15]~reg0.CLK
-clk => src1_out[0]~reg0.CLK
-clk => src1_out[1]~reg0.CLK
-clk => src1_out[2]~reg0.CLK
-clk => src1_out[3]~reg0.CLK
-clk => src1_out[4]~reg0.CLK
-clk => src1_out[5]~reg0.CLK
-clk => src1_out[6]~reg0.CLK
-clk => src1_out[7]~reg0.CLK
-clk => src1_out[8]~reg0.CLK
-clk => src1_out[9]~reg0.CLK
-clk => src1_out[10]~reg0.CLK
-clk => src1_out[11]~reg0.CLK
-clk => src1_out[12]~reg0.CLK
-clk => src1_out[13]~reg0.CLK
-clk => src1_out[14]~reg0.CLK
-clk => src1_out[15]~reg0.CLK
-clk => wr_mem_en_out~reg0.CLK
-clk => rd_mem_en_out~reg0.CLK
-clk => wb_enable_out~reg0.CLK
-rst => wb_enable_out.OUTPUTSELECT
-rst => rd_mem_en_out.OUTPUTSELECT
-rst => wr_mem_en_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => src1_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => srcdest_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => alu_result_out.OUTPUTSELECT
-rst => pc_en_out.OUTPUTSELECT
-wb_enable_in => wb_enable_out.DATAA
-rd_mem_en => rd_mem_en_out.DATAA
-wr_mem_en => wr_mem_en_out.DATAA
-pc_en_in => pc_en_out.DATAA
-src1_in[0] => src1_out.DATAA
-src1_in[1] => src1_out.DATAA
-src1_in[2] => src1_out.DATAA
-src1_in[3] => src1_out.DATAA
-src1_in[4] => src1_out.DATAA
-src1_in[5] => src1_out.DATAA
-src1_in[6] => src1_out.DATAA
-src1_in[7] => src1_out.DATAA
-src1_in[8] => src1_out.DATAA
-src1_in[9] => src1_out.DATAA
-src1_in[10] => src1_out.DATAA
-src1_in[11] => src1_out.DATAA
-src1_in[12] => src1_out.DATAA
-src1_in[13] => src1_out.DATAA
-src1_in[14] => src1_out.DATAA
-src1_in[15] => src1_out.DATAA
-srcdest_in[0] => srcdest_out.DATAA
-srcdest_in[1] => srcdest_out.DATAA
-srcdest_in[2] => srcdest_out.DATAA
-srcdest_in[3] => srcdest_out.DATAA
-srcdest_in[4] => srcdest_out.DATAA
-srcdest_in[5] => srcdest_out.DATAA
-srcdest_in[6] => srcdest_out.DATAA
-srcdest_in[7] => srcdest_out.DATAA
-srcdest_in[8] => srcdest_out.DATAA
-srcdest_in[9] => srcdest_out.DATAA
-srcdest_in[10] => srcdest_out.DATAA
-srcdest_in[11] => srcdest_out.DATAA
-srcdest_in[12] => srcdest_out.DATAA
-srcdest_in[13] => srcdest_out.DATAA
-srcdest_in[14] => srcdest_out.DATAA
-srcdest_in[15] => srcdest_out.DATAA
-alu_result_in[0] => alu_result_out.DATAA
-alu_result_in[1] => alu_result_out.DATAA
-alu_result_in[2] => alu_result_out.DATAA
-alu_result_in[3] => alu_result_out.DATAA
-alu_result_in[4] => alu_result_out.DATAA
-alu_result_in[5] => alu_result_out.DATAA
-alu_result_in[6] => alu_result_out.DATAA
-alu_result_in[7] => alu_result_out.DATAA
-alu_result_in[8] => alu_result_out.DATAA
-alu_result_in[9] => alu_result_out.DATAA
-alu_result_in[10] => alu_result_out.DATAA
-alu_result_in[11] => alu_result_out.DATAA
-alu_result_in[12] => alu_result_out.DATAA
-alu_result_in[13] => alu_result_out.DATAA
-alu_result_in[14] => alu_result_out.DATAA
-alu_result_in[15] => alu_result_out.DATAA
-wb_enable_out <= wb_enable_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-rd_mem_en_out <= rd_mem_en_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-wr_mem_en_out <= wr_mem_en_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pc_en_out <= pc_en_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[0] <= src1_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[1] <= src1_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[2] <= src1_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[3] <= src1_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[4] <= src1_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[5] <= src1_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[6] <= src1_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[7] <= src1_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[8] <= src1_out[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[9] <= src1_out[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[10] <= src1_out[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[11] <= src1_out[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[12] <= src1_out[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[13] <= src1_out[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[14] <= src1_out[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-src1_out[15] <= src1_out[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[0] <= srcdest_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[1] <= srcdest_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[2] <= srcdest_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[3] <= srcdest_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[4] <= srcdest_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[5] <= srcdest_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[6] <= srcdest_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[7] <= srcdest_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[8] <= srcdest_out[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[9] <= srcdest_out[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[10] <= srcdest_out[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[11] <= srcdest_out[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[12] <= srcdest_out[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[13] <= srcdest_out[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[14] <= srcdest_out[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-srcdest_out[15] <= srcdest_out[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[0] <= alu_result_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[1] <= alu_result_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[2] <= alu_result_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[3] <= alu_result_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[4] <= alu_result_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[5] <= alu_result_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[6] <= alu_result_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[7] <= alu_result_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[8] <= alu_result_out[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[9] <= alu_result_out[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[10] <= alu_result_out[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[11] <= alu_result_out[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[12] <= alu_result_out[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[13] <= alu_result_out[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[14] <= alu_result_out[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_result_out[15] <= alu_result_out[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

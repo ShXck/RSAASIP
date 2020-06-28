@@ -9,36 +9,36 @@ module Instr_Decoder #(parameter ARQ = 16)(input logic[ARQ - 1:0] instr, output 
 						src1 = instr[9:7];
 						src2 = instr[6:4];
 						srcdest = instr[12:10];
-						addr = 13'b0;
-						imm = 10'b0;
-						jop_lsb = 1'b0;
+						addr = 13'd0;
+						imm = 10'd0;
+						jop_lsb = 1'd0;
 					end
 				3'b001, 3'b011: //LDPX - STPX
 					begin
 						src1 = instr[9:7]; 
-						src2 = 3'b0;
+						src2 = 3'd0;
 						srcdest = instr[12:10];
-						addr = 13'b0;
-						imm = 10'b0;
-						jop_lsb = 1'b0;
+						addr = 13'd0;
+						imm = 10'd0;
+						jop_lsb = 1'd0;
 					end
 				3'b101, 3'b110: //JEQ - J
 					begin
-						src1 = 3'b0;
-						src2 = 3'b0;
-						srcdest = 3'b0;
+						src1 = 3'd0;
+						src2 = 3'd0;
+						srcdest = 3'd0;
 						addr = instr[12:0];
-						imm = 10'b0;
+						imm = 10'd0;
 						jop_lsb = instr[13];
 					end
-				3'b0, 3'b111: //SET - ADD
+				3'd0, 3'b111: //SET - ADD
 					begin
 						src1 = instr[12:10];
-						src2 = 3'b0;
+						src2 = 3'd0;
 						srcdest = instr[12:10];
-						addr = 13'b0;
+						addr = 13'd0;
 						imm = instr[9:0];
-						jop_lsb = 1'b0;
+						jop_lsb = 1'd0;
 					end
 				default:
 					begin
@@ -47,7 +47,7 @@ module Instr_Decoder #(parameter ARQ = 16)(input logic[ARQ - 1:0] instr, output 
 						srcdest = 3'b111;
 						addr = 13'b111;
 						imm = 10'b111;
-						jop_lsb = 1'b0;
+						jop_lsb = 1'd0;
 					end
 			endcase
 	end
