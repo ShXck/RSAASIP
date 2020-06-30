@@ -3,6 +3,7 @@ module EXE #(parameter ARQ = 16)(input logic clk, rst, mux_exe, jop_lsb, jenable
 											input logic[12:0] jaddr, 
 											output logic[ARQ - 1:0] alu_result,
 											output logic branch_taken, output logic[12:0] jaddr_out);
+											
 	logic zero;
 	logic[ARQ - 1: 0] data_mux;
 	

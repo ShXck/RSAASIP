@@ -42,11 +42,11 @@ module Instr_Decoder #(parameter ARQ = 16)(input logic[ARQ - 1:0] instr, output 
 					end
 				default:
 					begin
-						src1 = 3'b111;
-						src2 = 3'b111;
-						srcdest = 3'b111;
-						addr = 13'b111;
-						imm = 10'b111;
+						src1 = 3'b000;
+						src2 = 3'b000;
+						srcdest = 3'b000;
+						addr = 13'b0;
+						imm = 10'b0;
 						jop_lsb = 1'd0;
 					end
 			endcase

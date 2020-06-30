@@ -1,0 +1,14 @@
+module Top_MEM_TB();
+
+	logic clk, rst, rst_ALU, wr_reg_en;
+	logic [ARQ-1:0] wb_result_in;
+	logic [ARQ-1:0] instr_out;
+	
+	logic[ARQ - 1:0] mem_data_out, alu_result_mem_in;
+	
+	TOP uut(clk, rst, rst_ALU, wr_reg_en, wb_result_in, instr_out, mem_data_out, alu_result_mem_in);
+
+
+
+
+endmodule

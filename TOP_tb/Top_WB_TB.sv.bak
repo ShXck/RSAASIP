@@ -1,0 +1,20 @@
+module Top_WB_TB();
+
+	logic clk, rst, rst_ALU, wr_reg_en;
+	logic [ARQ-1:0] wb_result_in;
+	logic [ARQ-1:0] instr_out;
+	
+	logic[ARQ - 1:0] wb_result_wb_out;
+	logic wb_enable_wb_in;
+
+	TOP uut(clk, rst, rst_ALU, wr_reg_en, wb_result_in, instr_out, wb_enable_wb_in, wb_result_wb_out);
+	
+	initial begin 
+		clk = 1; rst = 1; wb_result_in = 16'd17; wr_reg_en = 1;   
+		#5 rst = 0; 
+	end 
+	
+	always #5 clk = ~clk; 
+
+
+endmodule

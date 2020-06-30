@@ -24,14 +24,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "instr_out[5]",
-					"strict" : false
-				},
-				{
-					"name" : "instr_out[7]",
-					"strict" : false
-				},
-				{
 					"name" : "instr_out[8]",
 					"strict" : false
 				},
@@ -52,211 +44,135 @@
 					"strict" : false
 				},
 				{
-					"name" : "wb_enable_mem_in",
+					"name" : "instr_out[15]",
 					"strict" : false
 				},
 				{
-					"name" : "rd_mem_mem_in",
+					"name" : "alu_result_wb_in[0]",
 					"strict" : false
 				},
 				{
-					"name" : "wr_mem_mem_in",
+					"name" : "alu_result_wb_in[1]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_mem_in",
+					"name" : "alu_result_wb_in[2]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[0]",
+					"name" : "wb_result_wb_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[1]",
+					"name" : "wb_result_wb_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[2]",
+					"name" : "wb_result_wb_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[3]",
+					"name" : "wb_result_wb_out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[4]",
+					"name" : "wb_result_wb_out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[5]",
+					"name" : "wb_result_wb_out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[6]",
+					"name" : "wb_result_wb_out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[7]",
+					"name" : "wb_result_wb_out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[8]",
+					"name" : "wb_result_wb_out[8]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[9]",
+					"name" : "wb_result_wb_out[9]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[10]",
+					"name" : "wb_result_wb_out[10]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[11]",
+					"name" : "wb_result_wb_out[11]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[12]",
+					"name" : "wb_result_wb_out[12]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[13]",
+					"name" : "wb_result_wb_out[13]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[14]",
+					"name" : "wb_result_wb_out[14]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_mem_in[15]",
+					"name" : "wb_result_wb_out[15]",
 					"strict" : false
 				},
 				{
-					"name" : "src3_mem_in[0]",
+					"name" : "alu_result_wb_in[3]",
 					"strict" : false
 				},
 				{
-					"name" : "src3_mem_in[1]",
+					"name" : "alu_result_wb_in[4]",
 					"strict" : false
 				},
 				{
-					"name" : "src3_mem_in[2]",
+					"name" : "alu_result_wb_in[5]",
 					"strict" : false
 				},
 				{
-					"name" : "src3_mem_in[3]",
+					"name" : "alu_result_wb_in[6]",
 					"strict" : false
 				},
 				{
-					"name" : "src3_mem_in[4]",
+					"name" : "alu_result_wb_in[7]",
 					"strict" : false
 				},
 				{
-					"name" : "src3_mem_in[5]",
+					"name" : "alu_result_wb_in[8]",
 					"strict" : false
 				},
 				{
-					"name" : "src3_mem_in[6]",
+					"name" : "alu_result_wb_in[9]",
 					"strict" : false
 				},
 				{
-					"name" : "src3_mem_in[7]",
+					"name" : "alu_result_wb_in[10]",
 					"strict" : false
 				},
 				{
-					"name" : "src3_mem_in[8]",
+					"name" : "alu_result_wb_in[11]",
 					"strict" : false
 				},
 				{
-					"name" : "src3_mem_in[9]",
+					"name" : "alu_result_wb_in[12]",
 					"strict" : false
 				},
 				{
-					"name" : "src3_mem_in[10]",
+					"name" : "alu_result_wb_in[13]",
 					"strict" : false
 				},
 				{
-					"name" : "src3_mem_in[11]",
+					"name" : "alu_result_wb_in[14]",
 					"strict" : false
 				},
 				{
-					"name" : "src3_mem_in[12]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_mem_in[13]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_mem_in[14]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_mem_in[15]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[0]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[1]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[2]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[3]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[4]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[5]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[6]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[7]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[8]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[9]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[10]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[11]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[12]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[13]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[14]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[15]",
+					"name" : "alu_result_wb_in[15]",
 					"strict" : false
 				},
 				{
@@ -268,75 +184,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "wr_reg_en",
-					"strict" : false
-				},
-				{
 					"name" : "rst_ALU",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[0]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[1]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[2]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[3]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[4]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[5]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[6]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[7]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[8]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[9]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[10]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[11]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[12]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[13]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[14]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_result_in[15]",
 					"strict" : false
 				}
 			]

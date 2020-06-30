@@ -1,5 +1,5 @@
 Analysis & Elaboration report for ASIP
-Sun Jun 28 15:03:25 2020
+Mon Jun 29 23:25:25 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -9,45 +9,51 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |Top_EXE_TB
-  5. Parameter Settings for User Entity Instance: TOP:uut
-  6. Parameter Settings for User Entity Instance: TOP:uut|IF:fetch
-  7. Parameter Settings for User Entity Instance: TOP:uut|IF:fetch|Mux2_PC:mux_pc
-  8. Parameter Settings for User Entity Instance: TOP:uut|IF:fetch|pc_register:pc_reg
-  9. Parameter Settings for User Entity Instance: TOP:uut|IF:fetch|Instruction_Mem:instruction_mem
- 10. Parameter Settings for User Entity Instance: TOP:uut|IF:fetch|plus_1:plus_pc
- 11. Parameter Settings for User Entity Instance: TOP:uut|IFID_Pipe:ifid_pipe
- 12. Parameter Settings for User Entity Instance: TOP:uut|ID:deco
- 13. Parameter Settings for User Entity Instance: TOP:uut|ID:deco|Instr_Decoder:decoder
- 14. Parameter Settings for User Entity Instance: TOP:uut|ID:deco|Control_Unit:control_unit
- 15. Parameter Settings for User Entity Instance: TOP:uut|ID:deco|Zero_Extend:zero_extend
- 16. Parameter Settings for User Entity Instance: TOP:uut|ID:deco|Mux2:wr_mux
- 17. Parameter Settings for User Entity Instance: TOP:uut|ID:deco|Register_Bank:reg_bank
- 18. Parameter Settings for User Entity Instance: TOP:uut|IDEXE_Pipe:idexe_pipe
- 19. Parameter Settings for User Entity Instance: TOP:uut|EXE:execution
- 20. Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|Mux2:in_mux
- 21. Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu
- 22. Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Adder:adder
- 23. Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Substraction:subs
- 24. Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex
- 25. Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod
- 26. Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod
- 27. Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Mux4:selector
- 28. Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Zero_Flag:zero
- 29. Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|Branch_Unit:branch
- 30. Parameter Settings for User Entity Instance: TOP:uut|EXEMEM_Pipe:exemem_pipe
- 31. Analysis & Elaboration Settings
- 32. Port Connectivity Checks: "TOP:uut|EXE:execution|ALU:alu|Mux4:selector"
- 33. Port Connectivity Checks: "TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod"
- 34. Port Connectivity Checks: "TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod"
- 35. Port Connectivity Checks: "TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex"
- 36. Port Connectivity Checks: "TOP:uut|EXE:execution|ALU:alu|Substraction:subs"
- 37. Port Connectivity Checks: "TOP:uut|IDEXE_Pipe:idexe_pipe"
- 38. Port Connectivity Checks: "TOP:uut|ID:deco"
- 39. Port Connectivity Checks: "TOP:uut|IFID_Pipe:ifid_pipe"
- 40. Port Connectivity Checks: "TOP:uut|IF:fetch"
- 41. Port Connectivity Checks: "TOP:uut"
- 42. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |Top_MEM_TB
+  5. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut
+  6. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IF:fetch
+  7. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IF:fetch|Mux2_PC:mux_pc
+  8. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IF:fetch|pc_register:pc_reg
+  9. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IF:fetch|Instruction_Mem:instruction_mem
+ 10. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IF:fetch|plus_1:plus_pc
+ 11. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IFID_Pipe:ifid_pipe
+ 12. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|ID:deco
+ 13. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|ID:deco|Instr_Decoder:decoder
+ 14. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|ID:deco|Control_Unit:control_unit
+ 15. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|ID:deco|Zero_Extend:zero_extend
+ 16. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|ID:deco|Mux2:wr_mux
+ 17. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|ID:deco|Register_Bank:reg_bank
+ 18. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IDEXE_Pipe:idexe_pipe
+ 19. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution
+ 20. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|Mux2:in_mux
+ 21. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu
+ 22. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Adder:adder
+ 23. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Substraction:subs
+ 24. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex
+ 25. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod
+ 26. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod
+ 27. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mux4:selector
+ 28. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Zero_Flag:zero
+ 29. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|Branch_Unit:branch
+ 30. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXEMEM_Pipe:exemem_pipe
+ 31. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IM:mem
+ 32. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IM:mem|Mux2_IM:mux_mem
+ 33. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IM:mem|dataMem:mem
+ 34. Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|MEMWB_Pipe:memwb_pipe
+ 35. Analysis & Elaboration Settings
+ 36. Port Connectivity Checks: "TOP_MEMPipe:uut|IM:mem"
+ 37. Port Connectivity Checks: "TOP_MEMPipe:uut|EXEMEM_Pipe:exemem_pipe"
+ 38. Port Connectivity Checks: "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mux4:selector"
+ 39. Port Connectivity Checks: "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod"
+ 40. Port Connectivity Checks: "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod"
+ 41. Port Connectivity Checks: "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex"
+ 42. Port Connectivity Checks: "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Substraction:subs"
+ 43. Port Connectivity Checks: "TOP_MEMPipe:uut|IDEXE_Pipe:idexe_pipe"
+ 44. Port Connectivity Checks: "TOP_MEMPipe:uut|ID:deco"
+ 45. Port Connectivity Checks: "TOP_MEMPipe:uut|IFID_Pipe:ifid_pipe"
+ 46. Port Connectivity Checks: "TOP_MEMPipe:uut|IF:fetch"
+ 47. Port Connectivity Checks: "TOP_MEMPipe:uut"
+ 48. Analysis & Elaboration Messages
 
 
 
@@ -73,10 +79,10 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Jun 28 15:03:25 2020       ;
+; Analysis & Elaboration Status ; Successful - Mon Jun 29 23:25:25 2020       ;
 ; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                 ; ASIP                                        ;
-; Top-level Entity Name         ; Top_EXE_TB                                  ;
+; Top-level Entity Name         ; Top_MEM_TB                                  ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -105,7 +111,7 @@ refer to the applicable agreement for further details.
 
 
 +----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |Top_EXE_TB ;
+; Parameter Settings for User Entity Instance: Top-level Entity: |Top_MEM_TB ;
 +------------------+-------+-------------------------------------------------+
 ; Parameter Name   ; Value ; Type                                            ;
 +------------------+-------+-------------------------------------------------+
@@ -115,78 +121,8 @@ refer to the applicable agreement for further details.
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut ;
-+----------------+-------+-----------------------------+
-; Parameter Name ; Value ; Type                        ;
-+----------------+-------+-----------------------------+
-; ARQ            ; 16    ; Signed Integer              ;
-+----------------+-------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|IF:fetch ;
-+----------------+-------+--------------------------------------+
-; Parameter Name ; Value ; Type                                 ;
-+----------------+-------+--------------------------------------+
-; ARQ            ; 16    ; Signed Integer                       ;
-+----------------+-------+--------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|IF:fetch|Mux2_PC:mux_pc ;
-+------------------+-------+---------------------------------------------------+
-; Parameter Name   ; Value ; Type                                              ;
-+------------------+-------+---------------------------------------------------+
-; MEMORY_ADDR_SIZE ; 13    ; Signed Integer                                    ;
-+------------------+-------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|IF:fetch|pc_register:pc_reg ;
-+------------------+-------+-------------------------------------------------------+
-; Parameter Name   ; Value ; Type                                                  ;
-+------------------+-------+-------------------------------------------------------+
-; MEMORY_ADDR_SIZE ; 13    ; Signed Integer                                        ;
-+------------------+-------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|IF:fetch|Instruction_Mem:instruction_mem ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|IF:fetch|plus_1:plus_pc ;
-+------------------+-------+---------------------------------------------------+
-; Parameter Name   ; Value ; Type                                              ;
-+------------------+-------+---------------------------------------------------+
-; MEMORY_ADDR_SIZE ; 13    ; Signed Integer                                    ;
-+------------------+-------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|IFID_Pipe:ifid_pipe ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|ID:deco ;
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut ;
 +----------------+-------+-------------------------------------+
 ; Parameter Name ; Value ; Type                                ;
 +----------------+-------+-------------------------------------+
@@ -195,108 +131,98 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|ID:deco|Instr_Decoder:decoder ;
-+----------------+-------+-----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                      ;
-+----------------+-------+-----------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                            ;
-+----------------+-------+-----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|ID:deco|Control_Unit:control_unit ;
-+----------------+-------+---------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                          ;
-+----------------+-------+---------------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                                ;
-+----------------+-------+---------------------------------------------------------------+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IF:fetch ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|ID:deco|Zero_Extend:zero_extend ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IF:fetch|Mux2_PC:mux_pc ;
++------------------+-------+-----------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                      ;
++------------------+-------+-----------------------------------------------------------+
+; MEMORY_ADDR_SIZE ; 13    ; Signed Integer                                            ;
++------------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|ID:deco|Mux2:wr_mux ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IF:fetch|pc_register:pc_reg ;
++------------------+-------+---------------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                          ;
++------------------+-------+---------------------------------------------------------------+
+; MEMORY_ADDR_SIZE ; 13    ; Signed Integer                                                ;
++------------------+-------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|ID:deco|Register_Bank:reg_bank ;
-+----------------+-------+------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                       ;
-+----------------+-------+------------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                             ;
-+----------------+-------+------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IF:fetch|Instruction_Mem:instruction_mem ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|IDEXE_Pipe:idexe_pipe ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IF:fetch|plus_1:plus_pc ;
++------------------+-------+-----------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                      ;
++------------------+-------+-----------------------------------------------------------+
+; MEMORY_ADDR_SIZE ; 13    ; Signed Integer                                            ;
++------------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|EXE:execution ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IFID_Pipe:ifid_pipe ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|Mux2:in_mux ;
-+----------------+-------+-------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                  ;
-+----------------+-------+-------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                        ;
-+----------------+-------+-------------------------------------------------------+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|ID:deco ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|ID:deco|Instr_Decoder:decoder ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Adder:adder ;
-+----------------+-------+---------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                          ;
-+----------------+-------+---------------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                                ;
-+----------------+-------+---------------------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|ID:deco|Control_Unit:control_unit ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Substraction:subs ;
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|ID:deco|Zero_Extend:zero_extend ;
 +----------------+-------+---------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                ;
 +----------------+-------+---------------------------------------------------------------------+
@@ -305,73 +231,197 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; ARQ            ; 8     ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|ID:deco|Mux2:wr_mux ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                 ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                                                       ;
-+----------------+-------+--------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|ID:deco|Register_Bank:reg_bank ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                    ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                                                          ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IDEXE_Pipe:idexe_pipe ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Mux4:selector ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|ALU:alu|Zero_Flag:zero ;
-+----------------+-------+------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                             ;
-+----------------+-------+------------------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                                   ;
-+----------------+-------+------------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|Mux2:in_mux ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|EXE:execution|Branch_Unit:branch ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TOP:uut|EXEMEM_Pipe:exemem_pipe ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Adder:adder ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Substraction:subs ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; ARQ            ; 8     ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mux4:selector ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|ALU:alu|Zero_Flag:zero ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXE:execution|Branch_Unit:branch ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|EXEMEM_Pipe:exemem_pipe ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IM:mem ;
++------------------+-------+------------------------------------------+
+; Parameter Name   ; Value ; Type                                     ;
++------------------+-------+------------------------------------------+
+; MEMORY_SIZE      ; 1024  ; Signed Integer                           ;
+; MEMORY_ADDR_SIZE ; 10    ; Signed Integer                           ;
+; MEMORY_DATA_SIZE ; 16    ; Signed Integer                           ;
++------------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IM:mem|Mux2_IM:mux_mem ;
++------------------+-------+----------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                     ;
++------------------+-------+----------------------------------------------------------+
+; MEMORY_DATA_SIZE ; 16    ; Signed Integer                                           ;
++------------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|IM:mem|dataMem:mem ;
++------------------+-------+------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                 ;
++------------------+-------+------------------------------------------------------+
+; MEMORY_SIZE      ; 1024  ; Signed Integer                                       ;
+; MEMORY_ADDR_SIZE ; 10    ; Signed Integer                                       ;
+; MEMORY_DATA_SIZE ; 16    ; Signed Integer                                       ;
++------------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TOP_MEMPipe:uut|MEMWB_Pipe:memwb_pipe ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -381,7 +431,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; Top_EXE_TB         ; ASIP               ;
+; Top-level entity name                                                           ; Top_MEM_TB         ; ASIP               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -462,8 +512,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "TOP_MEMPipe:uut|IM:mem"                                                                                                                                                              ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; address ; Input ; Warning  ; Input port expression (16 bits) is wider than the input port (10 bits) it drives.  The 6 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "TOP_MEMPipe:uut|EXEMEM_Pipe:exemem_pipe"                                                           ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                ; Type   ; Severity ; Details                                                                             ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; srcdest_out[15..10] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "TOP:uut|EXE:execution|ALU:alu|Mux4:selector"                                                                                                                                               ;
+; Port Connectivity Checks: "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mux4:selector"                                                                                                                                       ;
 +--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port         ; Type  ; Severity ; Details                                                                                                                                                                             ;
 +--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -473,7 +541,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod"                                           ;
+; Port Connectivity Checks: "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod"                                   ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                                                  ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -482,7 +550,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod"                                              ;
+; Port Connectivity Checks: "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod"                                      ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                                                  ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -491,7 +559,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex"                                          ;
+; Port Connectivity Checks: "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex"                                  ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port   ; Type   ; Severity ; Details                                                                             ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
@@ -500,7 +568,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "TOP:uut|EXE:execution|ALU:alu|Substraction:subs"                                    ;
+; Port Connectivity Checks: "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Substraction:subs"                            ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -509,17 +577,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "TOP:uut|IDEXE_Pipe:idexe_pipe"                                                               ;
+; Port Connectivity Checks: "TOP_MEMPipe:uut|IDEXE_Pipe:idexe_pipe"                                                       ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port          ; Type   ; Severity ; Details                                                                             ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 ; wb_enable_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; mux_mem_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "TOP:uut|ID:deco"                                                                         ;
+; Port Connectivity Checks: "TOP_MEMPipe:uut|ID:deco"                                                                 ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -527,38 +594,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------+
-; Port Connectivity Checks: "TOP:uut|IFID_Pipe:ifid_pipe" ;
-+------+-------+----------+-------------------------------+
-; Port ; Type  ; Severity ; Details                       ;
-+------+-------+----------+-------------------------------+
-; stop ; Input ; Info     ; Stuck at GND                  ;
-+------+-------+----------+-------------------------------+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "TOP_MEMPipe:uut|IFID_Pipe:ifid_pipe" ;
++------+-------+----------+---------------------------------------+
+; Port ; Type  ; Severity ; Details                               ;
++------+-------+----------+---------------------------------------+
+; stop ; Input ; Info     ; Stuck at GND                          ;
++------+-------+----------+---------------------------------------+
 
 
-+----------------------------------------------+
-; Port Connectivity Checks: "TOP:uut|IF:fetch" ;
-+-------+-------+----------+-------------------+
-; Port  ; Type  ; Severity ; Details           ;
-+-------+-------+----------+-------------------+
-; pc_en ; Input ; Info     ; Stuck at VCC      ;
-+-------+-------+----------+-------------------+
++------------------------------------------------------+
+; Port Connectivity Checks: "TOP_MEMPipe:uut|IF:fetch" ;
++-------+-------+----------+---------------------------+
+; Port  ; Type  ; Severity ; Details                   ;
++-------+-------+----------+---------------------------+
+; pc_en ; Input ; Info     ; Stuck at VCC              ;
++-------+-------+----------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "TOP:uut"                                                                                         ;
-+-------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port              ; Type   ; Severity ; Details                                                                             ;
-+-------------------+--------+----------+-------------------------------------------------------------------------------------+
-; instr_out         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; wb_enable_mem_in  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; rd_mem_mem_in     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; wr_mem_mem_in     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pc_mem_in         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; src1_mem_in       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; src3_mem_in       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; alu_result_mem_in ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "TOP_MEMPipe:uut"                                                                                ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; instr_out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; wb_mux_contrl    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; wb_enable_wb_in  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pc_en_wb_in      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; alu_result_wb_in ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; mem_result_wb_in ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -567,10 +632,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Jun 28 15:03:01 2020
+    Info: Processing started: Mon Jun 29 23:24:52 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ASIP -c ASIP --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file top_mempipe.sv
+    Info (12023): Found entity 1: TOP_MEMPipe File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_MEMPipe.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file wb/wb.sv
     Info (12023): Found entity 1: WB File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/WB/WB.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb/if_tb.sv
@@ -679,49 +746,66 @@ Info (12021): Found 1 design units, including 1 entities, in source file top_tb/
     Info (12023): Found entity 1: Top_ID_TB File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_ID_TB.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file top_tb/top_exe_tb.sv
     Info (12023): Found entity 1: Top_EXE_TB File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_EXE_TB.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file top_tb/top_mem_tb.sv
+    Info (12023): Found entity 1: Top_MEM_TB File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_MEM_TB.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file top_tb/top_wb_tb.sv
+    Info (12023): Found entity 1: Top_WB_TB File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_WB_TB.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file top_exepipe.sv
+    Info (12023): Found entity 1: TOP_EXEPipe File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_EXEPipe.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file top_idpipe.sv
+    Info (12023): Found entity 1: TOP_IDPipe File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_IDPipe.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at TOP_IDPipe.sv(45): created implicit net for "branch_taken" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_IDPipe.sv Line: 45
+Warning (10236): Verilog HDL Implicit Net warning at TOP_IDPipe.sv(45): created implicit net for "jaddr_exe_out" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_IDPipe.sv Line: 45
+Warning (10222): Verilog HDL Parameter Declaration warning at TOP_MEMPipe.sv(5): Parameter Declaration in module "TOP_MEMPipe" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_MEMPipe.sv Line: 5
 Warning (10222): Verilog HDL Parameter Declaration warning at IF.sv(3): Parameter Declaration in module "IF" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 3
 Warning (10222): Verilog HDL Parameter Declaration warning at Instruction_Mem.sv(2): Parameter Declaration in module "Instruction_Mem" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 2
-Warning (10222): Verilog HDL Parameter Declaration warning at TOP.sv(6): Parameter Declaration in module "TOP" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv Line: 6
-Info (12127): Elaborating entity "Top_EXE_TB" for the top level hierarchy
-Warning (10755): Verilog HDL warning at Top_EXE_TB.sv(25): assignments to clk create a combinational loop File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_EXE_TB.sv Line: 25
-Info (12128): Elaborating entity "TOP" for hierarchy "TOP:uut" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_EXE_TB.sv Line: 17
-Info (12128): Elaborating entity "IF" for hierarchy "TOP:uut|IF:fetch" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv Line: 42
-Info (12128): Elaborating entity "Mux2_PC" for hierarchy "TOP:uut|IF:fetch|Mux2_PC:mux_pc" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 12
-Info (12128): Elaborating entity "pc_register" for hierarchy "TOP:uut|IF:fetch|pc_register:pc_reg" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 13
-Info (12128): Elaborating entity "Instruction_Mem" for hierarchy "TOP:uut|IF:fetch|Instruction_Mem:instruction_mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 14
+Warning (10222): Verilog HDL Parameter Declaration warning at TOP.sv(5): Parameter Declaration in module "TOP" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv Line: 5
+Warning (10222): Verilog HDL Parameter Declaration warning at TOP_IDPipe.sv(6): Parameter Declaration in module "TOP_IDPipe" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_IDPipe.sv Line: 6
+Warning (10222): Verilog HDL Parameter Declaration warning at TOP_EXEPipe.sv(6): Parameter Declaration in module "TOP_EXEPipe" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_EXEPipe.sv Line: 6
+Info (12127): Elaborating entity "Top_MEM_TB" for the top level hierarchy
+Warning (10755): Verilog HDL warning at Top_MEM_TB.sv(22): assignments to clk create a combinational loop File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_MEM_TB.sv Line: 22
+Info (12128): Elaborating entity "TOP_MEMPipe" for hierarchy "TOP_MEMPipe:uut" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_MEM_TB.sv Line: 15
+Info (12128): Elaborating entity "IF" for hierarchy "TOP_MEMPipe:uut|IF:fetch" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_MEMPipe.sv Line: 46
+Info (12128): Elaborating entity "Mux2_PC" for hierarchy "TOP_MEMPipe:uut|IF:fetch|Mux2_PC:mux_pc" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 12
+Info (12128): Elaborating entity "pc_register" for hierarchy "TOP_MEMPipe:uut|IF:fetch|pc_register:pc_reg" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 13
+Info (12128): Elaborating entity "Instruction_Mem" for hierarchy "TOP_MEMPipe:uut|IF:fetch|Instruction_Mem:instruction_mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 14
 Warning (10850): Verilog HDL warning at Instruction_Mem.sv(7): number of words (3) in memory file does not match the number of elements in the address range [0:8191] File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 7
 Warning (10030): Net "memory.data_a" at Instruction_Mem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 4
 Warning (10030): Net "memory.waddr_a" at Instruction_Mem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 4
 Warning (10030): Net "memory.we_a" at Instruction_Mem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 4
-Info (12128): Elaborating entity "plus_1" for hierarchy "TOP:uut|IF:fetch|plus_1:plus_pc" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 15
+Info (12128): Elaborating entity "plus_1" for hierarchy "TOP_MEMPipe:uut|IF:fetch|plus_1:plus_pc" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 15
 Warning (10230): Verilog HDL assignment warning at plus_1.sv(6): truncated value with size 32 to match size of target (13) File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv Line: 6
-Info (12128): Elaborating entity "IFID_Pipe" for hierarchy "TOP:uut|IFID_Pipe:ifid_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv Line: 43
-Info (12128): Elaborating entity "ID" for hierarchy "TOP:uut|ID:deco" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv Line: 46
-Info (12128): Elaborating entity "Instr_Decoder" for hierarchy "TOP:uut|ID:deco|Instr_Decoder:decoder" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 11
-Info (12128): Elaborating entity "Control_Unit" for hierarchy "TOP:uut|ID:deco|Control_Unit:control_unit" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 13
-Info (12128): Elaborating entity "Zero_Extend" for hierarchy "TOP:uut|ID:deco|Zero_Extend:zero_extend" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 15
-Info (12128): Elaborating entity "Mux2" for hierarchy "TOP:uut|ID:deco|Mux2:wr_mux" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 17
-Info (12128): Elaborating entity "Register_Bank" for hierarchy "TOP:uut|ID:deco|Register_Bank:reg_bank" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 19
-Info (12128): Elaborating entity "IDEXE_Pipe" for hierarchy "TOP:uut|IDEXE_Pipe:idexe_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv Line: 52
-Info (12128): Elaborating entity "EXE" for hierarchy "TOP:uut|EXE:execution" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv Line: 56
-Info (12128): Elaborating entity "ALU" for hierarchy "TOP:uut|EXE:execution|ALU:alu" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv Line: 11
-Info (12128): Elaborating entity "Adder" for hierarchy "TOP:uut|EXE:execution|ALU:alu|Adder:adder" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 14
-Info (12128): Elaborating entity "Substraction" for hierarchy "TOP:uut|EXE:execution|ALU:alu|Substraction:subs" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 15
-Info (12128): Elaborating entity "Mod_Exp" for hierarchy "TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 16
+Info (12128): Elaborating entity "IFID_Pipe" for hierarchy "TOP_MEMPipe:uut|IFID_Pipe:ifid_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_MEMPipe.sv Line: 47
+Info (12128): Elaborating entity "ID" for hierarchy "TOP_MEMPipe:uut|ID:deco" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_MEMPipe.sv Line: 50
+Info (12128): Elaborating entity "Instr_Decoder" for hierarchy "TOP_MEMPipe:uut|ID:deco|Instr_Decoder:decoder" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 11
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "TOP_MEMPipe:uut|ID:deco|Control_Unit:control_unit" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 13
+Info (12128): Elaborating entity "Zero_Extend" for hierarchy "TOP_MEMPipe:uut|ID:deco|Zero_Extend:zero_extend" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 15
+Info (12128): Elaborating entity "Mux2" for hierarchy "TOP_MEMPipe:uut|ID:deco|Mux2:wr_mux" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 17
+Info (12128): Elaborating entity "Register_Bank" for hierarchy "TOP_MEMPipe:uut|ID:deco|Register_Bank:reg_bank" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 19
+Info (12128): Elaborating entity "IDEXE_Pipe" for hierarchy "TOP_MEMPipe:uut|IDEXE_Pipe:idexe_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_MEMPipe.sv Line: 56
+Info (12128): Elaborating entity "EXE" for hierarchy "TOP_MEMPipe:uut|EXE:execution" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_MEMPipe.sv Line: 60
+Info (12128): Elaborating entity "ALU" for hierarchy "TOP_MEMPipe:uut|EXE:execution|ALU:alu" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv Line: 12
+Info (12128): Elaborating entity "Adder" for hierarchy "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Adder:adder" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 14
+Info (12128): Elaborating entity "Substraction" for hierarchy "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Substraction:subs" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 15
+Info (12128): Elaborating entity "Mod_Exp" for hierarchy "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 16
 Warning (10230): Verilog HDL assignment warning at Mod_Exp.sv(41): truncated value with size 32 to match size of target (16) File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv Line: 41
-Info (12128): Elaborating entity "Mod" for hierarchy "TOP:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv Line: 29
+Info (12128): Elaborating entity "Mod" for hierarchy "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv Line: 29
 Warning (10230): Verilog HDL assignment warning at Mod.sv(33): truncated value with size 17 to match size of target (16) File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv Line: 33
-Info (12128): Elaborating entity "Mux4" for hierarchy "TOP:uut|EXE:execution|ALU:alu|Mux4:selector" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 19
-Info (12128): Elaborating entity "Zero_Flag" for hierarchy "TOP:uut|EXE:execution|ALU:alu|Zero_Flag:zero" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 21
-Info (12128): Elaborating entity "Branch_Unit" for hierarchy "TOP:uut|EXE:execution|Branch_Unit:branch" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv Line: 13
-Info (12128): Elaborating entity "EXEMEM_Pipe" for hierarchy "TOP:uut|EXEMEM_Pipe:exemem_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv Line: 61
+Info (12128): Elaborating entity "Mux4" for hierarchy "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Mux4:selector" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 19
+Info (12128): Elaborating entity "Zero_Flag" for hierarchy "TOP_MEMPipe:uut|EXE:execution|ALU:alu|Zero_Flag:zero" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 21
+Info (12128): Elaborating entity "Branch_Unit" for hierarchy "TOP_MEMPipe:uut|EXE:execution|Branch_Unit:branch" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv Line: 14
+Info (12128): Elaborating entity "EXEMEM_Pipe" for hierarchy "TOP_MEMPipe:uut|EXEMEM_Pipe:exemem_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_MEMPipe.sv Line: 65
+Info (12128): Elaborating entity "IM" for hierarchy "TOP_MEMPipe:uut|IM:mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_MEMPipe.sv Line: 67
+Info (12128): Elaborating entity "Mux2_IM" for hierarchy "TOP_MEMPipe:uut|IM:mem|Mux2_IM:mux_mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/IM.sv Line: 14
+Info (12128): Elaborating entity "dataMem" for hierarchy "TOP_MEMPipe:uut|IM:mem|dataMem:mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/IM.sv Line: 15
+Info (12128): Elaborating entity "MEMWB_Pipe" for hierarchy "TOP_MEMPipe:uut|MEMWB_Pipe:memwb_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_MEMPipe.sv Line: 70
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_EXE_TB.sv Line: 9
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4785 megabytes
-    Info: Processing ended: Sun Jun 28 15:03:25 2020
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:47
+    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_MEM_TB.sv Line: 8
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Mon Jun 29 23:25:25 2020
+    Info: Elapsed time: 00:00:33
+    Info: Total CPU time (on all processors): 00:00:53
 
 
