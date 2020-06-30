@@ -15,8 +15,9 @@ module Top_WB_TB();
 	TOP uut(clk, rst, rst_ALU, wr_reg_en, instr_out, wb_enable_wb_in, wb_result_wb_out, alu_result_wb_in);
 	
 	initial begin 
-		clk = 1; rst = 1; wr_reg_en = 1;   
+		clk = 1; rst = 1; wr_reg_en = 1;    
 		#5 rst = 0; 
+
 	end 
 	
 	always #5 clk = ~clk; 

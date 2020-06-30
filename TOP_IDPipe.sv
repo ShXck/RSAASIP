@@ -1,19 +1,18 @@
-module TOP_IDPipe #(parameter ARQ = 16)(clk, rst, rst_ALU, wr_reg_en, wb_result_in, instr_out, 
-						wb_en_exe_in, rd_en_mem_exe_in, wr_en_mem_exe_in, mux_exe_in, mux_exe_mem_in, jop_lsb_exe_in, 
-								jenable_exe_in, pc_en_exe_in, src1_exe_in, src2_exe_in, src3_exe_in, imm_exe_in, 
-								alu_op_exe_in, jaddr_exe_in);
-
+ module TOP_IDPipe #(parameter ARQ = 16)(clk, rst, rst_ALU, wr_reg_en, wb_result_in, instr_out, 
+											wb_en_exe_in, rd_en_mem_exe_in, wr_en_mem_exe_in, mux_exe_in, mux_exe_mem_in, jop_lsb_exe_in, 
+											jenable_exe_in, pc_en_exe_in, src1_exe_in, src2_exe_in, src3_exe_in, imm_exe_in, 
+											alu_op_exe_in, jaddr_exe_in);  
+ 
+ 
 	parameter MEMORY_ADDR_SIZE = 13;
 	
 	input logic clk, rst, rst_ALU, wr_reg_en;
 	input logic [ARQ-1:0] wb_result_in;
-	output logic [ARQ-1:0] instr_out;
+	output logic [ARQ-1:0] instr_out, src1_exe_in, src2_exe_in, src3_exe_in, imm_exe_in;
 	
 	output logic wb_en_exe_in, rd_en_mem_exe_in, wr_en_mem_exe_in, mux_exe_in, mux_exe_mem_in, jop_lsb_exe_in, jenable_exe_in, pc_en_exe_in;
-	output logic[ARQ-1:0] src1_exe_in, src2_exe_in, src3_exe_in, imm_exe_in;
 	output logic[1:0] alu_op_exe_in;
 	output logic[12:0] jaddr_exe_in;
-	
 	
 	//IF 
 	logic pc_en=1, stop=0; 
@@ -30,10 +29,10 @@ module TOP_IDPipe #(parameter ARQ = 16)(clk, rst, rst_ALU, wr_reg_en, wb_result_
 	jenable_exe_in, pc_en_exe_in;
 	logic [ARQ-1:0] src1_exe_in, src2_exe_in, src3_exe_in, imm_exe_in;
 	logic [1:0] alu_op_exe_in;
-	logic [MEMORY_ADDR_SIZE-1:0] jaddr_exe_in;*/
+	logic [MEMORY_ADDR_SIZE-1:0] jaddr_exe_in;
 	
 	//EXE
-	/*logic[ARQ - 1:0] alu_result;
+	logic[ARQ - 1:0] alu_result;
 	logic branch_taken;
 	logic[MEMORY_ADDR_SIZE-1:0] jaddr_exe_out;*/
 	
@@ -47,11 +46,6 @@ module TOP_IDPipe #(parameter ARQ = 16)(clk, rst, rst_ALU, wr_reg_en, wb_result_
 	
 	ID deco(instr_out, wb_result_in, clk, rst, wr_reg_en, src1_in, src2_in, src3_in, imm, addr, jop_lsb, rd_mem_en, 
 				wr_mem_en, mux_exe, mux_mem, jenable, pc_en_out, wb_enable_out, alu_op);
-				
-	/* module ID #(parameter ARQ = 16)(input logic[ARQ - 1:0] instr, wb_result, input logic clk, rst, wr_register,
-											output logic[ARQ - 1:0] out1, out2, out3, imm, output logic[12:0] addr, 
-											output logic jop_lsb, rd_mem_en, wr_mem_en, mux_exe, mux_mem, jenable, pc_en, wb_enable,
-											output logic[1:0] alu_op);*/
 
 	IDEXE_Pipe idexe_pipe(clk, rst, wr_reg_en, rd_mem_en, wr_mem_en, mux_exe, mux_mem, jop_lsb, jenable, pc_en_out, 
 								src1_in, src2_in, src3_in, imm, alu_op, addr, 

@@ -10,303 +10,313 @@
 # Copying D:/Programs/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_MEMPipe.sv}
+# vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/WB {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/WB/WB.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:37 on Jun 29,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_MEMPipe.sv 
-# -- Compiling module TOP_MEMPipe
+# Start time: 12:44:25 on Jun 30,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/WB" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/WB/WB.sv 
+# -- Compiling module WB
 # 
 # Top level modules:
-# 	TOP_MEMPipe
-# End time: 23:25:37 on Jun 29,2020, Elapsed time: 0:00:00
+# 	WB
+# End time: 12:44:25 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IFID_Pipe.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:37 on Jun 29,2020
+# Start time: 12:44:25 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IFID_Pipe.sv 
 # -- Compiling module IFID_Pipe
 # 
 # Top level modules:
 # 	IFID_Pipe
-# End time: 23:25:37 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:25 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:38 on Jun 29,2020
+# Start time: 12:44:25 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv 
 # -- Compiling module plus_1
 # 
 # Top level modules:
 # 	plus_1
-# End time: 23:25:38 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:25 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/pc_register.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:38 on Jun 29,2020
+# Start time: 12:44:25 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/pc_register.sv 
 # -- Compiling module pc_register
 # 
 # Top level modules:
 # 	pc_register
-# End time: 23:25:38 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:26 on Jun 30,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Mux2_PC.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:38 on Jun 29,2020
+# Start time: 12:44:26 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Mux2_PC.sv 
 # -- Compiling module Mux2_PC
 # 
 # Top level modules:
 # 	Mux2_PC
-# End time: 23:25:38 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:26 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:38 on Jun 29,2020
+# Start time: 12:44:26 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv 
 # -- Compiling module IF
 # 
 # Top level modules:
 # 	IF
-# End time: 23:25:38 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:26 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/Mux2_IM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:38 on Jun 29,2020
+# Start time: 12:44:26 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/Mux2_IM.sv 
 # -- Compiling module Mux2_IM
 # 
 # Top level modules:
 # 	Mux2_IM
-# End time: 23:25:38 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:26 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/IM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:38 on Jun 29,2020
+# Start time: 12:44:26 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/IM.sv 
 # -- Compiling module IM
 # 
 # Top level modules:
 # 	IM
-# End time: 23:25:38 on Jun 29,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/dataMem.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:38 on Jun 29,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/dataMem.sv 
-# -- Compiling module dataMem
-# 
-# Top level modules:
-# 	dataMem
-# End time: 23:25:39 on Jun 29,2020, Elapsed time: 0:00:01
+# End time: 12:44:26 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Mux2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:39 on Jun 29,2020
+# Start time: 12:44:26 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Mux2.sv 
 # -- Compiling module Mux2
 # 
 # Top level modules:
 # 	Mux2
-# End time: 23:25:39 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:26 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Zero_Extend.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:39 on Jun 29,2020
+# Start time: 12:44:27 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Zero_Extend.sv 
 # -- Compiling module Zero_Extend
 # 
 # Top level modules:
 # 	Zero_Extend
-# End time: 23:25:39 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:27 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:39 on Jun 29,2020
+# Start time: 12:44:27 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Adder.sv 
 # -- Compiling module Adder
 # 
 # Top level modules:
 # 	Adder
-# End time: 23:25:39 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:27 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:39 on Jun 29,2020
+# Start time: 12:44:27 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 23:25:39 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:27 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Substraction.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:39 on Jun 29,2020
+# Start time: 12:44:27 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Substraction.sv 
 # -- Compiling module Substraction
 # 
 # Top level modules:
 # 	Substraction
-# End time: 23:25:39 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:27 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mux4.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:39 on Jun 29,2020
+# Start time: 12:44:27 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mux4.sv 
 # -- Compiling module Mux4
 # 
 # Top level modules:
 # 	Mux4
-# End time: 23:25:39 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:27 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Zero_Flag.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:39 on Jun 29,2020
+# Start time: 12:44:27 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Zero_Flag.sv 
 # -- Compiling module Zero_Flag
 # 
 # Top level modules:
 # 	Zero_Flag
-# End time: 23:25:40 on Jun 29,2020, Elapsed time: 0:00:01
+# End time: 12:44:27 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:40 on Jun 29,2020
+# Start time: 12:44:27 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv 
 # -- Compiling module Mod
 # 
 # Top level modules:
 # 	Mod
-# End time: 23:25:40 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:27 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:40 on Jun 29,2020
+# Start time: 12:44:27 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv 
 # -- Compiling module Mod_Exp
 # 
 # Top level modules:
 # 	Mod_Exp
-# End time: 23:25:40 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:28 on Jun 30,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Branch_Unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:40 on Jun 29,2020
+# Start time: 12:44:28 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Branch_Unit.sv 
 # -- Compiling module Branch_Unit
 # 
 # Top level modules:
 # 	Branch_Unit
-# End time: 23:25:40 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:28 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Instr_Decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:40 on Jun 29,2020
+# Start time: 12:44:28 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Instr_Decoder.sv 
 # -- Compiling module Instr_Decoder
 # 
 # Top level modules:
 # 	Instr_Decoder
-# End time: 23:25:40 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:28 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Register_Bank.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:40 on Jun 29,2020
+# Start time: 12:44:28 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Register_Bank.sv 
 # -- Compiling module Register_Bank
 # 
 # Top level modules:
 # 	Register_Bank
-# End time: 23:25:40 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:28 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:40 on Jun 29,2020
+# Start time: 12:44:28 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv 
 # -- Compiling module ID
 # 
 # Top level modules:
 # 	ID
-# End time: 23:25:41 on Jun 29,2020, Elapsed time: 0:00:01
+# End time: 12:44:28 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:41 on Jun 29,2020
+# Start time: 12:44:28 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv 
 # -- Compiling module EXE
 # 
 # Top level modules:
 # 	EXE
-# End time: 23:25:41 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:29 on Jun 30,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IDEXE_Pipe.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:41 on Jun 29,2020
+# Start time: 12:44:29 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IDEXE_Pipe.sv 
 # -- Compiling module IDEXE_Pipe
 # 
 # Top level modules:
 # 	IDEXE_Pipe
-# End time: 23:25:41 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:29 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/EXEMEM_Pipe.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:41 on Jun 29,2020
+# Start time: 12:44:29 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/EXEMEM_Pipe.sv 
 # -- Compiling module EXEMEM_Pipe
 # 
 # Top level modules:
 # 	EXEMEM_Pipe
-# End time: 23:25:41 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:29 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/MEMWB_Pipe.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:41 on Jun 29,2020
+# Start time: 12:44:29 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/MEMWB_Pipe.sv 
 # -- Compiling module MEMWB_Pipe
 # 
 # Top level modules:
 # 	MEMWB_Pipe
-# End time: 23:25:41 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:29 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Control_Unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:41 on Jun 29,2020
+# Start time: 12:44:29 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Control_Unit.sv 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 23:25:41 on Jun 29,2020, Elapsed time: 0:00:00
+# End time: 12:44:29 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_MEM_TB.sv}
+# vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:41 on Jun 29,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_MEM_TB.sv 
-# -- Compiling module Top_MEM_TB
+# Start time: 12:44:29 on Jun 30,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv 
+# -- Compiling module TOP
 # 
 # Top level modules:
-# 	Top_MEM_TB
-# End time: 23:25:41 on Jun 29,2020, Elapsed time: 0:00:00
+# 	TOP
+# End time: 12:44:29 on Jun 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_WB_TB.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:44:30 on Jun 30,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_tb/Top_WB_TB.sv 
+# -- Compiling module Top_WB_TB
+# 
+# Top level modules:
+# 	Top_WB_TB
+# End time: 12:44:30 on Jun 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/dataMem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:44:30 on Jun 30,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/dataMem.sv 
+# -- Compiling module dataMem
+# 
+# Top level modules:
+# 	dataMem
+# End time: 12:44:30 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF {C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:25:41 on Jun 29,2020
+# Start time: 12:44:30 on Jun 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF" C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv 
 # -- Compiling module Instruction_Mem
 # 
 # Top level modules:
 # 	Instruction_Mem
-# End time: 23:25:42 on Jun 29,2020, Elapsed time: 0:00:01
+# End time: 12:44:30 on Jun 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.Top_MEM_TB
-# vsim work.Top_MEM_TB 
-# Start time: 23:26:37 on Jun 29,2020
+vsim work.Top_WB_TB
+# vsim work.Top_WB_TB 
+# Start time: 12:44:33 on Jun 30,2020
 # Loading sv_std.std
-# Loading work.Top_MEM_TB
-# Loading work.TOP_MEMPipe
+# Loading work.Top_WB_TB
+# Loading work.TOP
 # Loading work.IF
 # Loading work.Mux2_PC
 # Loading work.pc_register
@@ -334,34 +344,32 @@ vsim work.Top_MEM_TB
 # Loading work.Mux2_IM
 # Loading work.dataMem
 # Loading work.MEMWB_Pipe
+# Loading work.WB
 # ** Warning: (vsim-3017) C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv(29): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ps  Iteration: 0  Instance: /Top_MEM_TB/uut/execution/alu/modex/base_squared_mod File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv
+#    Time: 0 ps  Iteration: 0  Instance: /Top_WB_TB/uut/execution/alu/modex/base_squared_mod File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv
 # ** Warning: (vsim-3722) C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv(29): [TFMPC] - Missing connection for port 'div_result'.
 # ** Warning: (vsim-3017) C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv(32): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ps  Iteration: 0  Instance: /Top_MEM_TB/uut/execution/alu/modex/result_mul_base_mod File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv
+#    Time: 0 ps  Iteration: 0  Instance: /Top_WB_TB/uut/execution/alu/modex/result_mul_base_mod File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv
 # ** Warning: (vsim-3722) C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv(32): [TFMPC] - Missing connection for port 'div_result'.
 # ** Warning: (vsim-3015) C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv(19): [PCDPC] - Port size (16) does not match connection size (32) for port 'data4'. The port definition is at: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mux4.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_MEM_TB/uut/execution/alu/selector File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mux4.sv
-# ** Warning: (vsim-3015) C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP_MEMPipe.sv(67): [PCDPC] - Port size (10) does not match connection size (16) for port 'address'. The port definition is at: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/IM.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_MEM_TB/uut/mem File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/IM.sv
-# ** Warning: (vsim-3839) C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv(9): Variable '/Top_MEM_TB/uut/fetch/addr_in', driven via a port connection, is multiply driven. See C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv(15).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_MEM_TB/uut/fetch File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv
-add wave -position end  sim:/Top_MEM_TB/alu_result_wb_in
-add wave -position end  sim:/Top_MEM_TB/clk
-add wave -position end  sim:/Top_MEM_TB/instr_out
-add wave -position end  sim:/Top_MEM_TB/mem_result_wb_in
-add wave -position end  sim:/Top_MEM_TB/pc_en_wb_in
-add wave -position end  sim:/Top_MEM_TB/rst
-add wave -position end  sim:/Top_MEM_TB/rst_ALU
-add wave -position end  sim:/Top_MEM_TB/wb_enable_wb_in
-add wave -position end  sim:/Top_MEM_TB/wb_mux_contrl
-add wave -position end  sim:/Top_MEM_TB/wb_result_in
-add wave -position end  sim:/Top_MEM_TB/wr_reg_en
+#    Time: 0 ps  Iteration: 0  Instance: /Top_WB_TB/uut/execution/alu/selector File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mux4.sv
+# ** Warning: (vsim-3015) C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/TOP.sv(66): [PCDPC] - Port size (10) does not match connection size (16) for port 'address'. The port definition is at: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/IM.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_WB_TB/uut/mem File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/IM.sv
+# ** Warning: (vsim-3839) C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv(9): Variable '/Top_WB_TB/uut/fetch/addr_in', driven via a port connection, is multiply driven. See C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv(15).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_WB_TB/uut/fetch File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv
+add wave -position end  sim:/Top_WB_TB/alu_result_wb_in
+add wave -position end  sim:/Top_WB_TB/clk
+add wave -position end  sim:/Top_WB_TB/instr_out
+add wave -position end  sim:/Top_WB_TB/rst
+add wave -position end  sim:/Top_WB_TB/rst_ALU
+add wave -position end  sim:/Top_WB_TB/wb_enable_wb_in
+add wave -position end  sim:/Top_WB_TB/wb_result_wb_out
+add wave -position end  sim:/Top_WB_TB/wr_reg_en
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: DELL  Hostname: DESKTOP-VM7QFMR  ProcessID: 11200
-#           Attempting to use alternate WLF file "./wlft536gh5".
+#           Attempting to use alternate WLF file "./wlft0vs345".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft536gh5
+#           Using alternate file: ./wlft0vs345
 run -all
-# End time: 23:27:03 on Jun 29,2020, Elapsed time: 0:00:26
+# End time: 12:44:56 on Jun 30,2020, Elapsed time: 0:00:23
 # Errors: 0, Warnings: 9

@@ -48,131 +48,123 @@
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[0]",
+					"name" : "wb_en_exe_in",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[1]",
+					"name" : "wr_en_mem_exe_in",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[2]",
+					"name" : "mux_exe_mem_in",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[0]",
+					"name" : "pc_en_exe_in",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[1]",
+					"name" : "src1_exe_in[0]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[2]",
+					"name" : "src1_exe_in[1]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[3]",
+					"name" : "src1_exe_in[2]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[4]",
+					"name" : "src1_exe_in[3]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[5]",
+					"name" : "src1_exe_in[4]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[6]",
+					"name" : "src1_exe_in[8]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[7]",
+					"name" : "src2_exe_in[0]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[8]",
+					"name" : "src2_exe_in[1]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[9]",
+					"name" : "src2_exe_in[2]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[10]",
+					"name" : "src2_exe_in[3]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[11]",
+					"name" : "src2_exe_in[4]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[12]",
+					"name" : "src2_exe_in[8]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[13]",
+					"name" : "src3_exe_in[0]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[14]",
+					"name" : "src3_exe_in[1]",
 					"strict" : false
 				},
 				{
-					"name" : "wb_result_wb_out[15]",
+					"name" : "src3_exe_in[2]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[3]",
+					"name" : "src3_exe_in[3]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[4]",
+					"name" : "src3_exe_in[4]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[5]",
+					"name" : "src3_exe_in[8]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[6]",
+					"name" : "imm_exe_in[0]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[7]",
+					"name" : "imm_exe_in[1]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[8]",
+					"name" : "imm_exe_in[2]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[9]",
+					"name" : "imm_exe_in[3]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[10]",
+					"name" : "imm_exe_in[4]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[11]",
+					"name" : "imm_exe_in[8]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[12]",
+					"name" : "alu_op_exe_in[0]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_result_wb_in[13]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_wb_in[14]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_wb_in[15]",
+					"name" : "alu_op_exe_in[1]",
 					"strict" : false
 				},
 				{
@@ -184,7 +176,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst_ALU",
+					"name" : "wr_reg_en",
 					"strict" : false
 				}
 			]
