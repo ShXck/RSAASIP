@@ -1,5 +1,5 @@
 
-State Machine - |TOP|EXE:execution|ALU:alu|Mod_Exp:modex|state
+State Machine - |ProcessorEXE|EXE:exe|ALU:alu|Mod_Exp:modex|state
 Name state.10 
 state.01 0 
 state.10 1 

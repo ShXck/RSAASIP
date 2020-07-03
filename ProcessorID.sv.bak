@@ -1,0 +1,40 @@
+module Processor #(parameter ARQ = 16)(clk, rst, rst_alu, pc_enable, instr_out,  // IF
+													wb_result_in, wr_reg_en, src1, src2, src3, imm, mux_exe, alu_op);
+	
+	parameter MEM_ADDR = 13;
+	
+	//IF 
+	input logic clk, rst, rst_alu, pc_enable;
+	output logic[ARQ-1:0] instr_out;
+	
+	//ID 
+	input logic[ARQ-1:0] wb_result_in;
+	input logic wr_reg_en;
+	output logic[ARQ-1:0] src1, src2, src3, imm;
+	output logic mux_exe;
+	output logic[1:0] alu_op;
+	
+	// IF Linkers
+	logic branch_taken = 0;
+	logic[MEM_ADDR-1:0] jump_address = 13'd4;
+	logic[ARQ-1:0] instr;
+	
+	// ID Linkers
+	logic[MEM_ADDR-1:0] jaddr;
+	logic jop_lsb, rd_mem_en, wr_mem_en, mux_mem, jenable, pc_en_out, wb_enable_out;
+	
+	IF fetch(clk, rst, pc_enable, branch_taken, jump_address, instr);
+	
+	IFID_Pipe ifid_pipe(clk, rst, 0, instr, instr_out);
+	
+	ID deco(instr_out, wb_result_in, clk, rst, wr_reg_en, src1, src2, src3, imm, jaddr, jop_lsb, rd_mem_en, 
+			wr_mem_en, mux_exe, mux_mem, jenable, pc_en_out, wb_enable_out, alu_op);
+			
+	/* module ID #(parameter ARQ = 16)(input logic[ARQ - 1:0] instr, wb_result, input logic clk, rst, wr_register,
+											output logic[ARQ - 1:0] out1, out2, out3, imm, output logic[12:0] addr, 
+											output logic jop_lsb, rd_mem_en, wr_mem_en, mux_exe, mux_mem, jenable, pc_en, wb_enable,
+											output logic[1:0] alu_op);*/
+	
+
+endmodule
+

@@ -1,0 +1,17 @@
+module Processor_TB();
+
+	logic clk, rst, rst_alu, pc_enable;
+	logic[ARQ-1:0] instr_out;
+	
+	Processor uut(clk, rst, rst_alu, pc_enable, instr_out);
+	
+	initial begin
+		clk = 1; rst = 1; rst_alu = 1; pc_enable = 0;
+		#10 rst = 0; rst_alu = 0; pc_enable = 1;
+		#10 pc_enable = 0;
+	
+	end
+	
+	always #5 clk = ~clk;
+
+endmodule

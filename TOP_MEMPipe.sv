@@ -1,5 +1,6 @@
- module TOP_MEMPipe #(parameter ARQ = 16)(clk, rst, rst_ALU, wr_reg_en, wb_result_in, instr_out, 
-											 wb_mux_contrl, wb_enable_wb_in, pc_en_wb_in,  alu_result_wb_in, mem_result_wb_in);  
+ module TOP_MEMPipe #(parameter ARQ = 16)(clk, rst, rst_ALU, wr_reg_en, wb_result_in, instr_out,
+														mem_data_out, wb_mux_contrl, wb_enable_wb_in, pc_en_wb_in,
+														alu_result_wb_in, mem_result_wb_in);  
  
  
 	parameter MEMORY_ADDR_SIZE = 13;
@@ -8,9 +9,11 @@
 	input logic [ARQ-1:0] wb_result_in;
 	output logic [ARQ-1:0] instr_out;
 	
-	output logic[ARQ - 1:0] alu_result_wb_in, mem_result_wb_in;
-	output logic wb_mux_contrl, wb_enable_wb_in, pc_en_wb_in;
+	output logic [ARQ-1:0] mem_data_out;
 	
+	output logic wb_mux_contrl, wb_enable_wb_in, pc_en_wb_in;
+	output logic[ARQ-1:0] alu_result_wb_in, mem_result_wb_in;
+
 	//IF 
 	logic pc_en=1, stop=0; 
 	logic [ARQ-1:0] instr;
@@ -32,15 +35,18 @@
 	logic[ARQ - 1:0] alu_result;
 	logic branch_taken;
 	logic[MEMORY_ADDR_SIZE-1:0] jaddr_exe_out;
+	//logic[ARQ - 1:0] alu_result_mem_in, src3_mem_in, src1_mem_in;
+	//logic pc_mem_in, wb_enable_mem_in, rd_mem_mem_in, wr_mem_mem_in, mux_mem_out;
+	logic pc_mem_in, wb_enable_mem_in;
 	
 	//MEM
-	logic wb_enable_mem_in, rd_mem_mem_in, wr_mem_mem_in, pc_mem_in, mux_mem_out;
-	logic[ARQ-1:0] src1_mem_in, src3_mem_in, alu_result_mem_in, mem_data_out;
+	//logic [ARQ-1:0] mem_data_out;
+	logic rd_mem_mem_in, wr_mem_mem_in;
+	logic[ARQ-1:0] src1_mem_in, src3_mem_in, alu_result_mem_in;
 	
 	//WB
-	/*logic wb_mux_contrl, wb_enable_wb_in, pc_en_wb_in;
-	logic[ARQ-1:0] alu_result_wb_in, mem_result_wb_in;*/
-	
+	//logic wb_mux_contrl, wb_enable_wb_in, pc_en_wb_in;
+	//logic[ARQ-1:0] alu_result_wb_in, mem_result_wb_in;
 	
 
 	IF fetch(clk, rst, pc_en, branch_taken, jaddr_exe_out,  instr);
@@ -64,19 +70,16 @@
 									wb_enable_mem_in, rd_mem_mem_in, wr_mem_mem_in, mux_mem_out, pc_mem_in, src1_mem_in, src3_mem_in,
 									alu_result_mem_in);
 									
-	IM mem(clk, rst, rd_mem_mem_in, wr_mem_mem_in, mux_mem_out, src3_mem_in, alu_result_mem_in, src1_mem_in, mem_data_out);
+	IM memory(clk, rst, rd_mem_mem_in, wr_mem_mem_in, mux_mem_out, 
+				src3_mem_in, alu_result_mem_in, src1_mem_in, mem_data_out);
+				
+				/* module IM (clk, rst, readEn, writeEn, mux_sel, address, data_ALU, data_Reg, dataOut);*/
+				
+				
+	MEMWB_Pipe memwb_pipe(clk, rst, rd_mem_mem_in, wb_enable_mem_in, pc_mem_in, 
+								alu_result_mem_in, mem_data_out,
+								wb_mux_contrl, wb_enable_wb_in, pc_en_wb_in, alu_result_wb_in, mem_result_wb_in);
 	
-	MEMWB_Pipe memwb_pipe(clk, rst, rd_mem_mem_in, wb_enable_mem_in, pc_mem_in, alu_result_mem_in, mem_data_out,
-								wb_mux_contrl, wb_enable_wb_in, pc_en_wb_in,  alu_result_wb_in, mem_result_wb_in);
-
 	
-	/*module WB #(parameter ARQ = 16) 
-				(input logic [ARQ-1:0] ALU_value, mem_value, input logic mux_sel, 
-				output logic [ARQ-1:0] wb_result);*/
-									
-									
-						 
-	
-
  endmodule
  

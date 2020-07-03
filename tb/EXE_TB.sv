@@ -8,7 +8,7 @@ logic clk, rst, mux_exe, jenable;
 logic[1:0] alu_op; 
 logic[ARQ - 1:0] src1, src2, srcdest, imm, alu_result;
 logic branch_taken, jop_lsb;
-logic[12:0] jaddr_out, jaddr;
+logic[12:0] jaddr_out, jaddr; 
 
 EXE uut(clk, rst, mux_exe, jop_lsb, jenable, alu_op, src1, src2, srcdest, imm, jaddr, alu_result, branch_taken, jaddr_out);
 

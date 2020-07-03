@@ -13,16 +13,10 @@ module dataMem (clk, rst, writeEn, readEn, address, dataIn, dataOut);
 	integer i;
 	reg [MEMORY_DATA_SIZE-1:0] memory [0:MEMORY_SIZE-1];
 	
-	initial 
-	begin
-		$readmemb("pixels.dat", memory);
-	end
-		
 	always @ (negedge clk) begin
 		if (rst) begin
-		for (i = 0; i < MEMORY_SIZE - 1; i = i + 1)
-		  memory[i] <= 0;
-		 end
+			$readmemb("pixels.dat", memory);
+		end
 
 		else if (writeEn) memory[address] <= dataIn;	 
 	end
@@ -34,5 +28,4 @@ module dataMem (clk, rst, writeEn, readEn, address, dataIn, dataOut);
 	end
 
 endmodule 
-
  

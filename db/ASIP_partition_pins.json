@@ -48,22 +48,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "wb_en_exe_in",
-					"strict" : false
-				},
-				{
-					"name" : "wr_en_mem_exe_in",
-					"strict" : false
-				},
-				{
-					"name" : "mux_exe_mem_in",
-					"strict" : false
-				},
-				{
-					"name" : "pc_en_exe_in",
-					"strict" : false
-				},
-				{
 					"name" : "src1_exe_in[0]",
 					"strict" : false
 				},
@@ -84,7 +68,47 @@
 					"strict" : false
 				},
 				{
+					"name" : "src1_exe_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "src1_exe_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "src1_exe_in[7]",
+					"strict" : false
+				},
+				{
 					"name" : "src1_exe_in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "src1_exe_in[9]",
+					"strict" : false
+				},
+				{
+					"name" : "src1_exe_in[10]",
+					"strict" : false
+				},
+				{
+					"name" : "src1_exe_in[11]",
+					"strict" : false
+				},
+				{
+					"name" : "src1_exe_in[12]",
+					"strict" : false
+				},
+				{
+					"name" : "src1_exe_in[13]",
+					"strict" : false
+				},
+				{
+					"name" : "src1_exe_in[14]",
+					"strict" : false
+				},
+				{
+					"name" : "src1_exe_in[15]",
 					"strict" : false
 				},
 				{
@@ -108,7 +132,47 @@
 					"strict" : false
 				},
 				{
+					"name" : "src2_exe_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "src2_exe_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "src2_exe_in[7]",
+					"strict" : false
+				},
+				{
 					"name" : "src2_exe_in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "src2_exe_in[9]",
+					"strict" : false
+				},
+				{
+					"name" : "src2_exe_in[10]",
+					"strict" : false
+				},
+				{
+					"name" : "src2_exe_in[11]",
+					"strict" : false
+				},
+				{
+					"name" : "src2_exe_in[12]",
+					"strict" : false
+				},
+				{
+					"name" : "src2_exe_in[13]",
+					"strict" : false
+				},
+				{
+					"name" : "src2_exe_in[14]",
+					"strict" : false
+				},
+				{
+					"name" : "src2_exe_in[15]",
 					"strict" : false
 				},
 				{
@@ -132,7 +196,47 @@
 					"strict" : false
 				},
 				{
+					"name" : "src3_exe_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "src3_exe_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "src3_exe_in[7]",
+					"strict" : false
+				},
+				{
 					"name" : "src3_exe_in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "src3_exe_in[9]",
+					"strict" : false
+				},
+				{
+					"name" : "src3_exe_in[10]",
+					"strict" : false
+				},
+				{
+					"name" : "src3_exe_in[11]",
+					"strict" : false
+				},
+				{
+					"name" : "src3_exe_in[12]",
+					"strict" : false
+				},
+				{
+					"name" : "src3_exe_in[13]",
+					"strict" : false
+				},
+				{
+					"name" : "src3_exe_in[14]",
+					"strict" : false
+				},
+				{
+					"name" : "src3_exe_in[15]",
 					"strict" : false
 				},
 				{
@@ -160,11 +264,71 @@
 					"strict" : false
 				},
 				{
-					"name" : "alu_op_exe_in[0]",
+					"name" : "alu_result_mem_in[0]",
 					"strict" : false
 				},
 				{
-					"name" : "alu_op_exe_in[1]",
+					"name" : "alu_result_mem_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[9]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[10]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[11]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[12]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[13]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[14]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_result_mem_in[15]",
+					"strict" : false
+				},
+				{
+					"name" : "wb_enable_mem_in",
 					"strict" : false
 				},
 				{
@@ -176,7 +340,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "wr_reg_en",
+					"name" : "rst_alu",
+					"strict" : false
+				},
+				{
+					"name" : "pc_enable",
 					"strict" : false
 				}
 			]

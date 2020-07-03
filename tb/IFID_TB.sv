@@ -13,8 +13,7 @@ module IFID_TB();
 		clk = 0; rst = 1; stop = 0;
 		#100 rst = 0; instr_in = 16'b0000100000010000;
 		#100 instr_in = 16'b0000101100010000; stop = 1;
-		#100 stop = 0;
-		
+		#100 stop = 0;	
 	end
 	
 always #5 clk = ~clk;

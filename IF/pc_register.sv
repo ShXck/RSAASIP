@@ -13,7 +13,7 @@ module pc_register (clk, rst, pc_en, addr_in, addr_out);
 		else next_addr_out <= addr_in;
 	end
   
-	always @ (negedge clk & pc_en) 
+	always @ (negedge clk & pc_en)
 		addr_out <= next_addr_out;
   
 endmodule 

@@ -18,7 +18,7 @@ module Top_EXE_TB();
 				 
 	initial begin 
 		clk = 1; rst = 1; wb_result_in = 16'd2; wr_reg_en = 1;   
-		#5 rst = 0; 
+		#10 rst = 0; 
 	end 
 	
 	always #5 clk = ~clk; 

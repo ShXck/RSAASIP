@@ -1,0 +1,15 @@
+module pc_cntr_TB();
+
+	logic clk, rst;
+	logic[2:0] count;
+	
+	pc_counter uut(clk, rst, count);
+	
+	initial begin
+		clk = 0; rst = 1;
+		#5 rst = 0;
+	end
+	
+	always #5 clk = ~clk; 
+	
+endmodule
