@@ -13,6 +13,7 @@
 	
 	Mux2_IM mux_mem(data_ALU, data_Reg, mux_sel, data_mux);
 	dataMem mem(clk, rst, writeEn, readEn, address, data_mux, dataOut);
+
 	
  endmodule
  

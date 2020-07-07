@@ -1,0 +1,21 @@
+module Zero_32_TB();
+		
+	parameter ARQ = 16;
+	
+	logic[ARQ-1:0] in;
+	logic[2*ARQ-1:0] out;
+	
+	Zero_Ext_32 uut(in, out);
+	
+	initial begin
+	
+	#10;
+	#10 in = 16'd6;
+	#10 in = 16'd150;
+	#10 in = 16'd258;
+	#10;
+	end
+
+
+
+endmodule

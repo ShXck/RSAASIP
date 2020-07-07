@@ -1,3 +1,5 @@
+import sys
+
 # register dict
 registers = {'A0': '000',
              'A1': '001',
@@ -38,7 +40,6 @@ def get_jump_addr(jumps, tag):
 def decode(instr):
     instr_split = clean_instr(instr.split(" "))
     dec_instr = ""
-    print(instr_split)
     if instr_split[0] not in instructions:
         raise Exception("Instrucion " + instr_split[0] + " does not exist.")
     else:
@@ -71,23 +72,25 @@ def decode(instr):
     return dec_instr
 
 
-asm_file = open("program.txt", "r")
+asm_file = open(sys.argv[1], "r")
 
 compiled_asm = open("memfile.dat", "w")
-compiled_asm.close()
 
 jump_tags = []
 line_numbr = 0
 
+
 for line in asm_file:
     if line[0] != '_':
         comp_file = open("memfile.dat", "a")
-        comp_file.writelines(decode(line) + "\n")
+        for i in range(3):
+            comp_file.writelines(decode(line) + "\n")
     else:
         if line_numbr != 0:
-            jump_tags.append((line.replace("\n", "").replace(":", ""), line_numbr - 1))
+            jump_tags.append((line.replace("\n", "").replace(":", ""), 3 * line_numbr))
         else:
             jump_tags.append((line.replace("\n", "").replace(":", ""), line_numbr))
     line_numbr += 1
 
+compiled_asm.close()
 asm_file.close()

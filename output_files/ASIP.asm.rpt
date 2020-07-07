@@ -1,5 +1,5 @@
 Assembler report for ASIP
-Sat Jun 13 15:18:28 2020
+Mon Jul 06 22:55:39 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/DELL/Desktop/Proyecto2-Arqui/output_files/ASIP.sof
+  5. Assembler Device Options: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/output_files/ASIP.sof
   6. Assembler Messages
 
 
@@ -37,9 +37,9 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Jun 13 15:18:28 2020 ;
+; Assembler Status      ; Successful - Mon Jul 06 22:55:39 2020 ;
 ; Revision Name         ; ASIP                                  ;
-; Top-level Entity Name ; Mod_Exp                               ;
+; Top-level Entity Name ; ProcessorMEM                          ;
 ; Family                ; Cyclone V                             ;
 ; Device                ; 5CGXFC7C7F23C8                        ;
 +-----------------------+---------------------------------------+
@@ -52,23 +52,23 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+-------------------------------------------------------------+
-; Assembler Generated Files                                   ;
-+-------------------------------------------------------------+
-; File Name                                                   ;
-+-------------------------------------------------------------+
-; C:/Users/DELL/Desktop/Proyecto2-Arqui/output_files/ASIP.sof ;
-+-------------------------------------------------------------+
++--------------------------------------------------------------------+
+; Assembler Generated Files                                          ;
++--------------------------------------------------------------------+
+; File Name                                                          ;
++--------------------------------------------------------------------+
+; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/output_files/ASIP.sof ;
++--------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/DELL/Desktop/Proyecto2-Arqui/output_files/ASIP.sof ;
-+----------------+----------------------------------------------------------------------+
-; Option         ; Setting                                                              ;
-+----------------+----------------------------------------------------------------------+
-; JTAG usercode  ; 0x013819C7                                                           ;
-; Checksum       ; 0x013819C7                                                           ;
-+----------------+----------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/output_files/ASIP.sof ;
++----------------+-----------------------------------------------------------------------------+
+; Option         ; Setting                                                                     ;
++----------------+-----------------------------------------------------------------------------+
+; JTAG usercode  ; 0x02392188                                                                  ;
+; Checksum       ; 0x02392188                                                                  ;
++----------------+-----------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -77,14 +77,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Jun 13 15:18:08 2020
+    Info: Processing started: Mon Jul 06 22:55:11 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ASIP -c ASIP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4848 megabytes
-    Info: Processing ended: Sat Jun 13 15:18:28 2020
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 4986 megabytes
+    Info: Processing ended: Mon Jul 06 22:55:39 2020
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:27
 
 

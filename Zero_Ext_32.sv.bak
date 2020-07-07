@@ -1,0 +1,6 @@
+module Zero_Ext_32 #(parameter ARQ = 16)(in, out);
+
+	
+	
+
+endmodule

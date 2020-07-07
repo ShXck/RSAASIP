@@ -4,331 +4,139 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "instr_out[0]",
+					"name" : "encripted_32[0]",
 					"strict" : false
 				},
 				{
-					"name" : "instr_out[1]",
+					"name" : "encripted_32[1]",
 					"strict" : false
 				},
 				{
-					"name" : "instr_out[2]",
+					"name" : "encripted_32[2]",
 					"strict" : false
 				},
 				{
-					"name" : "instr_out[3]",
+					"name" : "encripted_32[3]",
 					"strict" : false
 				},
 				{
-					"name" : "instr_out[4]",
+					"name" : "encripted_32[4]",
 					"strict" : false
 				},
 				{
-					"name" : "instr_out[8]",
+					"name" : "encripted_32[5]",
 					"strict" : false
 				},
 				{
-					"name" : "instr_out[10]",
+					"name" : "encripted_32[6]",
 					"strict" : false
 				},
 				{
-					"name" : "instr_out[11]",
+					"name" : "encripted_32[7]",
 					"strict" : false
 				},
 				{
-					"name" : "instr_out[13]",
+					"name" : "desencripted[0]",
 					"strict" : false
 				},
 				{
-					"name" : "instr_out[14]",
+					"name" : "desencripted[1]",
 					"strict" : false
 				},
 				{
-					"name" : "instr_out[15]",
+					"name" : "desencripted[2]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[0]",
+					"name" : "desencripted[3]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[1]",
+					"name" : "desencripted[4]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[2]",
+					"name" : "desencripted[5]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[3]",
+					"name" : "desencripted[6]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[4]",
+					"name" : "desencripted[7]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[5]",
+					"name" : "desencripted[8]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[6]",
+					"name" : "desencripted[9]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[7]",
+					"name" : "desencripted[10]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[8]",
+					"name" : "desencripted[11]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[9]",
+					"name" : "desencripted[12]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[10]",
+					"name" : "desencripted[13]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[11]",
+					"name" : "desencripted[14]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[12]",
+					"name" : "desencripted[15]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[13]",
+					"name" : "address[7]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[14]",
+					"name" : "address[1]",
 					"strict" : false
 				},
 				{
-					"name" : "src1_exe_in[15]",
+					"name" : "address[2]",
 					"strict" : false
 				},
 				{
-					"name" : "src2_exe_in[0]",
+					"name" : "address[3]",
 					"strict" : false
 				},
 				{
-					"name" : "src2_exe_in[1]",
+					"name" : "address[4]",
 					"strict" : false
 				},
 				{
-					"name" : "src2_exe_in[2]",
+					"name" : "address[5]",
 					"strict" : false
 				},
 				{
-					"name" : "src2_exe_in[3]",
+					"name" : "address[8]",
 					"strict" : false
 				},
 				{
-					"name" : "src2_exe_in[4]",
+					"name" : "address[0]",
 					"strict" : false
 				},
 				{
-					"name" : "src2_exe_in[5]",
+					"name" : "address[6]",
 					"strict" : false
 				},
 				{
-					"name" : "src2_exe_in[6]",
-					"strict" : false
-				},
-				{
-					"name" : "src2_exe_in[7]",
-					"strict" : false
-				},
-				{
-					"name" : "src2_exe_in[8]",
-					"strict" : false
-				},
-				{
-					"name" : "src2_exe_in[9]",
-					"strict" : false
-				},
-				{
-					"name" : "src2_exe_in[10]",
-					"strict" : false
-				},
-				{
-					"name" : "src2_exe_in[11]",
-					"strict" : false
-				},
-				{
-					"name" : "src2_exe_in[12]",
-					"strict" : false
-				},
-				{
-					"name" : "src2_exe_in[13]",
-					"strict" : false
-				},
-				{
-					"name" : "src2_exe_in[14]",
-					"strict" : false
-				},
-				{
-					"name" : "src2_exe_in[15]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[0]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[1]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[2]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[3]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[4]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[5]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[6]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[7]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[8]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[9]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[10]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[11]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[12]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[13]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[14]",
-					"strict" : false
-				},
-				{
-					"name" : "src3_exe_in[15]",
-					"strict" : false
-				},
-				{
-					"name" : "imm_exe_in[0]",
-					"strict" : false
-				},
-				{
-					"name" : "imm_exe_in[1]",
-					"strict" : false
-				},
-				{
-					"name" : "imm_exe_in[2]",
-					"strict" : false
-				},
-				{
-					"name" : "imm_exe_in[3]",
-					"strict" : false
-				},
-				{
-					"name" : "imm_exe_in[4]",
-					"strict" : false
-				},
-				{
-					"name" : "imm_exe_in[8]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[0]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[1]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[2]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[3]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[4]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[5]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[6]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[7]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[8]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[9]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[10]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[11]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[12]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[13]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[14]",
-					"strict" : false
-				},
-				{
-					"name" : "alu_result_mem_in[15]",
-					"strict" : false
-				},
-				{
-					"name" : "wb_enable_mem_in",
+					"name" : "address[9]",
 					"strict" : false
 				},
 				{
@@ -337,14 +145,6 @@
 				},
 				{
 					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "rst_alu",
-					"strict" : false
-				},
-				{
-					"name" : "pc_enable",
 					"strict" : false
 				}
 			]

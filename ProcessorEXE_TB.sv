@@ -32,7 +32,7 @@ parameter ARQ = 16;
 		#10;
 		#5 pc_enable = 1;
 		#10
-		#5 pc_enable = 0; 
+		#5 pc_enable = 0;
 	end
 	
 	always #5 clk = ~clk; 

@@ -8,347 +8,35 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/simulation/modelsim
-vAdder
+vMod
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1593794084
+Z2 !s110 1594140333
 !i10b 1
-!s100 [:c1fO23YPWT`hjHeN>9_0
-IDlB5fhz;VEb3k?47CG]Qc2
+!s100 R9:DNV]Vk:N`Q[Selg0=60
+INldPI1L@a^=i4aBYLVZ1a3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 Adder_sv_unit
+!s105 Mod_sv_unit
 S1
 R0
 Z4 w1592777410
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Adder.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Adder.sv
-L0 1
+8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv
+FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv
+L0 3
 Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1593794084.000000
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Adder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Adder.sv|
-!i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP
-Z9 tCvgOpt 0
-n@adder
-vALU
-R1
-R2
-!i10b 1
-!s100 bmzG8nAO^B`K>3=97i5;51
-I;[i:IhcNdiGSQXS<U:`oK0
-R3
-!s105 ALU_sv_unit
-S1
-R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv
-L0 3
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv|
-!i113 1
-R7
-Z10 !s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE
-R9
-n@a@l@u
-vBranch_Unit
-R1
-Z11 !s110 1593794085
-!i10b 1
-!s100 IP4X`Nch<]FIj?bZVO[@N2
-I^10N<9P_5LW1A@^EEGI><3
-R3
-!s105 Branch_Unit_sv_unit
-S1
-R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Branch_Unit.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Branch_Unit.sv
-L0 1
-R5
-r1
-!s85 0
-31
-Z12 !s108 1593794085.000000
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Branch_Unit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Branch_Unit.sv|
-!i113 1
-R7
-R10
-R9
-n@branch_@unit
-vControl_Unit
-R1
-Z13 !s110 1593794086
-!i10b 1
-!s100 JD1EnlC^X]b@O0PIbj`M^2
-IGjc9GGFl`SoHCE`oPl]DQ0
-R3
-!s105 Control_Unit_sv_unit
-S1
-R0
-w1593790168
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Control_Unit.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Control_Unit.sv
-L0 1
-R5
-r1
-!s85 0
-31
-Z14 !s108 1593794086.000000
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Control_Unit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Control_Unit.sv|
-!i113 1
-R7
-Z15 !s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID
-R9
-n@control_@unit
-vEXE
-R1
-R13
-!i10b 1
-!s100 BLmSYUg_I?4f8ai74mC=d1
-I5AGbLo<ARF0nTU3Q8E=^h3
-R3
-!s105 EXE_sv_unit
-S1
-R0
-w1593462102
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R14
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv|
-!i113 1
-R7
-R10
-R9
-n@e@x@e
-vEXEMEM_Pipe
-R1
-R13
-!i10b 1
-!s100 caIiX0N<ObmW<@^QYzc>z1
-I8GXMTWh@;nOUbmY=N]OLA3
-R3
-!s105 EXEMEM_Pipe_sv_unit
-S1
-R0
-w1593748662
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/EXEMEM_Pipe.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/EXEMEM_Pipe.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R14
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/EXEMEM_Pipe.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/EXEMEM_Pipe.sv|
-!i113 1
-R7
-Z16 !s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes
-R9
-n@e@x@e@m@e@m_@pipe
-vID
-R1
-R13
-!i10b 1
-!s100 VkmbSfP3eQl5ZjW[[lcbi3
-IdnPYUngdo9fGVd2;iHl5L1
-R3
-!s105 ID_sv_unit
-S1
-R0
-w1593748401
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R14
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv|
-!i113 1
-R7
-R15
-R9
-n@i@d
-vIDEXE_Pipe
-R1
-R13
-!i10b 1
-!s100 hQRVd7l1_io5hWZ[YmBzH2
-I6]<k9@ENlbC=Mm7VkZ<ff1
-R3
-!s105 IDEXE_Pipe_sv_unit
-S1
-R0
-w1593741376
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IDEXE_Pipe.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IDEXE_Pipe.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R14
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IDEXE_Pipe.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IDEXE_Pipe.sv|
-!i113 1
-R7
-R16
-R9
-n@i@d@e@x@e_@pipe
-vIF
-R1
-R2
-!i10b 1
-!s100 L1fJF<20Po@NkaiE:H[]X3
-IL`_mz8VQ6Z>8f30<a1k9L3
-R3
-!s105 IF_sv_unit
-S1
-R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv|
-!i113 1
-R7
-Z17 !s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF
-R9
-n@i@f
-vIFID_Pipe
-R1
-Z18 !s110 1593794083
-!i10b 1
-!s100 aLCTD3i1<6c3^iXZfX=EW2
-I4D8<LjzWBnP41o0ZXV0a82
-R3
-!s105 IFID_Pipe_sv_unit
-S1
-R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IFID_Pipe.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IFID_Pipe.sv
-L0 1
-R5
-r1
-!s85 0
-31
-Z19 !s108 1593794083.000000
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IFID_Pipe.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IFID_Pipe.sv|
-!i113 1
-R7
-R16
-R9
-n@i@f@i@d_@pipe
-vInstr_Decoder
-R1
-R11
-!i10b 1
-!s100 _FEKK@Vo6KDl?NB=A3?dU1
-IEkYKcVG@]OkO:S]f1<WTM0
-R3
-!s105 Instr_Decoder_sv_unit
-S1
-R0
-w1593746781
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Instr_Decoder.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Instr_Decoder.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R12
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Instr_Decoder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Instr_Decoder.sv|
-!i113 1
-R7
-R15
-R9
-n@instr_@decoder
-vInstruction_Mem
-R1
-Z20 !s110 1593794087
-!i10b 1
-!s100 7m=RGEn^GY1AHBE8@Zidh0
-I40nI[R^<^DegmHb1XlIUz1
-R3
-!s105 Instruction_Mem_sv_unit
-S1
-R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv
-L0 1
-R5
-r1
-!s85 0
-31
-!s108 1593794087.000000
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv|
-!i113 1
-R7
-R17
-R9
-n@instruction_@mem
-vMod
-R1
-R11
-!i10b 1
-!s100 R9:DNV]Vk:N`Q[Selg0=60
-INldPI1L@a^=i4aBYLVZ1a3
-R3
-!s105 Mod_sv_unit
-S1
-R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv
-L0 3
-R5
-r1
-!s85 0
-31
-R12
+Z6 !s108 1594140333.000000
 !s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv|
 !i113 1
-R7
-R10
-R9
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE
+Z9 tCvgOpt 0
 n@mod
 vMod_Exp
 R1
-R11
+R2
 !i10b 1
 !s100 C206^W6kze[;9P>S2YXSo3
 I=3S:^[WWk<HT2nbooM7220
@@ -364,295 +52,115 @@ R5
 r1
 !s85 0
 31
-R12
+R6
 !s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv|
 !i113 1
 R7
-R10
+R8
 R9
 n@mod_@exp
-vMux2
+vMODEX_Memory
 R1
-R2
+Z10 !s110 1594140334
 !i10b 1
-!s100 [BXlI<0;9U3HMcYKPhW`12
-IfBBd?@4:gA6l^h2VMlO_m2
+!s100 8Q71@WWjK?aMd7zgOmK[j1
+I6__DmB@b`EMo6J9j5D3j`2
 R3
-!s105 Mux2_sv_unit
+!s105 MODEX_Memory_sv_unit
 S1
 R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Mux2.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Mux2.sv
+w1594096110
+8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Memory.sv
+FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Memory.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z11 !s108 1594140334.000000
+!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Memory.sv|
+!i113 1
+R7
+Z12 !s92 -sv -work work +incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP
+R9
+n@m@o@d@e@x_@memory
+vMODEX_Processor
+R1
+R10
+!i10b 1
+!s100 A8?j3HHgC8hSI05B[7`lI3
+IilV45D>=B`>]>kXT@9`aT1
+R3
+!s105 MODEX_Processor_sv_unit
+S1
+R0
+w1594139751
+8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor.sv
+FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor.sv
 L0 1
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Mux2.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Mux2.sv|
+!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor.sv|
 !i113 1
 R7
-R8
-R9
-n@mux2
-vMux2_PC
-R1
-R2
-!i10b 1
-!s100 1CclbfcM19Y:H>@>0`b733
-Igf^^<U86>`85a4ePjIRmj0
-R3
-!s105 Mux2_PC_sv_unit
-S1
-R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Mux2_PC.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Mux2_PC.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R19
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Mux2_PC.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Mux2_PC.sv|
-!i113 1
-R7
-R17
-R9
-n@mux2_@p@c
-vMux4
-R1
-R11
-!i10b 1
-!s100 1PFXzG@a:D^QdL=kW367X1
-IX_^e9@2z<gzc:9igWJ3HR1
-R3
-!s105 Mux4_sv_unit
-S1
-R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mux4.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mux4.sv
-L0 1
-R5
-r1
-!s85 0
-31
 R12
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mux4.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mux4.sv|
-!i113 1
-R7
+R9
+n@m@o@d@e@x_@processor
+vMODEX_Processor_TB
+R1
 R10
-R9
-n@mux4
-vpc_register
-R1
-R18
 !i10b 1
-!s100 Kf7c1P17CegmLg4ihbW8z0
-IM5`TXbelT[Fbj_Wdbbha90
+!s100 l2I6:53:h0aKj3BbO0EUe1
+ImRCML>Z=Yh3Lf72nTHj>V3
 R3
-!s105 pc_register_sv_unit
+!s105 MODEX_Processor_TB_sv_unit
 S1
 R0
-w1593790611
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/pc_register.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/pc_register.sv
-L0 1
+w1594140298
+8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor_TB.sv
+FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor_TB.sv
+L0 3
 R5
 r1
 !s85 0
 31
-R19
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/pc_register.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/pc_register.sv|
-!i113 1
-R7
-R17
-R9
-vplus_1
-R1
-R18
-!i10b 1
-!s100 g]He<SMMMk>O]:23L2K@P2
-I0ABnXnB4^nmI_J7QiJEgX2
-R3
-!s105 plus_1_sv_unit
-S1
-R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R19
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv|
-!i113 1
-R7
-R17
-R9
-vProcessorEXE
-R1
-R13
-!i10b 1
-!s100 cKlPSU7O43iB`LTjJ1jPh1
-IVZkCY4e[WB];2;?;F;::o0
-R3
-!s105 ProcessorEXE_sv_unit
-S1
-R0
-w1593791419
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorEXE.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorEXE.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R14
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorEXE.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorEXE.sv|
-!i113 1
-R7
-R8
-R9
-n@processor@e@x@e
-vProcessorEXE_TB
-R1
-R20
-!i10b 1
-!s100 C@8A5VCX2UIn]S0U@^:bc1
-IG9>N7`g33bQDzHm?M7aa80
-R3
-!s105 ProcessorEXE_TB_sv_unit
-S1
-R0
-w1593791711
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorEXE_TB.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorEXE_TB.sv
-L0 4
-R5
-r1
-!s85 0
-31
-R14
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorEXE_TB.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorEXE_TB.sv|
-!i113 1
-R7
-R8
-R9
-n@processor@e@x@e_@t@b
-vRegister_Bank
-R1
-R13
-!i10b 1
-!s100 9FoH3`LT6f@YOSQJ@?3KA1
-I<MAzU7[^<[ejR8>5^MAe91
-R3
-!s105 Register_Bank_sv_unit
-S1
-R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Register_Bank.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Register_Bank.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R14
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Register_Bank.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Register_Bank.sv|
-!i113 1
-R7
-R15
-R9
-n@register_@bank
-vSubstraction
-R1
 R11
-!i10b 1
-!s100 F4O2YKUa_^2B@hTkkX_I21
-I>geI@EdF4@o4PNV1cU>bG3
-R3
-!s105 Substraction_sv_unit
-S1
-R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Substraction.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Substraction.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Substraction.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Substraction.sv|
+!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor_TB.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor_TB.sv|
 !i113 1
 R7
-R10
-R9
-n@substraction
-vZero_Extend
-R1
-R2
-!i10b 1
-!s100 l[Q;[5JLRzMm?<8_aFbiX2
-Ij[LH^[_iXmcoT?;TeYQTj2
-R3
-!s105 Zero_Extend_sv_unit
-S1
-R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Zero_Extend.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Zero_Extend.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Zero_Extend.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Zero_Extend.sv|
-!i113 1
-R7
-R8
-R9
-n@zero_@extend
-vZero_Flag
-R1
-R11
-!i10b 1
-!s100 i`63gYM]U:zJ_lAW>]7?`0
-IHzRHF^7P_4XYJ0EMS3^BT1
-R3
-!s105 Zero_Flag_sv_unit
-S1
-R0
-R4
-8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Zero_Flag.sv
-FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Zero_Flag.sv
-L0 1
-R5
-r1
-!s85 0
-31
 R12
-!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Zero_Flag.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Zero_Flag.sv|
+R9
+n@m@o@d@e@x_@processor_@t@b
+vZero_Ext_32
+R1
+R10
+!i10b 1
+!s100 ZTXh_EjzhVVY17aM<4^@_2
+IP1=D@1=808hAo8?CK4N463
+R3
+!s105 Zero_Ext_32_sv_unit
+S1
+R0
+w1594139142
+8C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Zero_Ext_32.sv
+FC:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Zero_Ext_32.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Zero_Ext_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP|C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Zero_Ext_32.sv|
 !i113 1
 R7
-R10
+R12
 R9
-n@zero_@flag
+n@zero_@ext_32

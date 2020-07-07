@@ -18,7 +18,7 @@ module ModExp_TB();
 	initial begin
 	   base = 255;
 	   modulo = 1927;
-	   exponent =  1842;
+	   exponent =  1349;
 	   clk = 0;
 	   reset = 0;
 	   #10 reset = 1;

@@ -19,7 +19,7 @@ initial begin
 	#50 mux_exe = 1; alu_op = 2'b01; src1 = 16'd250; src2 = 16'd250; srcdest = 16'd50; imm = 16'd25; jop_lsb = 1;
 	#50 mux_exe = 1; alu_op = 2'b01; src1 = 16'd250; src2 = 16'd251; srcdest = 16'd50; imm = 16'd25; jop_lsb = 1;
 	#50 mux_exe = 1; alu_op = 2'b01; src1 = 16'd250; src2 = 16'd251; srcdest = 16'd50; imm = 16'd25; jop_lsb = 0;
-	#50 mux_exe = 0; alu_op = 2'b10; src1 = 16'd16; src2 = 16'd100; srcdest = 16'd140; imm = 16'd152; rst = 1;
+	#50 mux_exe = 0; alu_op = 2'b10; src1 = 16'd6; src2 = 16'd1927; srcdest = 16'd1349; imm = 16'd152; rst = 1;
 	#50 rst = 0;
 
 end

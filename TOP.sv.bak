@@ -1,7 +1,0 @@
- module TOP #(parameter ARQ = 16)(input logic clk, rst, rst_ALU, 
- output logic [ARQ-1:0] result_WB, );
- 
-
- 
- endmodule
- 

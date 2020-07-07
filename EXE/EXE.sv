@@ -12,5 +12,6 @@ module EXE #(parameter ARQ = 16)(input logic clk, rst, mux_exe, jop_lsb, jenable
 	ALU alu(src1, src2, data_mux, alu_op, clk, rst, alu_result, zero);
 	
 	Branch_Unit branch(jaddr, jop_lsb, zero, jenable, branch_taken, jaddr_out);
+
 	
 endmodule
