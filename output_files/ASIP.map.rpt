@@ -1,5 +1,5 @@
-Analysis & Elaboration report for ASIP
-Tue Jul 07 10:45:22 2020
+Analysis & Synthesis report for ASIP
+Tue Jul 07 16:44:30 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -7,22 +7,61 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |MODEX_Processor_TB
-  5. Parameter Settings for User Entity Instance: MODEX_Processor:uut
-  6. Parameter Settings for User Entity Instance: MODEX_Processor:uut|MODEX_Memory:modex_mem
-  7. Parameter Settings for User Entity Instance: MODEX_Processor:uut|Zero_Ext_32:ext_32
-  8. Parameter Settings for User Entity Instance: MODEX_Processor:uut|Mod_Exp:modex
-  9. Parameter Settings for User Entity Instance: MODEX_Processor:uut|Mod_Exp:modex|Mod:base_squared_mod
- 10. Parameter Settings for User Entity Instance: MODEX_Processor:uut|Mod_Exp:modex|Mod:result_mul_base_mod
- 11. Analysis & Elaboration Settings
- 12. Port Connectivity Checks: "MODEX_Processor:uut|Mod_Exp:modex|Mod:result_mul_base_mod"
- 13. Port Connectivity Checks: "MODEX_Processor:uut|Mod_Exp:modex|Mod:base_squared_mod"
- 14. Port Connectivity Checks: "MODEX_Processor:uut|Mod_Exp:modex"
- 15. Port Connectivity Checks: "MODEX_Processor:uut"
- 16. Analysis & Elaboration Messages
- 17. Analysis & Elaboration Suppressed Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. State Machine - |ProcessorMEM|EXE:exe|ALU:alu|Mod_Exp:modex|state
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: Top-level Entity: |ProcessorMEM
+ 15. Parameter Settings for User Entity Instance: IF:fetch
+ 16. Parameter Settings for User Entity Instance: IF:fetch|Mux2_PC:mux_pc
+ 17. Parameter Settings for User Entity Instance: IF:fetch|pc_register:pc_reg
+ 18. Parameter Settings for User Entity Instance: IF:fetch|Instruction_Mem:instruction_mem
+ 19. Parameter Settings for User Entity Instance: IF:fetch|plus_1:plus_pc
+ 20. Parameter Settings for User Entity Instance: IFID_Pipe:ifid_pipe
+ 21. Parameter Settings for User Entity Instance: ID:deco
+ 22. Parameter Settings for User Entity Instance: ID:deco|Instr_Decoder:decoder
+ 23. Parameter Settings for User Entity Instance: ID:deco|Control_Unit:control_unit
+ 24. Parameter Settings for User Entity Instance: ID:deco|Zero_Extend:zero_extend
+ 25. Parameter Settings for User Entity Instance: ID:deco|Mux2:wr_mux
+ 26. Parameter Settings for User Entity Instance: ID:deco|Register_Bank:reg_bank
+ 27. Parameter Settings for User Entity Instance: IDEXE_Pipe:idexe_pipe
+ 28. Parameter Settings for User Entity Instance: EXE:exe
+ 29. Parameter Settings for User Entity Instance: EXE:exe|Mux2:in_mux
+ 30. Parameter Settings for User Entity Instance: EXE:exe|ALU:alu
+ 31. Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Adder:adder
+ 32. Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Substraction:subs
+ 33. Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Mod_Exp:modex
+ 34. Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod
+ 35. Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod
+ 36. Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Mux4:selector
+ 37. Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Zero_Flag:zero
+ 38. Parameter Settings for User Entity Instance: EXE:exe|Branch_Unit:branch
+ 39. Parameter Settings for User Entity Instance: EXEMEM_Pipe:exemem_pipe
+ 40. Parameter Settings for User Entity Instance: IM:mem
+ 41. Parameter Settings for User Entity Instance: IM:mem|Mux2_IM:mux_mem
+ 42. Parameter Settings for User Entity Instance: IM:mem|dataMem:mem
+ 43. Parameter Settings for User Entity Instance: MEMWB_Pipe:memwb_pipe
+ 44. Parameter Settings for User Entity Instance: WB:wb
+ 45. Port Connectivity Checks: "MEMWB_Pipe:memwb_pipe"
+ 46. Port Connectivity Checks: "EXEMEM_Pipe:exemem_pipe"
+ 47. Port Connectivity Checks: "EXE:exe|ALU:alu|Mux4:selector"
+ 48. Port Connectivity Checks: "EXE:exe|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod"
+ 49. Port Connectivity Checks: "EXE:exe|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod"
+ 50. Port Connectivity Checks: "EXE:exe|ALU:alu|Mod_Exp:modex"
+ 51. Port Connectivity Checks: "EXE:exe|ALU:alu|Substraction:subs"
+ 52. Port Connectivity Checks: "IFID_Pipe:ifid_pipe"
+ 53. Post-Synthesis Netlist Statistics for Top Partition
+ 54. Elapsed Time Per Partition
+ 55. Analysis & Synthesis Messages
+ 56. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -45,118 +84,36 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Jul 07 10:45:22 2020       ;
-; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                 ; ASIP                                        ;
-; Top-level Entity Name         ; MODEX_Processor_TB                          ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |MODEX_Processor_TB ;
-+----------------+-------+-----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                      ;
-+----------------+-------+-----------------------------------------------------------+
-; ADDR           ; 10    ; Signed Integer                                            ;
-; ARQ            ; 16    ; Signed Integer                                            ;
-+----------------+-------+-----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MODEX_Processor:uut ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; ARQ            ; 16    ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MODEX_Processor:uut|MODEX_Memory:modex_mem ;
-+----------------+-------+----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                           ;
-+----------------+-------+----------------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                                 ;
-+----------------+-------+----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MODEX_Processor:uut|Zero_Ext_32:ext_32 ;
-+----------------+-------+------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                       ;
-+----------------+-------+------------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                             ;
-+----------------+-------+------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MODEX_Processor:uut|Mod_Exp:modex ;
-+----------------+-------+-------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                  ;
-+----------------+-------+-------------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                        ;
-+----------------+-------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MODEX_Processor:uut|Mod_Exp:modex|Mod:base_squared_mod ;
-+----------------+-------+----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                       ;
-+----------------+-------+----------------------------------------------------------------------------+
-; ARQ            ; 32    ; Signed Integer                                                             ;
-+----------------+-------+----------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MODEX_Processor:uut|Mod_Exp:modex|Mod:result_mul_base_mod ;
-+----------------+-------+-------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                          ;
-+----------------+-------+-------------------------------------------------------------------------------+
-; ARQ            ; 32    ; Signed Integer                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Jul 07 16:44:30 2020       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; ASIP                                        ;
+; Top-level Entity Name           ; ProcessorMEM                                ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 16783                                       ;
+; Total pins                      ; 68                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 2                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; MODEX_Processor_TB ; ASIP               ;
+; Top-level entity name                                                           ; ProcessorMEM       ; ASIP               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Iteration limit for constant Verilog loops                                      ; 262145             ; 5000               ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -237,8 +194,723 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.30        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;  29.7%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
+; WB/WB.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/WB/WB.sv              ;         ;
+; pipes/IFID_Pipe.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IFID_Pipe.sv    ;         ;
+; IF/plus_1.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv          ;         ;
+; IF/pc_register.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/pc_register.sv     ;         ;
+; IF/Mux2_PC.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Mux2_PC.sv         ;         ;
+; IF/IF.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv              ;         ;
+; IM/Mux2_IM.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/Mux2_IM.sv         ;         ;
+; IM/IM.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/IM.sv              ;         ;
+; IM/dataMem.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/dataMem.sv         ;         ;
+; Mux2.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Mux2.sv               ;         ;
+; Zero_Extend.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Zero_Extend.sv        ;         ;
+; Adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Adder.sv              ;         ;
+; EXE/ALU.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv            ;         ;
+; EXE/Substraction.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Substraction.sv   ;         ;
+; EXE/Mux4.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mux4.sv           ;         ;
+; EXE/Zero_Flag.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Zero_Flag.sv      ;         ;
+; EXE/Mod.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv            ;         ;
+; EXE/Mod_Exp.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv        ;         ;
+; EXE/Branch_Unit.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Branch_Unit.sv    ;         ;
+; ID/Instr_Decoder.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Instr_Decoder.sv   ;         ;
+; IF/Instruction_Mem.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv ;         ;
+; ID/Register_Bank.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Register_Bank.sv   ;         ;
+; ID/ID.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv              ;         ;
+; EXE/EXE.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv            ;         ;
+; pipes/IDEXE_Pipe.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/IDEXE_Pipe.sv   ;         ;
+; pipes/EXEMEM_Pipe.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/EXEMEM_Pipe.sv  ;         ;
+; pipes/MEMWB_Pipe.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/pipes/MEMWB_Pipe.sv   ;         ;
+; ID/Control_Unit.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/Control_Unit.sv    ;         ;
+; ProcessorMEM.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv       ;         ;
+; if/memfile.dat                   ; yes             ; Auto-Found Unspecified File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/if/memfile.dat        ;         ;
+; im/pixels.dat                    ; yes             ; Auto-Found Unspecified File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/im/pixels.dat         ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 11536     ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 7989      ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 5577      ;
+;     -- 5 input functions                    ; 44        ;
+;     -- 4 input functions                    ; 1497      ;
+;     -- <=3 input functions                  ; 871       ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 16783     ;
+;                                             ;           ;
+; I/O pins                                    ; 68        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 2         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 16758     ;
+; Total fan-out                               ; 93277     ;
+; Average fan-out                             ; 3.74      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                     ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Entity Name     ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------+-----------------+--------------+
+; |ProcessorMEM                           ; 7989 (1)            ; 16783 (0)                 ; 0                 ; 2          ; 68   ; 0            ; |ProcessorMEM                                                       ; ProcessorMEM    ; work         ;
+;    |EXE:exe|                            ; 1282 (0)            ; 65 (0)                    ; 0                 ; 2          ; 0    ; 0            ; |ProcessorMEM|EXE:exe                                               ; EXE             ; work         ;
+;       |ALU:alu|                         ; 1257 (0)            ; 65 (0)                    ; 0                 ; 2          ; 0    ; 0            ; |ProcessorMEM|EXE:exe|ALU:alu                                       ; ALU             ; work         ;
+;          |Adder:adder|                  ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|EXE:exe|ALU:alu|Adder:adder                           ; Adder           ; work         ;
+;          |Mod_Exp:modex|                ; 1216 (37)           ; 65 (65)                   ; 0                 ; 2          ; 0    ; 0            ; |ProcessorMEM|EXE:exe|ALU:alu|Mod_Exp:modex                         ; Mod_Exp         ; work         ;
+;             |Mod:base_squared_mod|      ; 590 (590)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod    ; Mod             ; work         ;
+;             |Mod:result_mul_base_mod|   ; 589 (589)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod ; Mod             ; work         ;
+;          |Mux4:selector|                ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|EXE:exe|ALU:alu|Mux4:selector                         ; Mux4            ; work         ;
+;       |Branch_Unit:branch|              ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|EXE:exe|Branch_Unit:branch                            ; Branch_Unit     ; work         ;
+;       |Mux2:in_mux|                     ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|EXE:exe|Mux2:in_mux                                   ; Mux2            ; work         ;
+;    |EXEMEM_Pipe:exemem_pipe|            ; 0 (0)               ; 54 (54)                   ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|EXEMEM_Pipe:exemem_pipe                               ; EXEMEM_Pipe     ; work         ;
+;    |ID:deco|                            ; 78 (0)              ; 112 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|ID:deco                                               ; ID              ; work         ;
+;       |Control_Unit:control_unit|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|ID:deco|Control_Unit:control_unit                     ; Control_Unit    ; work         ;
+;       |Instr_Decoder:decoder|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|ID:deco|Instr_Decoder:decoder                         ; Instr_Decoder   ; work         ;
+;       |Mux2:wr_mux|                     ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|ID:deco|Mux2:wr_mux                                   ; Mux2            ; work         ;
+;       |Register_Bank:reg_bank|          ; 52 (52)             ; 112 (112)                 ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|ID:deco|Register_Bank:reg_bank                        ; Register_Bank   ; work         ;
+;    |IDEXE_Pipe:idexe_pipe|              ; 6 (6)               ; 73 (73)                   ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|IDEXE_Pipe:idexe_pipe                                 ; IDEXE_Pipe      ; work         ;
+;    |IF:fetch|                           ; 19 (0)              ; 26 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|IF:fetch                                              ; IF              ; work         ;
+;       |Instruction_Mem:instruction_mem| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|IF:fetch|Instruction_Mem:instruction_mem              ; Instruction_Mem ; work         ;
+;       |pc_register:pc_reg|              ; 1 (1)               ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|IF:fetch|pc_register:pc_reg                           ; pc_register     ; work         ;
+;       |plus_1:plus_pc|                  ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|IF:fetch|plus_1:plus_pc                               ; plus_1          ; work         ;
+;    |IFID_Pipe:ifid_pipe|                ; 3 (3)               ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|IFID_Pipe:ifid_pipe                                   ; IFID_Pipe       ; work         ;
+;    |IM:mem|                             ; 6584 (0)            ; 16400 (0)                 ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|IM:mem                                                ; IM              ; work         ;
+;       |Mux2_IM:mux_mem|                 ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|IM:mem|Mux2_IM:mux_mem                                ; Mux2_IM         ; work         ;
+;       |dataMem:mem|                     ; 6568 (6568)         ; 16400 (16400)             ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|IM:mem|dataMem:mem                                    ; dataMem         ; work         ;
+;    |MEMWB_Pipe:memwb_pipe|              ; 0 (0)               ; 42 (42)                   ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|MEMWB_Pipe:memwb_pipe                                 ; MEMWB_Pipe      ; work         ;
+;    |WB:wb|                              ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessorMEM|WB:wb                                                 ; WB              ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Two Independent 18x18           ; 2           ;
+; Total number of DSP blocks      ; 2           ;
+;                                 ;             ;
+; Fixed Point Unsigned Multiplier ; 2           ;
++---------------------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------+
+; State Machine - |ProcessorMEM|EXE:exe|ALU:alu|Mod_Exp:modex|state ;
++----------+--------------------------------------------------------+
+; Name     ; state.10                                               ;
++----------+--------------------------------------------------------+
+; state.01 ; 0                                                      ;
+; state.10 ; 1                                                      ;
++----------+--------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++----------------------------------------------+----------------------------------------+
+; Register name                                ; Reason for Removal                     ;
++----------------------------------------------+----------------------------------------+
+; IDEXE_Pipe:idexe_pipe|imm_out[10..15]        ; Stuck at GND due to stuck port data_in ;
+; EXEMEM_Pipe:exemem_pipe|wb_imm_out[10..15]   ; Stuck at GND due to stuck port data_in ;
+; MEMWB_Pipe:memwb_pipe|wb_imm_out[10..15]     ; Stuck at GND due to stuck port data_in ;
+; IFID_Pipe:ifid_pipe|instr_out[5..7,9,12]     ; Stuck at GND due to stuck port data_in ;
+; IDEXE_Pipe:idexe_pipe|wb_dest_out[2]         ; Stuck at GND due to stuck port data_in ;
+; IDEXE_Pipe:idexe_pipe|jaddr_out[5..7,9,12]   ; Stuck at GND due to stuck port data_in ;
+; IDEXE_Pipe:idexe_pipe|imm_out[5..7,9]        ; Stuck at GND due to stuck port data_in ;
+; EXEMEM_Pipe:exemem_pipe|wb_imm_out[5..7,9]   ; Stuck at GND due to stuck port data_in ;
+; EXEMEM_Pipe:exemem_pipe|wb_dest_out[2]       ; Stuck at GND due to stuck port data_in ;
+; MEMWB_Pipe:memwb_pipe|wb_imm_out[5..7,9]     ; Stuck at GND due to stuck port data_in ;
+; MEMWB_Pipe:memwb_pipe|wb_dest_out[2]         ; Stuck at GND due to stuck port data_in ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][15] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][15] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][15] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][15] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][14] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][14] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][14] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][14] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][13] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][13] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][13] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][13] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][12] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][12] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][12] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][12] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][11] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][11] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][11] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][11] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][10] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][10] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][10] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][10] ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][9]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][9]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][9]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][9]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][8]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][8]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][8]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][8]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][7]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][7]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][7]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][7]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][6]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][6]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][6]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][6]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][5]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][5]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][5]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][5]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][4]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][4]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][4]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][4]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][3]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][3]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][3]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][3]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][2]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][2]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][2]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][2]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][1]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][1]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][1]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][1]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[4][0]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[5][0]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[6][0]  ; Lost fanout                            ;
+; ID:deco|Register_Bank:reg_bank|regMem[7][0]  ; Lost fanout                            ;
+; EXE:exe|ALU:alu|Mod_Exp:modex|state~3        ; Lost fanout                            ;
+; Total Number of Removed Registers = 108      ;                                        ;
++----------------------------------------------+----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                      ;
++--------------------------------------+---------------------------+-------------------------------------------------------------------------------+
+; Register name                        ; Reason for Removal        ; Registers Removed due to This Register                                        ;
++--------------------------------------+---------------------------+-------------------------------------------------------------------------------+
+; IDEXE_Pipe:idexe_pipe|wb_dest_out[2] ; Stuck at GND              ; EXEMEM_Pipe:exemem_pipe|wb_dest_out[2], MEMWB_Pipe:memwb_pipe|wb_dest_out[2], ;
+;                                      ; due to stuck port data_in ; ID:deco|Register_Bank:reg_bank|regMem[4][15],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][15],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][15],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][15],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][14],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][14],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][14],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][14],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][13],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][13],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][13],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][13],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][12],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][12],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][12],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][12],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][11],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][11],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][11],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][11],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][10],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][10],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][10],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][10],                                 ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][9],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][9],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][9],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][9],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][8],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][8],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][8],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][8],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][7],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][7],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][7],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][7],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][6],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][6],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][6],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][6],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][5],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][5],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][5],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][5],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][4],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][4],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][4],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][4],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][3],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][3],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][3],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][3],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][2],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][2],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][2],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][2],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][1],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][1],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][1],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][1],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[4][0],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[5][0],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[6][0],                                  ;
+;                                      ;                           ; ID:deco|Register_Bank:reg_bank|regMem[7][0]                                   ;
+; IDEXE_Pipe:idexe_pipe|imm_out[10]    ; Stuck at GND              ; EXEMEM_Pipe:exemem_pipe|wb_imm_out[10], MEMWB_Pipe:memwb_pipe|wb_imm_out[10]  ;
+;                                      ; due to stuck port data_in ;                                                                               ;
+; IDEXE_Pipe:idexe_pipe|imm_out[11]    ; Stuck at GND              ; EXEMEM_Pipe:exemem_pipe|wb_imm_out[11], MEMWB_Pipe:memwb_pipe|wb_imm_out[11]  ;
+;                                      ; due to stuck port data_in ;                                                                               ;
+; IDEXE_Pipe:idexe_pipe|imm_out[12]    ; Stuck at GND              ; EXEMEM_Pipe:exemem_pipe|wb_imm_out[12], MEMWB_Pipe:memwb_pipe|wb_imm_out[12]  ;
+;                                      ; due to stuck port data_in ;                                                                               ;
+; IDEXE_Pipe:idexe_pipe|imm_out[13]    ; Stuck at GND              ; EXEMEM_Pipe:exemem_pipe|wb_imm_out[13], MEMWB_Pipe:memwb_pipe|wb_imm_out[13]  ;
+;                                      ; due to stuck port data_in ;                                                                               ;
+; IDEXE_Pipe:idexe_pipe|imm_out[14]    ; Stuck at GND              ; EXEMEM_Pipe:exemem_pipe|wb_imm_out[14], MEMWB_Pipe:memwb_pipe|wb_imm_out[14]  ;
+;                                      ; due to stuck port data_in ;                                                                               ;
+; IDEXE_Pipe:idexe_pipe|imm_out[15]    ; Stuck at GND              ; EXEMEM_Pipe:exemem_pipe|wb_imm_out[15], MEMWB_Pipe:memwb_pipe|wb_imm_out[15]  ;
+;                                      ; due to stuck port data_in ;                                                                               ;
+; IDEXE_Pipe:idexe_pipe|imm_out[5]     ; Stuck at GND              ; EXEMEM_Pipe:exemem_pipe|wb_imm_out[5], MEMWB_Pipe:memwb_pipe|wb_imm_out[5]    ;
+;                                      ; due to stuck port data_in ;                                                                               ;
+; IDEXE_Pipe:idexe_pipe|imm_out[6]     ; Stuck at GND              ; EXEMEM_Pipe:exemem_pipe|wb_imm_out[6], MEMWB_Pipe:memwb_pipe|wb_imm_out[6]    ;
+;                                      ; due to stuck port data_in ;                                                                               ;
+; IDEXE_Pipe:idexe_pipe|imm_out[7]     ; Stuck at GND              ; EXEMEM_Pipe:exemem_pipe|wb_imm_out[7], MEMWB_Pipe:memwb_pipe|wb_imm_out[7]    ;
+;                                      ; due to stuck port data_in ;                                                                               ;
+; IDEXE_Pipe:idexe_pipe|imm_out[9]     ; Stuck at GND              ; EXEMEM_Pipe:exemem_pipe|wb_imm_out[9], MEMWB_Pipe:memwb_pipe|wb_imm_out[9]    ;
+;                                      ; due to stuck port data_in ;                                                                               ;
++--------------------------------------+---------------------------+-------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 16783 ;
+; Number of registers using Synchronous Clear  ; 301   ;
+; Number of registers using Synchronous Load   ; 44    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 16584 ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ProcessorMEM|IM:mem|dataMem:mem|memory[4][0]                 ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |ProcessorMEM|IM:mem|dataMem:mem|memory[4][1]                 ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |ProcessorMEM|IM:mem|dataMem:mem|memory[3][0]                 ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 0 LEs                ; 18 LEs                 ; Yes        ; |ProcessorMEM|IM:mem|dataMem:mem|memory[3][2]                 ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ProcessorMEM|IM:mem|dataMem:mem|memory[2][6]                 ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |ProcessorMEM|IM:mem|dataMem:mem|memory[2][0]                 ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ProcessorMEM|IM:mem|dataMem:mem|memory[1][1]                 ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |ProcessorMEM|IM:mem|dataMem:mem|memory[1][0]                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ProcessorMEM|IM:mem|dataMem:mem|memory[0][0]                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |ProcessorMEM|IM:mem|dataMem:mem|memory[0][8]                 ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 0 LEs                ; 30 LEs                 ; Yes        ; |ProcessorMEM|EXE:exe|ALU:alu|Mod_Exp:modex|exponent_logic[6] ;
+; 3:1                ; 13 bits   ; 26 LEs        ; 0 LEs                ; 26 LEs                 ; Yes        ; |ProcessorMEM|IF:fetch|pc_register:pc_reg|next_addr_out[4]    ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |ProcessorMEM|EXE:exe|ALU:alu|Mod_Exp:modex|result_logic[1]   ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |ProcessorMEM|EXE:exe|ALU:alu|Mod_Exp:modex|base_logic[2]     ;
+; 1024:1             ; 16 bits   ; 10912 LEs     ; 10912 LEs            ; 0 LEs                  ; Yes        ; |ProcessorMEM|IM:mem|dataMem:mem|dataOut[12]                  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |ProcessorMEM|EXE:exe|ALU:alu|Mux4:selector|out[0]            ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 0 LEs                ; 28 LEs                 ; Yes        ; |ProcessorMEM|IDEXE_Pipe:idexe_pipe|jop_lsb_out               ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |ProcessorMEM|IDEXE_Pipe:idexe_pipe|wb_dest_out[1]            ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |ProcessorMEM|IDEXE_Pipe:idexe_pipe|imm_out[1]                ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |ProcessorMEM|ID:deco|Register_Bank:reg_bank|regMem[0][4]     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |ProcessorMEM|ID:deco|Register_Bank:reg_bank|regMem[1][13]    ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |ProcessorMEM|ID:deco|Register_Bank:reg_bank|regMem[2][15]    ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |ProcessorMEM|ID:deco|Register_Bank:reg_bank|regMem[3][8]     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |ProcessorMEM|ID:deco|Register_Bank:reg_bank|regMem[4][11]    ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |ProcessorMEM|ID:deco|Register_Bank:reg_bank|regMem[5][12]    ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |ProcessorMEM|ID:deco|Register_Bank:reg_bank|regMem[6][13]    ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |ProcessorMEM|ID:deco|Register_Bank:reg_bank|src2_out[2]      ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |ProcessorMEM|ID:deco|Register_Bank:reg_bank|src3_out[5]      ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |ProcessorMEM|ID:deco|Register_Bank:reg_bank|src1_out[9]      ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; No         ; |ProcessorMEM|ID:deco|Instr_Decoder:decoder|Mux2              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ProcessorMEM ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: IF:fetch ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; ARQ            ; 16    ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: IF:fetch|Mux2_PC:mux_pc ;
++------------------+-------+-------------------------------------------+
+; Parameter Name   ; Value ; Type                                      ;
++------------------+-------+-------------------------------------------+
+; MEMORY_ADDR_SIZE ; 13    ; Signed Integer                            ;
++------------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: IF:fetch|pc_register:pc_reg ;
++------------------+-------+-----------------------------------------------+
+; Parameter Name   ; Value ; Type                                          ;
++------------------+-------+-----------------------------------------------+
+; MEMORY_ADDR_SIZE ; 13    ; Signed Integer                                ;
++------------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: IF:fetch|Instruction_Mem:instruction_mem ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: IF:fetch|plus_1:plus_pc ;
++------------------+-------+-------------------------------------------+
+; Parameter Name   ; Value ; Type                                      ;
++------------------+-------+-------------------------------------------+
+; MEMORY_ADDR_SIZE ; 13    ; Signed Integer                            ;
++------------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: IFID_Pipe:ifid_pipe ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; ARQ            ; 16    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ID:deco ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; ARQ            ; 16    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ID:deco|Instr_Decoder:decoder ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ID:deco|Control_Unit:control_unit ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ID:deco|Zero_Extend:zero_extend ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ID:deco|Mux2:wr_mux ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; ARQ            ; 16    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ID:deco|Register_Bank:reg_bank ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: IDEXE_Pipe:idexe_pipe ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:exe ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; ARQ            ; 16    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:exe|Mux2:in_mux ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; ARQ            ; 16    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:exe|ALU:alu ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; ARQ            ; 16    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Adder:adder ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Substraction:subs ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Mod_Exp:modex ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; ARQ            ; 8     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Mux4:selector ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:exe|ALU:alu|Zero_Flag:zero ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE:exe|Branch_Unit:branch ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXEMEM_Pipe:exemem_pipe ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Parameter Settings for User Entity Instance: IM:mem ;
++------------------+-------+--------------------------+
+; Parameter Name   ; Value ; Type                     ;
++------------------+-------+--------------------------+
+; MEMORY_SIZE      ; 1024  ; Signed Integer           ;
+; MEMORY_ADDR_SIZE ; 10    ; Signed Integer           ;
+; MEMORY_DATA_SIZE ; 16    ; Signed Integer           ;
++------------------+-------+--------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: IM:mem|Mux2_IM:mux_mem ;
++------------------+-------+------------------------------------------+
+; Parameter Name   ; Value ; Type                                     ;
++------------------+-------+------------------------------------------+
+; MEMORY_DATA_SIZE ; 16    ; Signed Integer                           ;
++------------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: IM:mem|dataMem:mem ;
++------------------+-------+--------------------------------------+
+; Parameter Name   ; Value ; Type                                 ;
++------------------+-------+--------------------------------------+
+; MEMORY_SIZE      ; 1024  ; Signed Integer                       ;
+; MEMORY_ADDR_SIZE ; 10    ; Signed Integer                       ;
+; MEMORY_DATA_SIZE ; 16    ; Signed Integer                       ;
++------------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MEMWB_Pipe:memwb_pipe ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------+
+; Parameter Settings for User Entity Instance: WB:wb ;
++----------------+-------+---------------------------+
+; Parameter Name ; Value ; Type                      ;
++----------------+-------+---------------------------+
+; ARQ            ; 16    ; Signed Integer            ;
++----------------+-------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MEMWB_Pipe:memwb_pipe"                                                                   ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pc_en_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXEMEM_Pipe:exemem_pipe"                                                                           ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                ; Type   ; Severity ; Details                                                                             ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; srcdest_out[15..10] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXE:exe|ALU:alu|Mux4:selector"                                                                                                                                                             ;
++--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                                                                                                                                             ;
++--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data4        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; data4[15..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "MODEX_Processor:uut|Mod_Exp:modex|Mod:result_mul_base_mod"                                                     ;
+; Port Connectivity Checks: "EXE:exe|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod"                                                         ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                                                  ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -247,7 +919,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "MODEX_Processor:uut|Mod_Exp:modex|Mod:base_squared_mod"                                                        ;
+; Port Connectivity Checks: "EXE:exe|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod"                                                            ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                                                  ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -255,49 +927,90 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "MODEX_Processor:uut|Mod_Exp:modex"                                                                                                        ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port             ; Type   ; Severity ; Details                                                                                                                       ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; modulo[10..7]    ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; modulo[2..0]     ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; modulo[31..11]   ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; modulo[6..3]     ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; exponent[31..11] ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; exponent[5..3]   ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; exponent[10]     ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; exponent[9]      ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; exponent[8]      ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; exponent[7]      ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; exponent[6]      ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; exponent[2]      ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; exponent[1]      ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; exponent[0]      ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; finish           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                           ;
-; result           ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXE:exe|ALU:alu|Mod_Exp:modex"                                                        ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; finish ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "MODEX_Processor:uut"                                                                                                                        ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                                                                             ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------+
-; encripted_32 ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "encripted_32[31..16]" have no fanouts ;
-; encripted_32 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                 ;
-; desencripted ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                 ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXE:exe|ALU:alu|Substraction:subs"                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "IFID_Pipe:ifid_pipe"                                                                                                                                                                  ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; stop     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; stop[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 16783                       ;
+;     ENA               ; 16424                       ;
+;     ENA SCLR          ; 129                         ;
+;     ENA SLD           ; 31                          ;
+;     SCLR              ; 159                         ;
+;     SCLR SLD          ; 13                          ;
+;     plain             ; 27                          ;
+; arriav_lcell_comb     ; 7989                        ;
+;     arith             ; 992                         ;
+;         0 data inputs ; 30                          ;
+;         1 data inputs ; 14                          ;
+;         2 data inputs ; 482                         ;
+;         3 data inputs ; 28                          ;
+;         4 data inputs ; 420                         ;
+;         5 data inputs ; 18                          ;
+;     normal            ; 6965                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 270                         ;
+;         4 data inputs ; 1077                        ;
+;         5 data inputs ; 26                          ;
+;         6 data inputs ; 5577                        ;
+;     shared            ; 32                          ;
+;         1 data inputs ; 30                          ;
+;         2 data inputs ; 2                           ;
+; arriav_mac            ; 2                           ;
+; boundary_port         ; 68                          ;
+;                       ;                             ;
+; Max LUT depth         ; 40.50                       ;
+; Average LUT depth     ; 7.35                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:30     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Jul 07 10:45:00 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ASIP -c ASIP --analysis_and_elaboration
+    Info: Processing started: Tue Jul 07 16:43:26 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ASIP -c ASIP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file tb/im_tb.sv
@@ -441,31 +1154,71 @@ Warning (10222): Verilog HDL Parameter Declaration warning at ProcessorMEM.sv(4)
 Warning (10222): Verilog HDL Parameter Declaration warning at MODEX_Processor.sv(3): Parameter Declaration in module "MODEX_Processor" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor.sv Line: 3
 Warning (10222): Verilog HDL Parameter Declaration warning at MODEX_Memory.sv(3): Parameter Declaration in module "MODEX_Memory" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Memory.sv Line: 3
 Warning (10222): Verilog HDL Parameter Declaration warning at MODEX_Memory.sv(8): Parameter Declaration in module "MODEX_Memory" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Memory.sv Line: 8
-Info (12127): Elaborating entity "MODEX_Processor_TB" for the top level hierarchy
-Warning (10755): Verilog HDL warning at MODEX_Processor_TB.sv(20): assignments to clk create a combinational loop File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor_TB.sv Line: 20
-Info (12128): Elaborating entity "MODEX_Processor" for hierarchy "MODEX_Processor:uut" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor_TB.sv Line: 12
-Info (12128): Elaborating entity "MODEX_Memory" for hierarchy "MODEX_Processor:uut|MODEX_Memory:modex_mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor.sv Line: 14
-Warning (10030): Net "memory.data_a" at MODEX_Memory.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Memory.sv Line: 10
-Warning (10030): Net "memory.waddr_a" at MODEX_Memory.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Memory.sv Line: 10
-Warning (10030): Net "memory.we_a" at MODEX_Memory.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Memory.sv Line: 10
-Info (12128): Elaborating entity "Zero_Ext_32" for hierarchy "MODEX_Processor:uut|Zero_Ext_32:ext_32" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor.sv Line: 16
-Info (12128): Elaborating entity "Mod_Exp" for hierarchy "MODEX_Processor:uut|Mod_Exp:modex" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor.sv Line: 18
-Info (12128): Elaborating entity "Mod" for hierarchy "MODEX_Processor:uut|Mod_Exp:modex|Mod:base_squared_mod" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv Line: 29
-Warning (10230): Verilog HDL assignment warning at Mod.sv(33): truncated value with size 33 to match size of target (32) File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv Line: 33
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor_TB.sv Line: 8
+Info (12127): Elaborating entity "ProcessorMEM" for the top level hierarchy
+Info (12128): Elaborating entity "IF" for hierarchy "IF:fetch" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 39
+Info (12128): Elaborating entity "Mux2_PC" for hierarchy "IF:fetch|Mux2_PC:mux_pc" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 12
+Info (12128): Elaborating entity "pc_register" for hierarchy "IF:fetch|pc_register:pc_reg" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 13
+Info (12128): Elaborating entity "Instruction_Mem" for hierarchy "IF:fetch|Instruction_Mem:instruction_mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 14
+Warning (10850): Verilog HDL warning at Instruction_Mem.sv(7): number of words (3) in memory file does not match the number of elements in the address range [0:8191] File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 7
+Warning (10030): Net "memory.data_a" at Instruction_Mem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 4
+Warning (10030): Net "memory.waddr_a" at Instruction_Mem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 4
+Warning (10030): Net "memory.we_a" at Instruction_Mem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 4
+Info (12128): Elaborating entity "plus_1" for hierarchy "IF:fetch|plus_1:plus_pc" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at plus_1.sv(6): truncated value with size 32 to match size of target (13) File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv Line: 6
+Info (12128): Elaborating entity "IFID_Pipe" for hierarchy "IFID_Pipe:ifid_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 41
+Info (12128): Elaborating entity "ID" for hierarchy "ID:deco" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 44
+Info (12128): Elaborating entity "Instr_Decoder" for hierarchy "ID:deco|Instr_Decoder:decoder" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 13
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "ID:deco|Control_Unit:control_unit" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 15
+Info (12128): Elaborating entity "Zero_Extend" for hierarchy "ID:deco|Zero_Extend:zero_extend" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 17
+Info (12128): Elaborating entity "Mux2" for hierarchy "ID:deco|Mux2:wr_mux" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 19
+Info (12128): Elaborating entity "Register_Bank" for hierarchy "ID:deco|Register_Bank:reg_bank" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 21
+Info (12128): Elaborating entity "IDEXE_Pipe" for hierarchy "IDEXE_Pipe:idexe_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 50
+Info (12128): Elaborating entity "EXE" for hierarchy "EXE:exe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 53
+Info (12128): Elaborating entity "ALU" for hierarchy "EXE:exe|ALU:alu" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv Line: 12
+Info (12128): Elaborating entity "Adder" for hierarchy "EXE:exe|ALU:alu|Adder:adder" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 14
+Info (12128): Elaborating entity "Substraction" for hierarchy "EXE:exe|ALU:alu|Substraction:subs" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 15
+Info (12128): Elaborating entity "Mod_Exp" for hierarchy "EXE:exe|ALU:alu|Mod_Exp:modex" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at Mod_Exp.sv(41): truncated value with size 32 to match size of target (16) File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv Line: 41
+Info (12128): Elaborating entity "Mod" for hierarchy "EXE:exe|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at Mod.sv(33): truncated value with size 17 to match size of target (16) File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv Line: 33
+Info (12128): Elaborating entity "Mux4" for hierarchy "EXE:exe|ALU:alu|Mux4:selector" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 19
+Info (12128): Elaborating entity "Zero_Flag" for hierarchy "EXE:exe|ALU:alu|Zero_Flag:zero" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 21
+Info (12128): Elaborating entity "Branch_Unit" for hierarchy "EXE:exe|Branch_Unit:branch" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv Line: 14
+Info (12128): Elaborating entity "EXEMEM_Pipe" for hierarchy "EXEMEM_Pipe:exemem_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 58
+Info (12128): Elaborating entity "IM" for hierarchy "IM:mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 60
+Info (12128): Elaborating entity "Mux2_IM" for hierarchy "IM:mem|Mux2_IM:mux_mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/IM.sv Line: 14
+Info (12128): Elaborating entity "dataMem" for hierarchy "IM:mem|dataMem:mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/IM.sv Line: 15
+Warning (10850): Verilog HDL warning at dataMem.sv(18): number of words (5) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/dataMem.sv Line: 18
+Info (12128): Elaborating entity "MEMWB_Pipe" for hierarchy "MEMWB_Pipe:memwb_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 63
+Info (12128): Elaborating entity "WB" for hierarchy "WB:wb" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 65
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/db/ASIP.ram0_Instruction_Mem_f50985c0.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "instr_out[5]" is stuck at GND File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 8
+    Warning (13410): Pin "instr_out[9]" is stuck at GND File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 8
+    Warning (13410): Pin "instr_out[12]" is stuck at GND File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 8
+    Warning (13410): Pin "instr_out[6]" is stuck at GND File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 8
+    Warning (13410): Pin "instr_out[7]" is stuck at GND File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 8
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 65 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/output_files/ASIP.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 22 warnings
-    Info: Peak virtual memory: 4779 megabytes
-    Info: Processing ended: Tue Jul 07 10:45:22 2020
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:46
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 24699 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 64 output pins
+    Info (21061): Implemented 24629 logic cells
+    Info (21062): Implemented 2 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 4989 megabytes
+    Info: Processing ended: Tue Jul 07 16:44:30 2020
+    Info: Elapsed time: 00:01:04
+    Info: Total CPU time (on all processors): 00:01:37
 
 
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
 The suppressed messages can be found in C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/output_files/ASIP.map.smsg.
 
 
