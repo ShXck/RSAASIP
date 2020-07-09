@@ -1,5 +1,5 @@
 module ProcessorMEM #(parameter ARQ = 16)(clk, rst, rst_alu, pc_enable, instr_out,  // IF
-													alu_result_wb_in, mem_data_wb_in, wb_out);
+													 wb_out);
 													
 	parameter MEM_ADDR = 13;
 	
@@ -8,7 +8,7 @@ module ProcessorMEM #(parameter ARQ = 16)(clk, rst, rst_alu, pc_enable, instr_ou
 	output logic[ARQ-1:0] instr_out;
 	
 	//ID 
-	output logic[ARQ-1:0] alu_result_wb_in, mem_data_wb_in, wb_out;
+	output logic[ARQ-1:0] wb_out;
 	//output logic
 	
 	// IF Linkers
@@ -31,7 +31,7 @@ module ProcessorMEM #(parameter ARQ = 16)(clk, rst, rst_alu, pc_enable, instr_ou
 	logic[2:0] wb_dest_mem_in;
 	
 	//MEM Linkers
-	logic[ARQ-1:0] mem_data, wb_imm_wb_in; /*mem_data_wb_in alu_result_wb_in*/
+	logic[ARQ-1:0] mem_data, wb_imm_wb_in, mem_data_wb_in, alu_result_wb_in;
 	logic wb_mux_control, wb_enable_wb_in, pc_wb_in; 
 	logic[2:0] wb_dest_wb_in;
 	
@@ -67,20 +67,3 @@ module ProcessorMEM #(parameter ARQ = 16)(clk, rst, rst_alu, pc_enable, instr_ou
 	
 endmodule
 
-
-
-//MEM Linkers
-	/*logic[ARQ-1:0] mem_data, wb_imm_wb_in; /*mem_data_wb_in alu_result_wb_in*/
-	/*logic wb_mux_control, wb_enable_wb_in, pc_wb_in; 
-	logic[2:0] wb_dest_wb_in;*/
-	
-	//WB Linkers
-	//logic[ARQ-1:0] wb_out;
-	
-		/*IM mem(clk, rst, rd_mem_mem_in, wr_mem_mem_in, mux_mem_mem_in, src3_mem_in[9:0], alu_result_mem_in, src1_mem_in, mem_data);
-	
-	
-	MEMWB_Pipe memwb_pipe(clk, rst, rd_mem_mem_in, wb_enable_mem_in, pc_mem_in, alu_result_mem_in, mem_data, wb_imm_mem_in, wb_dest_mem_in,
-					wb_mux_control, wb_enable_wb_in, pc_wb_in, alu_result_wb_in, mem_data_wb_in, wb_imm_wb_in, wb_dest_wb_in);
-					
-	WB wb(alu_result_wb_in, mem_data_wb_in, wb_mux_control, wb_out);*/

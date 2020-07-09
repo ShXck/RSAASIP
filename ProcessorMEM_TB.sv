@@ -9,11 +9,11 @@ parameter ARQ = 16;
 	logic[ARQ-1:0] instr_out;
 	
 	//ID 
-	logic[ARQ-1:0] alu_result, mem_result, wb_out;
+	logic[ARQ-1:0] wb_out;
 	
 	
 	ProcessorMEM uut(clk, rst, rst_alu, pc_enable, instr_out,  // IF
-						alu_result, mem_result, wb_out); //ID
+						wb_out); 
 	initial begin 
 		clk = 0; rst = 1; rst_alu = 1; pc_enable = 1; 
 		#10 rst = 0; 

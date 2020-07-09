@@ -1,5 +1,5 @@
-Analysis & Synthesis report for ASIP
-Wed Jul 08 19:53:14 2020
+Analysis & Elaboration report for ASIP
+Wed Jul 08 21:46:25 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -7,26 +7,52 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis DSP Block Usage Summary
-  9. State Machine - |Mod_Exp|state
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: Top-level Entity: |Mod_Exp
- 14. Parameter Settings for User Entity Instance: Mod:base_squared_mod
- 15. Parameter Settings for User Entity Instance: Mod:result_mul_base_mod
- 16. Port Connectivity Checks: "Mod:result_mul_base_mod"
- 17. Port Connectivity Checks: "Mod:base_squared_mod"
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
- 21. Analysis & Synthesis Suppressed Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |ProcessorMEM_TB
+  5. Parameter Settings for User Entity Instance: ProcessorMEM:uut
+  6. Parameter Settings for User Entity Instance: ProcessorMEM:uut|IF:fetch
+  7. Parameter Settings for User Entity Instance: ProcessorMEM:uut|IF:fetch|Mux2_PC:mux_pc
+  8. Parameter Settings for User Entity Instance: ProcessorMEM:uut|IF:fetch|pc_register:pc_reg
+  9. Parameter Settings for User Entity Instance: ProcessorMEM:uut|IF:fetch|Instruction_Mem:instruction_mem
+ 10. Parameter Settings for User Entity Instance: ProcessorMEM:uut|IF:fetch|plus_1:plus_pc
+ 11. Parameter Settings for User Entity Instance: ProcessorMEM:uut|IFID_Pipe:ifid_pipe
+ 12. Parameter Settings for User Entity Instance: ProcessorMEM:uut|ID:deco
+ 13. Parameter Settings for User Entity Instance: ProcessorMEM:uut|ID:deco|Instr_Decoder:decoder
+ 14. Parameter Settings for User Entity Instance: ProcessorMEM:uut|ID:deco|Control_Unit:control_unit
+ 15. Parameter Settings for User Entity Instance: ProcessorMEM:uut|ID:deco|Zero_Extend:zero_extend
+ 16. Parameter Settings for User Entity Instance: ProcessorMEM:uut|ID:deco|Mux2:wr_mux
+ 17. Parameter Settings for User Entity Instance: ProcessorMEM:uut|ID:deco|Register_Bank:reg_bank
+ 18. Parameter Settings for User Entity Instance: ProcessorMEM:uut|IDEXE_Pipe:idexe_pipe
+ 19. Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe
+ 20. Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|Mux2:in_mux
+ 21. Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu
+ 22. Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Adder:adder
+ 23. Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Substraction:subs
+ 24. Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex
+ 25. Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod
+ 26. Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod
+ 27. Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Mux4:selector
+ 28. Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Zero_Flag:zero
+ 29. Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|Branch_Unit:branch
+ 30. Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXEMEM_Pipe:exemem_pipe
+ 31. Parameter Settings for User Entity Instance: ProcessorMEM:uut|IM:mem
+ 32. Parameter Settings for User Entity Instance: ProcessorMEM:uut|IM:mem|Mux2_IM:mux_mem
+ 33. Parameter Settings for User Entity Instance: ProcessorMEM:uut|IM:mem|dataMem:mem
+ 34. Parameter Settings for User Entity Instance: ProcessorMEM:uut|MEMWB_Pipe:memwb_pipe
+ 35. Parameter Settings for User Entity Instance: ProcessorMEM:uut|WB:wb
+ 36. Analysis & Elaboration Settings
+ 37. Port Connectivity Checks: "ProcessorMEM:uut|MEMWB_Pipe:memwb_pipe"
+ 38. Port Connectivity Checks: "ProcessorMEM:uut|EXEMEM_Pipe:exemem_pipe"
+ 39. Port Connectivity Checks: "ProcessorMEM:uut|EXE:exe|ALU:alu|Mux4:selector"
+ 40. Port Connectivity Checks: "ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod"
+ 41. Port Connectivity Checks: "ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod"
+ 42. Port Connectivity Checks: "ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex"
+ 43. Port Connectivity Checks: "ProcessorMEM:uut|EXE:exe|ALU:alu|Substraction:subs"
+ 44. Port Connectivity Checks: "ProcessorMEM:uut|IFID_Pipe:ifid_pipe"
+ 45. Port Connectivity Checks: "ProcessorMEM:uut"
+ 46. Analysis & Elaboration Messages
+ 47. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -49,36 +75,371 @@ refer to the applicable agreement for further details.
 
 
 
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Wed Jul 08 21:46:25 2020       ;
+; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                 ; ASIP                                        ;
+; Top-level Entity Name         ; ProcessorMEM_TB                             ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ProcessorMEM_TB ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; ARQ            ; 16    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|IF:fetch ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|IF:fetch|Mux2_PC:mux_pc ;
++------------------+-------+------------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                       ;
++------------------+-------+------------------------------------------------------------+
+; MEMORY_ADDR_SIZE ; 13    ; Signed Integer                                             ;
++------------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|IF:fetch|pc_register:pc_reg ;
++------------------+-------+----------------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                           ;
++------------------+-------+----------------------------------------------------------------+
+; MEMORY_ADDR_SIZE ; 13    ; Signed Integer                                                 ;
++------------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|IF:fetch|Instruction_Mem:instruction_mem ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|IF:fetch|plus_1:plus_pc ;
++------------------+-------+------------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                       ;
++------------------+-------+------------------------------------------------------------+
+; MEMORY_ADDR_SIZE ; 13    ; Signed Integer                                             ;
++------------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|IFID_Pipe:ifid_pipe ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|ID:deco ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|ID:deco|Instr_Decoder:decoder ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|ID:deco|Control_Unit:control_unit ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|ID:deco|Zero_Extend:zero_extend ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|ID:deco|Mux2:wr_mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|ID:deco|Register_Bank:reg_bank ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|IDEXE_Pipe:idexe_pipe ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|Mux2:in_mux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Jul 08 19:53:14 2020       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                   ; ASIP                                        ;
-; Top-level Entity Name           ; Mod_Exp                                     ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 161                                         ;
-; Total pins                      ; 130                                         ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 4                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Adder:adder ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Substraction:subs ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; ARQ            ; 8     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Mux4:selector ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|ALU:alu|Zero_Flag:zero ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXE:exe|Branch_Unit:branch ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|EXEMEM_Pipe:exemem_pipe ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|IM:mem ;
++------------------+-------+-------------------------------------------+
+; Parameter Name   ; Value ; Type                                      ;
++------------------+-------+-------------------------------------------+
+; MEMORY_SIZE      ; 1024  ; Signed Integer                            ;
+; MEMORY_ADDR_SIZE ; 10    ; Signed Integer                            ;
+; MEMORY_DATA_SIZE ; 16    ; Signed Integer                            ;
++------------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|IM:mem|Mux2_IM:mux_mem ;
++------------------+-------+-----------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                      ;
++------------------+-------+-----------------------------------------------------------+
+; MEMORY_DATA_SIZE ; 16    ; Signed Integer                                            ;
++------------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|IM:mem|dataMem:mem ;
++------------------+-------+-------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                  ;
++------------------+-------+-------------------------------------------------------+
+; MEMORY_SIZE      ; 1024  ; Signed Integer                                        ;
+; MEMORY_ADDR_SIZE ; 10    ; Signed Integer                                        ;
+; MEMORY_DATA_SIZE ; 16    ; Signed Integer                                        ;
++------------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|MEMWB_Pipe:memwb_pipe ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ProcessorMEM:uut|WB:wb ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; ARQ            ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; Mod_Exp            ; ASIP               ;
+; Top-level entity name                                                           ; ProcessorMEM_TB    ; ASIP               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Iteration limit for constant Verilog loops                                      ; 262145             ; 5000               ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -159,164 +520,36 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-+----------------------------+-------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ProcessorMEM:uut|MEMWB_Pipe:memwb_pipe"                                                  ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pc_en_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
-; EXE/Mod.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv     ;         ;
-; EXE/Mod_Exp.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ProcessorMEM:uut|EXEMEM_Pipe:exemem_pipe"                                                          ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                ; Type   ; Severity ; Details                                                                             ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; srcdest_out[15..10] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 2263      ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 4476      ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 12        ;
-;     -- 5 input functions                    ; 14        ;
-;     -- 4 input functions                    ; 1923      ;
-;     -- <=3 input functions                  ; 2527      ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 161       ;
-;                                             ;           ;
-; I/O pins                                    ; 130       ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 4         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 161       ;
-; Total fan-out                               ; 17935     ;
-; Average fan-out                             ; 3.66      ;
-+---------------------------------------------+-----------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                   ;
-+------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+-------------+--------------+
-; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name ; Library Name ;
-+------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+-------------+--------------+
-; |Mod_Exp                     ; 4476 (141)          ; 161 (161)                 ; 0                 ; 4          ; 130  ; 0            ; |Mod_Exp                         ; Mod_Exp     ; work         ;
-;    |Mod:base_squared_mod|    ; 2168 (2168)         ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Mod_Exp|Mod:base_squared_mod    ; Mod         ; work         ;
-;    |Mod:result_mul_base_mod| ; 2167 (2167)         ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Mod_Exp|Mod:result_mul_base_mod ; Mod         ; work         ;
-+------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------+
-; Analysis & Synthesis DSP Block Usage Summary  ;
-+---------------------------------+-------------+
-; Statistic                       ; Number Used ;
-+---------------------------------+-------------+
-; Two Independent 18x18           ; 2           ;
-; Sum of two 18x18                ; 2           ;
-; Total number of DSP blocks      ; 4           ;
-;                                 ;             ;
-; Fixed Point Unsigned Multiplier ; 6           ;
-+---------------------------------+-------------+
-
-
-Encoding Type:  One-Hot
-+--------------------------------+
-; State Machine - |Mod_Exp|state ;
-+----------+---------------------+
-; Name     ; state.10            ;
-+----------+---------------------+
-; state.01 ; 0                   ;
-; state.10 ; 1                   ;
-+----------+---------------------+
-
-
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; state~3                               ; Lost fanout        ;
-; Total Number of Removed Registers = 1 ;                    ;
-+---------------------------------------+--------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 161   ;
-; Number of registers using Synchronous Clear  ; 30    ;
-; Number of registers using Synchronous Load   ; 63    ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 128   ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 31 bits   ; 62 LEs        ; 0 LEs                ; 62 LEs                 ; Yes        ; |Mod_Exp|exponent_logic[6] ;
-; 4:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |Mod_Exp|result_logic[13]  ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; Yes        ; |Mod_Exp|base_logic[30]    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |Mod_Exp ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; ARQ            ; 16    ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Mod:base_squared_mod ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; ARQ            ; 32    ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Mod:result_mul_base_mod ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; ARQ            ; 32    ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ProcessorMEM:uut|EXE:exe|ALU:alu|Mux4:selector"                                                                                                                                            ;
++--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                                                                                                                                             ;
++--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data4        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; data4[15..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Mod:result_mul_base_mod"                                                                                       ;
+; Port Connectivity Checks: "ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod"                                        ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                                                  ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -325,7 +558,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Mod:base_squared_mod"                                                                                          ;
+; Port Connectivity Checks: "ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod"                                           ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                                                  ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -333,56 +566,52 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 161                         ;
-;     ENA               ; 35                          ;
-;     ENA SCLR          ; 30                          ;
-;     ENA SLD           ; 63                          ;
-;     plain             ; 33                          ;
-; arriav_lcell_comb     ; 4476                        ;
-;     arith             ; 4091                        ;
-;         0 data inputs ; 62                          ;
-;         2 data inputs ; 2106                        ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 1922                        ;
-;     normal            ; 321                         ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 289                         ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 14                          ;
-;         6 data inputs ; 12                          ;
-;     shared            ; 64                          ;
-;         1 data inputs ; 62                          ;
-;         2 data inputs ; 2                           ;
-; arriav_mac            ; 4                           ;
-; boundary_port         ; 130                         ;
-;                       ;                             ;
-; Max LUT depth         ; 132.40                      ;
-; Average LUT depth     ; 123.82                      ;
-+-----------------------+-----------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex"                                       ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; finish ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:06     ;
-+----------------+--------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ProcessorMEM:uut|EXE:exe|ALU:alu|Substraction:subs"                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ProcessorMEM:uut|IFID_Pipe:ifid_pipe"                                                                                                                                                 ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; stop     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; stop[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ProcessorMEM:uut"                                                                        ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; instr_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; wb_out    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jul 08 19:52:37 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ASIP -c ASIP
+    Info: Processing started: Wed Jul 08 21:45:57 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ASIP -c ASIP --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file tb/im_tb.sv
@@ -445,7 +674,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file tb/mod_
 Info (12021): Found 1 design units, including 1 entities, in source file exe/mod.sv
     Info (12023): Found entity 1: Mod File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file exe/mod_exp.sv
-    Info (12023): Found entity 1: Mod_Exp File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv Line: 7
+    Info (12023): Found entity 1: Mod_Exp File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file exe/branch_unit.sv
     Info (12023): Found entity 1: Branch_Unit File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Branch_Unit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb/branchunit_tb.sv
@@ -502,7 +731,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file process
     Info (12023): Found entity 1: ProcessorEXE File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorEXE.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processorexe_tb.sv
     Info (12023): Found entity 1: ProcessorEXE_TB File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorEXE_TB.sv Line: 4
-Warning (10090): Verilog HDL syntax warning at ProcessorMEM.sv(73): extra block comment delimiter characters /* within block comment File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 73
 Info (12021): Found 1 design units, including 1 entities, in source file processormem.sv
     Info (12023): Found entity 1: ProcessorMEM File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processormem_tb.sv
@@ -517,7 +745,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file zero_ex
     Info (12023): Found entity 1: Zero_Ext_32 File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Zero_Ext_32.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb/zero_32_tb.sv
     Info (12023): Found entity 1: Zero_32_TB File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/tb/Zero_32_TB.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at MODEX_Processor_TB.sv(14): created implicit net for "rst" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor_TB.sv Line: 14
 Warning (10222): Verilog HDL Parameter Declaration warning at IF.sv(3): Parameter Declaration in module "IF" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 3
 Warning (10222): Verilog HDL Parameter Declaration warning at Instruction_Mem.sv(2): Parameter Declaration in module "Instruction_Mem" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 2
 Warning (10222): Verilog HDL Parameter Declaration warning at Processor.sv(3): Parameter Declaration in module "Processor" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/Processor.sv Line: 3
@@ -527,30 +754,59 @@ Warning (10222): Verilog HDL Parameter Declaration warning at ProcessorMEM.sv(4)
 Warning (10222): Verilog HDL Parameter Declaration warning at MODEX_Processor.sv(3): Parameter Declaration in module "MODEX_Processor" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Processor.sv Line: 3
 Warning (10222): Verilog HDL Parameter Declaration warning at MODEX_Memory.sv(3): Parameter Declaration in module "MODEX_Memory" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Memory.sv Line: 3
 Warning (10222): Verilog HDL Parameter Declaration warning at MODEX_Memory.sv(8): Parameter Declaration in module "MODEX_Memory" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/MODEX_Memory.sv Line: 8
-Info (12127): Elaborating entity "Mod_Exp" for the top level hierarchy
-Info (12128): Elaborating entity "Mod" for hierarchy "Mod:base_squared_mod" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv Line: 28
-Warning (10230): Verilog HDL assignment warning at Mod.sv(33): truncated value with size 33 to match size of target (32) File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv Line: 33
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (12127): Elaborating entity "ProcessorMEM_TB" for the top level hierarchy
+Warning (10755): Verilog HDL warning at ProcessorMEM_TB.sv(45): assignments to clk create a combinational loop File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM_TB.sv Line: 45
+Info (12128): Elaborating entity "ProcessorMEM" for hierarchy "ProcessorMEM:uut" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM_TB.sv Line: 16
+Info (12128): Elaborating entity "IF" for hierarchy "ProcessorMEM:uut|IF:fetch" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 39
+Info (12128): Elaborating entity "Mux2_PC" for hierarchy "ProcessorMEM:uut|IF:fetch|Mux2_PC:mux_pc" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 12
+Info (12128): Elaborating entity "pc_register" for hierarchy "ProcessorMEM:uut|IF:fetch|pc_register:pc_reg" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 13
+Info (12128): Elaborating entity "Instruction_Mem" for hierarchy "ProcessorMEM:uut|IF:fetch|Instruction_Mem:instruction_mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 14
+Warning (10850): Verilog HDL warning at Instruction_Mem.sv(7): number of words (3) in memory file does not match the number of elements in the address range [0:8191] File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 7
+Warning (10030): Net "memory.data_a" at Instruction_Mem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 4
+Warning (10030): Net "memory.waddr_a" at Instruction_Mem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 4
+Warning (10030): Net "memory.we_a" at Instruction_Mem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/Instruction_Mem.sv Line: 4
+Info (12128): Elaborating entity "plus_1" for hierarchy "ProcessorMEM:uut|IF:fetch|plus_1:plus_pc" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/IF.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at plus_1.sv(6): truncated value with size 32 to match size of target (13) File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/plus_1.sv Line: 6
+Info (12128): Elaborating entity "IFID_Pipe" for hierarchy "ProcessorMEM:uut|IFID_Pipe:ifid_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 41
+Info (12128): Elaborating entity "ID" for hierarchy "ProcessorMEM:uut|ID:deco" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 44
+Info (12128): Elaborating entity "Instr_Decoder" for hierarchy "ProcessorMEM:uut|ID:deco|Instr_Decoder:decoder" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 13
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "ProcessorMEM:uut|ID:deco|Control_Unit:control_unit" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 15
+Info (12128): Elaborating entity "Zero_Extend" for hierarchy "ProcessorMEM:uut|ID:deco|Zero_Extend:zero_extend" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 17
+Info (12128): Elaborating entity "Mux2" for hierarchy "ProcessorMEM:uut|ID:deco|Mux2:wr_mux" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 19
+Info (12128): Elaborating entity "Register_Bank" for hierarchy "ProcessorMEM:uut|ID:deco|Register_Bank:reg_bank" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ID/ID.sv Line: 21
+Info (12128): Elaborating entity "IDEXE_Pipe" for hierarchy "ProcessorMEM:uut|IDEXE_Pipe:idexe_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 50
+Info (12128): Elaborating entity "EXE" for hierarchy "ProcessorMEM:uut|EXE:exe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 53
+Info (12128): Elaborating entity "ALU" for hierarchy "ProcessorMEM:uut|EXE:exe|ALU:alu" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv Line: 12
+Info (12128): Elaborating entity "Adder" for hierarchy "ProcessorMEM:uut|EXE:exe|ALU:alu|Adder:adder" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 14
+Info (12128): Elaborating entity "Substraction" for hierarchy "ProcessorMEM:uut|EXE:exe|ALU:alu|Substraction:subs" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 15
+Info (12128): Elaborating entity "Mod_Exp" for hierarchy "ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at Mod_Exp.sv(39): truncated value with size 32 to match size of target (16) File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv Line: 39
+Info (12128): Elaborating entity "Mod" for hierarchy "ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv Line: 27
+Warning (10230): Verilog HDL assignment warning at Mod.sv(33): truncated value with size 17 to match size of target (16) File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod.sv Line: 33
+Info (12128): Elaborating entity "Mux4" for hierarchy "ProcessorMEM:uut|EXE:exe|ALU:alu|Mux4:selector" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 19
+Info (12128): Elaborating entity "Zero_Flag" for hierarchy "ProcessorMEM:uut|EXE:exe|ALU:alu|Zero_Flag:zero" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/ALU.sv Line: 21
+Info (12128): Elaborating entity "Branch_Unit" for hierarchy "ProcessorMEM:uut|EXE:exe|Branch_Unit:branch" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/EXE.sv Line: 14
+Info (12128): Elaborating entity "EXEMEM_Pipe" for hierarchy "ProcessorMEM:uut|EXEMEM_Pipe:exemem_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 58
+Info (12128): Elaborating entity "IM" for hierarchy "ProcessorMEM:uut|IM:mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 60
+Info (12128): Elaborating entity "Mux2_IM" for hierarchy "ProcessorMEM:uut|IM:mem|Mux2_IM:mux_mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/IM.sv Line: 14
+Info (12128): Elaborating entity "dataMem" for hierarchy "ProcessorMEM:uut|IM:mem|dataMem:mem" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/IM.sv Line: 15
+Warning (10850): Verilog HDL warning at dataMem.sv(18): number of words (5) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IM/dataMem.sv Line: 18
+Info (12128): Elaborating entity "MEMWB_Pipe" for hierarchy "ProcessorMEM:uut|MEMWB_Pipe:memwb_pipe" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 63
+Info (12128): Elaborating entity "WB" for hierarchy "ProcessorMEM:uut|WB:wb" File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM.sv Line: 65
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/ProcessorMEM_TB.sv Line: 8
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/output_files/ASIP.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4674 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 97 input pins
-    Info (21059): Implemented 33 output pins
-    Info (21061): Implemented 4540 logic cells
-    Info (21062): Implemented 4 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4832 megabytes
-    Info: Processing ended: Wed Jul 08 19:53:14 2020
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:00:52
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 4917 megabytes
+    Info: Processing ended: Wed Jul 08 21:46:25 2020
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:51
 
 
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
 The suppressed messages can be found in C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/output_files/ASIP.map.smsg.
 
 
