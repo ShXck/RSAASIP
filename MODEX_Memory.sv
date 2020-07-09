@@ -3,7 +3,7 @@ module MODEX_Memory #(parameter ARQ = 16)(address, data_out);
 	parameter ADDR = 18;
 	
 	input logic[ADDR-1:0] address; 
-	output logic[15:0] data_out;
+	output logic[ARQ-1:0] data_out;
 	
 	parameter MEMORY_SIZE = 262144;
 

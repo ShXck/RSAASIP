@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Tue Jul 07 16:44:30 2020
+Analysis & Synthesis Status : Successful - Wed Jul 08 19:53:14 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ASIP
-Top-level Entity Name : ProcessorMEM
+Top-level Entity Name : Mod_Exp
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 16783
-Total pins : 68
+Total registers : 161
+Total pins : 130
 Total virtual pins : 0
 Total block memory bits : 0
-Total DSP Blocks : 2
+Total DSP Blocks : 4
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0

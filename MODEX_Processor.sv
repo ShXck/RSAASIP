@@ -1,6 +1,6 @@
 module MODEX_Processor#(parameter ARQ = 16)(clk, rst, address, encripted_32, desencripted);
 	
-	parameter ADDR = 10;
+	parameter ADDR = 18;
 	
 	input logic clk, rst;
 	input logic[ADDR-1:0] address;

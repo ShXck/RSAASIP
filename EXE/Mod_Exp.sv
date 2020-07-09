@@ -2,8 +2,6 @@
 `define UPDATE 2'd1
 `define HOLD 2'd2
 
-/* to calculate *** a^b mod n *** we use right to left binary exponentiation (by .BRUCE SCHIENER)
-*/
 module Mod_Exp #(parameter ARQ = 16)(
     input [ARQ*2-1:0] base,
 	 input [ARQ*2-1:0] modulo,

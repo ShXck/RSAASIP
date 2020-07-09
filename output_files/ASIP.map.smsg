@@ -1,1 +1,2 @@
+Warning (10268): Verilog HDL information at Mod_Exp.sv(38): always construct contains both blocking and non-blocking assignments File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/EXE/Mod_Exp.sv Line: 38
 Warning (10268): Verilog HDL information at pc_counter.sv(8): always construct contains both blocking and non-blocking assignments File: C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/IF/pc_counter.sv Line: 8
