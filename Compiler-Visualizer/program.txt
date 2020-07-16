@@ -1,0 +1,8 @@
+SET A3, 0
+LDPX A7, [A3]
+_start:
+SET A0, 44
+SET A1, 64
+CMPEQ A0, A1
+ADD A1, 167
+J _start

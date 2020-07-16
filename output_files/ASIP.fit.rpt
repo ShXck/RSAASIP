@@ -1,5 +1,5 @@
 Fitter report for ASIP
-Mon Jul 13 12:05:21 2020
+Wed Jul 15 21:36:51 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -65,7 +65,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Mon Jul 13 12:05:21 2020       ;
+; Fitter Status                   ; Successful - Wed Jul 15 21:36:50 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; ASIP                                        ;
 ; Top-level Entity Name           ; ProcessorMEM                                ;
@@ -160,7 +160,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  11.1%      ;
+;     Processor 2            ;  11.5%      ;
 +----------------------------+-------------+
 
 
@@ -3973,7 +3973,7 @@ Critical Warning (169085): No exact pin location assignment(s) for 36 pins of 36
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
     Info (11162): clk~inputCLKENA0 with 16757 fanout uses global clock CLKCTRL_G10
-Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:06
+Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:01
 Info (176233): Starting register packing
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'ASIP.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
@@ -3983,31 +3983,31 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176235): Finished register packing
     Extra Info (176218): Packed 16 registers into blocks of type DSP block
     Extra Info (176220): Created 16 register duplicates
-Info (11798): Fitter preparation operations ending: elapsed time is 00:01:03
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:40
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:03:06
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:02:15
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:01:44
+Info (170192): Fitter placement operations ending: elapsed time is 00:02:06
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 7% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 28% of the available device resources in the region that extends from location X56_Y58 to location X66_Y69
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:01:11
-Info (11888): Total time spent on timing analysis during the Fitter is 58.54 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 59.64 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:01:26
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:01:20
 Info (144001): Generated suppressed messages file C:/Users/DELL/Desktop/Proyecto2-ASIP/RSAASIP/output_files/ASIP.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6592 megabytes
-    Info: Processing ended: Mon Jul 13 12:05:29 2020
-    Info: Elapsed time: 00:11:49
-    Info: Total CPU time (on all processors): 00:18:16
+    Info: Peak virtual memory: 6598 megabytes
+    Info: Processing ended: Wed Jul 15 21:36:59 2020
+    Info: Elapsed time: 00:10:41
+    Info: Total CPU time (on all processors): 00:18:13
 
 
 +----------------------------+

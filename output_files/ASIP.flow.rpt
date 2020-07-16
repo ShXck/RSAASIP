@@ -1,5 +1,5 @@
 Flow report for ASIP
-Wed Jul 15 19:42:26 2020
+Wed Jul 15 21:37:29 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,24 +37,29 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Wed Jul 15 19:42:26 2020      ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; ASIP                                        ;
-; Top-level Entity Name       ; MODEX_Processor                             ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CGXFC7C7F23C8                              ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Wed Jul 15 21:37:29 2020       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; ASIP                                        ;
+; Top-level Entity Name           ; ProcessorMEM                                ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CGXFC7C7F23C8                              ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 9,222 / 56,480 ( 16 % )                     ;
+; Total registers                 ; 16783                                       ;
+; Total pins                      ; 36 / 268 ( 13 % )                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                       ;
+; Total DSP Blocks                ; 2 / 156 ( 1 % )                             ;
+; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                               ;
+; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                               ;
+; Total HSSI TX PCSs              ; 0 / 6 ( 0 % )                               ;
+; Total HSSI PMA TX Serializers   ; 0 / 6 ( 0 % )                               ;
+; Total PLLs                      ; 0 / 13 ( 0 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -62,31 +67,31 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/15/2020 19:41:57 ;
+; Start date & time ; 07/15/2020 21:24:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ASIP                ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                ;
-+-------------------------------------+----------------------------------------+---------------+-----------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name     ; Section Id     ;
-+-------------------------------------+----------------------------------------+---------------+-----------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 35490520470848.159486371710468         ; --            ; --              ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --              ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --              ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --              ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --              ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; MODEX_Processor ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; MODEX_Processor ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; MODEX_Processor ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --              ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --              ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --              ; --             ;
-; TOP_LEVEL_ENTITY                    ; MODEX_Processor                        ; ASIP          ; --              ; --             ;
-; VERILOG_CONSTANT_LOOP_LIMIT         ; 262145                                 ; 5000          ; --              ; --             ;
-+-------------------------------------+----------------------------------------+---------------+-----------------+----------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                             ;
++-------------------------------------+----------------------------------------+---------------+--------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name  ; Section Id     ;
++-------------------------------------+----------------------------------------+---------------+--------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 35490520470848.159486987811220         ; --            ; --           ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --           ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --           ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --           ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --           ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; ProcessorMEM ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; ProcessorMEM ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; ProcessorMEM ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --           ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --           ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --           ; --             ;
+; TOP_LEVEL_ENTITY                    ; ProcessorMEM                           ; ASIP          ; --           ; --             ;
+; VERILOG_CONSTANT_LOOP_LIMIT         ; 262145                                 ; 5000          ; --           ; --             ;
++-------------------------------------+----------------------------------------+---------------+--------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -94,8 +99,10 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:30     ; 1.0                     ; 4796 MB             ; 00:00:48                           ;
-; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:48                           ;
+; Analysis & Synthesis ; 00:01:24     ; 1.2                     ; 4997 MB             ; 00:01:36                           ;
+; Fitter               ; 00:10:32     ; 1.1                     ; 6598 MB             ; 00:18:06                           ;
+; Assembler            ; 00:00:26     ; 1.0                     ; 4997 MB             ; 00:00:23                           ;
+; Total                ; 00:12:22     ; --                      ; --                  ; 00:20:05                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -105,6 +112,8 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; DESKTOP-VM7QFMR  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-VM7QFMR  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-VM7QFMR  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -112,6 +121,8 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off ASIP -c ASIP
+quartus_fit --read_settings_files=off --write_settings_files=off ASIP -c ASIP
+quartus_asm --read_settings_files=off --write_settings_files=off ASIP -c ASIP
 
 
 

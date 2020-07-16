@@ -1,46 +1,43 @@
-|ProcessorMEM_TB
-
-
-|ProcessorMEM_TB|ProcessorMEM:uut
+|ProcessorMEM
 clk => clk.IN8
 rst => rst.IN7
 rst_alu => rst_alu.IN1
 pc_enable => pc_enable.IN1
-instr_out[0] <= instr_out[0].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[1] <= instr_out[1].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[2] <= instr_out[2].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[3] <= instr_out[3].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[4] <= instr_out[4].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[5] <= instr_out[5].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[6] <= instr_out[6].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[7] <= instr_out[7].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[8] <= instr_out[8].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[9] <= instr_out[9].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[10] <= instr_out[10].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[11] <= instr_out[11].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[12] <= instr_out[12].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[13] <= instr_out[13].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[14] <= instr_out[14].DB_MAX_OUTPUT_PORT_TYPE
-instr_out[15] <= instr_out[15].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[0] <= wb_out[0].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[1] <= wb_out[1].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[2] <= wb_out[2].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[3] <= wb_out[3].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[4] <= wb_out[4].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[5] <= wb_out[5].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[6] <= wb_out[6].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[7] <= wb_out[7].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[8] <= wb_out[8].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[9] <= wb_out[9].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[10] <= wb_out[10].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[11] <= wb_out[11].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[12] <= wb_out[12].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[13] <= wb_out[13].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[14] <= wb_out[14].DB_MAX_OUTPUT_PORT_TYPE
-wb_out[15] <= wb_out[15].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[0] << instr_out[0].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[1] << instr_out[1].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[2] << instr_out[2].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[3] << instr_out[3].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[4] << instr_out[4].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[5] << instr_out[5].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[6] << instr_out[6].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[7] << instr_out[7].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[8] << instr_out[8].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[9] << instr_out[9].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[10] << instr_out[10].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[11] << instr_out[11].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[12] << instr_out[12].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[13] << instr_out[13].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[14] << instr_out[14].DB_MAX_OUTPUT_PORT_TYPE
+instr_out[15] << instr_out[15].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[0] << wb_out[0].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[1] << wb_out[1].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[2] << wb_out[2].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[3] << wb_out[3].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[4] << wb_out[4].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[5] << wb_out[5].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[6] << wb_out[6].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[7] << wb_out[7].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[8] << wb_out[8].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[9] << wb_out[9].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[10] << wb_out[10].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[11] << wb_out[11].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[12] << wb_out[12].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[13] << wb_out[13].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[14] << wb_out[14].DB_MAX_OUTPUT_PORT_TYPE
+wb_out[15] << wb_out[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|IF:fetch
+|ProcessorMEM|IF:fetch
 clk => clk.IN1
 rst => rst.IN1
 pc_en => pc_en.IN1
@@ -76,7 +73,7 @@ instr[14] <= Instruction_Mem:instruction_mem.port1
 instr[15] <= Instruction_Mem:instruction_mem.port1
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|IF:fetch|Mux2_PC:mux_pc
+|ProcessorMEM|IF:fetch|Mux2_PC:mux_pc
 data1[0] => out.DATAA
 data1[1] => out.DATAA
 data1[2] => out.DATAA
@@ -131,7 +128,7 @@ out[11] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[12] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|IF:fetch|pc_register:pc_reg
+|ProcessorMEM|IF:fetch|pc_register:pc_reg
 clk => always1.IN0
 rst => next_addr_out.OUTPUTSELECT
 rst => next_addr_out.OUTPUTSELECT
@@ -175,7 +172,7 @@ addr_out[11] <= addr_out[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 addr_out[12] <= addr_out[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|IF:fetch|Instruction_Mem:instruction_mem
+|ProcessorMEM|IF:fetch|Instruction_Mem:instruction_mem
 addr[0] => memory.RADDR
 addr[1] => memory.RADDR1
 addr[2] => memory.RADDR2
@@ -207,7 +204,7 @@ instr[14] <= memory.DATAOUT14
 instr[15] <= memory.DATAOUT15
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|IF:fetch|plus_1:plus_pc
+|ProcessorMEM|IF:fetch|plus_1:plus_pc
 addr_in[0] => Add0.IN26
 addr_in[1] => Add0.IN25
 addr_in[2] => Add0.IN24
@@ -236,7 +233,7 @@ addr_out[11] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 addr_out[12] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|IFID_Pipe:ifid_pipe
+|ProcessorMEM|IFID_Pipe:ifid_pipe
 clk => instr_out[0]~reg0.CLK
 clk => instr_out[1]~reg0.CLK
 clk => instr_out[2]~reg0.CLK
@@ -319,7 +316,7 @@ instr_out[14] <= instr_out[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 instr_out[15] <= instr_out[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|ID:deco
+|ProcessorMEM|ID:deco
 instr[0] => instr[0].IN1
 instr[1] => instr[1].IN1
 instr[2] => instr[2].IN1
@@ -466,7 +463,7 @@ wb_dest[1] <= Instr_Decoder:decoder.port3
 wb_dest[2] <= Instr_Decoder:decoder.port3
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|ID:deco|Instr_Decoder:decoder
+|ProcessorMEM|ID:deco|Instr_Decoder:decoder
 instr[0] => addr.DATAB
 instr[0] => imm.DATAB
 instr[1] => addr.DATAB
@@ -568,7 +565,7 @@ imm[9] <= imm.DB_MAX_OUTPUT_PORT_TYPE
 jop_lsb <= jop_lsb.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|ID:deco|Control_Unit:control_unit
+|ProcessorMEM|ID:deco|Control_Unit:control_unit
 opcode[0] => Decoder0.IN2
 opcode[1] => Decoder0.IN1
 opcode[2] => Decoder0.IN0
@@ -585,7 +582,7 @@ alu_op[0] <= alu_op.DB_MAX_OUTPUT_PORT_TYPE
 alu_op[1] <= alu_op.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|ID:deco|Zero_Extend:zero_extend
+|ProcessorMEM|ID:deco|Zero_Extend:zero_extend
 immediate[0] => ext_imm[0].DATAIN
 immediate[1] => ext_imm[1].DATAIN
 immediate[2] => ext_imm[2].DATAIN
@@ -614,7 +611,7 @@ ext_imm[14] <= <GND>
 ext_imm[15] <= <GND>
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|ID:deco|Mux2:wr_mux
+|ProcessorMEM|ID:deco|Mux2:wr_mux
 data1[0] => out.DATAA
 data1[1] => out.DATAA
 data1[2] => out.DATAA
@@ -681,7 +678,7 @@ out[14] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[15] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|ID:deco|Register_Bank:reg_bank
+|ProcessorMEM|ID:deco|Register_Bank:reg_bank
 clk => src3_out[0]~reg0.CLK
 clk => src3_out[1]~reg0.CLK
 clk => src3_out[2]~reg0.CLK
@@ -1487,7 +1484,7 @@ src3_out[14] <= src3_out[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 src3_out[15] <= src3_out[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|IDEXE_Pipe:idexe_pipe
+|ProcessorMEM|IDEXE_Pipe:idexe_pipe
 clk => mux_mem_out~reg0.CLK
 clk => mux_exe_out~reg0.CLK
 clk => wb_dest_out[0]~reg0.CLK
@@ -1850,7 +1847,7 @@ wb_dest_out[1] <= wb_dest_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 wb_dest_out[2] <= wb_dest_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|EXE:exe
+|ProcessorMEM|EXE:exe
 clk => clk.IN1
 rst => rst.IN1
 mux_exe => mux_exe.IN1
@@ -1967,7 +1964,7 @@ jaddr_out[11] <= Branch_Unit:branch.port5
 jaddr_out[12] <= Branch_Unit:branch.port5
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|EXE:exe|Mux2:in_mux
+|ProcessorMEM|EXE:exe|Mux2:in_mux
 data1[0] => out.DATAA
 data1[1] => out.DATAA
 data1[2] => out.DATAA
@@ -2034,7 +2031,7 @@ out[14] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[15] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|EXE:exe|ALU:alu
+|ProcessorMEM|EXE:exe|ALU:alu
 data1[0] => data1[0].IN3
 data1[1] => data1[1].IN3
 data1[2] => data1[2].IN3
@@ -2106,7 +2103,7 @@ ALU_Result[15] <= final_result[15].DB_MAX_OUTPUT_PORT_TYPE
 z <= Zero_Flag:zero.port1
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|EXE:exe|ALU:alu|Adder:adder
+|ProcessorMEM|EXE:exe|ALU:alu|Adder:adder
 num1[0] => Add0.IN16
 num1[1] => Add0.IN15
 num1[2] => Add0.IN14
@@ -2157,7 +2154,7 @@ result[14] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 result[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|EXE:exe|ALU:alu|Substraction:subs
+|ProcessorMEM|EXE:exe|ALU:alu|Substraction:subs
 num1[0] => Add0.IN32
 num1[1] => Add0.IN31
 num1[2] => Add0.IN30
@@ -2209,7 +2206,7 @@ result[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 cout <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex
+|ProcessorMEM|EXE:exe|ALU:alu|Mod_Exp:modex
 base[0] => base_logic.DATAB
 base[1] => base_logic.DATAB
 base[2] => base_logic.DATAB
@@ -2408,7 +2405,7 @@ result[14] <= result_logic[14].DB_MAX_OUTPUT_PORT_TYPE
 result[15] <= result_logic[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod
+|ProcessorMEM|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:base_squared_mod
 og_number[0] => Add30.IN32
 og_number[1] => Add28.IN32
 og_number[2] => Add26.IN32
@@ -2971,7 +2968,7 @@ div_result[14] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
 div_result[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod
+|ProcessorMEM|EXE:exe|ALU:alu|Mod_Exp:modex|Mod:result_mul_base_mod
 og_number[0] => Add30.IN32
 og_number[1] => Add28.IN32
 og_number[2] => Add26.IN32
@@ -3534,7 +3531,7 @@ div_result[14] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
 div_result[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|EXE:exe|ALU:alu|Mux4:selector
+|ProcessorMEM|EXE:exe|ALU:alu|Mux4:selector
 data1[0] => out.DATAA
 data1[1] => out.DATAA
 data1[2] => out.DATAA
@@ -3665,7 +3662,7 @@ out[14] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[15] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|EXE:exe|ALU:alu|Zero_Flag:zero
+|ProcessorMEM|EXE:exe|ALU:alu|Zero_Flag:zero
 ALU_Result[0] => Equal0.IN15
 ALU_Result[1] => Equal0.IN14
 ALU_Result[2] => Equal0.IN13
@@ -3685,7 +3682,7 @@ ALU_Result[15] => Equal0.IN0
 z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|EXE:exe|Branch_Unit:branch
+|ProcessorMEM|EXE:exe|Branch_Unit:branch
 jaddress[0] => jaddress_out[0].DATAIN
 jaddress[1] => jaddress_out[1].DATAIN
 jaddress[2] => jaddress_out[2].DATAIN
@@ -3719,7 +3716,7 @@ jaddress_out[11] <= jaddress[11].DB_MAX_OUTPUT_PORT_TYPE
 jaddress_out[12] <= jaddress[12].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|EXEMEM_Pipe:exemem_pipe
+|ProcessorMEM|EXEMEM_Pipe:exemem_pipe
 clk => wb_imm_out[0]~reg0.CLK
 clk => wb_imm_out[1]~reg0.CLK
 clk => wb_imm_out[2]~reg0.CLK
@@ -4010,7 +4007,7 @@ wb_dest_out[1] <= wb_dest_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 wb_dest_out[2] <= wb_dest_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|IM:mem
+|ProcessorMEM|IM:mem
 clk => clk.IN1
 rst => rst.IN1
 readEn => readEn.IN1
@@ -4076,7 +4073,7 @@ dataOut[14] <= dataMem:mem.port6
 dataOut[15] <= dataMem:mem.port6
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|IM:mem|Mux2_IM:mux_mem
+|ProcessorMEM|IM:mem|Mux2_IM:mux_mem
 data1[0] => out.DATAA
 data1[1] => out.DATAA
 data1[2] => out.DATAA
@@ -4143,7 +4140,7 @@ out[14] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[15] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|IM:mem|dataMem:mem
+|ProcessorMEM|IM:mem|dataMem:mem
 clk => dataOut[0]~reg0.CLK
 clk => dataOut[1]~reg0.CLK
 clk => dataOut[2]~reg0.CLK
@@ -69900,7 +69897,7 @@ dataOut[14] <= dataOut[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dataOut[15] <= dataOut[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|MEMWB_Pipe:memwb_pipe
+|ProcessorMEM|MEMWB_Pipe:memwb_pipe
 clk => wb_imm_out[0]~reg0.CLK
 clk => wb_imm_out[1]~reg0.CLK
 clk => wb_imm_out[2]~reg0.CLK
@@ -70119,7 +70116,7 @@ wb_dest_out[1] <= wb_dest_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 wb_dest_out[2] <= wb_dest_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessorMEM_TB|ProcessorMEM:uut|WB:wb
+|ProcessorMEM|WB:wb
 ALU_value[0] => wb_result.DATAA
 ALU_value[1] => wb_result.DATAA
 ALU_value[2] => wb_result.DATAA
