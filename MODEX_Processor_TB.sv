@@ -2,7 +2,7 @@
 
 module MODEX_Processor_TB();
 
-	parameter ADDR = 17;
+	parameter ADDR = 18;
 	parameter ARQ = 16;
 
 	logic clk, rst;
@@ -19,12 +19,12 @@ module MODEX_Processor_TB();
 	
 	
 	initial begin
-		clk = 0; rst = 0; address = 17'd0;
+		clk = 0; rst = 0; address = 18'd0;
 		
-		for(int i = 0; i < 102400; i++) begin
+		for(int i = 0; i < 204800; i++) begin
 			#50 rst = 1;
 			#50 rst = 0;
-			#100 address = address + 17'd1;
+			#100 address = address + 18'd1;
 			#50;
 			$fwrite(file, "%d\n", decrypted);
 		end

@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Tue Jul 14 17:15:52 2020
+Analysis & Synthesis Status : Failed - Wed Jul 15 19:42:26 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ASIP
-Top-level Entity Name : ProcessorMEM_TB
+Top-level Entity Name : MODEX_Processor
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
