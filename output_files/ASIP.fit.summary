@@ -1,13 +1,13 @@
-Fitter Status : Successful - Tue Jul 07 16:53:40 2020
+Fitter Status : Successful - Mon Jul 13 12:05:21 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ASIP
 Top-level Entity Name : ProcessorMEM
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 9,039 / 56,480 ( 16 % )
+Logic utilization (in ALMs) : 9,222 / 56,480 ( 16 % )
 Total registers : 16783
-Total pins : 68 / 268 ( 25 % )
+Total pins : 36 / 268 ( 13 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 7,024,640 ( 0 % )
 Total RAM Blocks : 0 / 686 ( 0 % )

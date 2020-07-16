@@ -1,20 +1,19 @@
-module MODEX_Processor#(parameter ARQ = 16)(clk, rst, address, encripted_32, desencripted);
+module MODEX_Processor#(parameter ARQ = 16)(clk, rst, address, encrypted_32, decrypted);
 	
-	parameter ADDR = 18;
+	parameter ADDR = 17;
 	
 	input logic clk, rst;
 	input logic[ADDR-1:0] address;
-	output logic[ARQ-1:0] desencripted;
-	output logic[2*ARQ-1:0] encripted_32;
+	output logic[ARQ-1:0] decrypted;
+	output logic[2*ARQ-1:0] encrypted_32;
 	
-	logic[ARQ-1:0] alu_result, encripted;
-	//logic[2*ARQ-1:0] encripted_32;
+	logic[ARQ-1:0] encrypted;
 	logic finish;
 	
-	MODEX_Memory modex_mem(address, encripted);
+	MODEX_Memory modex_mem(address, encrypted);
 	
-	Zero_Ext_32 ext_32(encripted, encripted_32);
+	Zero_Ext_32 ext_32(encrypted, encrypted_32);
 	
-	Mod_Exp modex(encripted_32, 1927, 1349, clk, rst, finish, desencripted);
+	Mod_Exp modex(encrypted_32, 1927, 1349, clk, rst, finish, decrypted);
 
 endmodule
